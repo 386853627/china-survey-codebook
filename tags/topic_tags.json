@@ -1,0 +1,61 @@
+{
+  "tag_definitions": {
+    "demographic": {
+      "label": "人口学特征",
+      "label_en": "Demographic",
+      "description": "性别、年龄、民族、户口、婚姻等基本人口学变量"
+    },
+    "education": {
+      "label": "教育",
+      "label_en": "Education",
+      "description": "教育程度、学历、受教育年限"
+    },
+    "income": {
+      "label": "收入",
+      "label_en": "Income",
+      "description": "个人收入、家庭收入、收入来源"
+    },
+    "labor": {
+      "label": "劳动就业",
+      "label_en": "Labor & Employment",
+      "description": "就业状态、职业、工时、工作性质"
+    },
+    "health": {
+      "label": "健康",
+      "label_en": "Health",
+      "description": "自评健康、就医行为、医疗保险、健康行为"
+    },
+    "family": {
+      "label": "家庭",
+      "label_en": "Family",
+      "description": "家庭结构、子女、家务分工、家庭关系"
+    },
+    "political": {
+      "label": "政治参与",
+      "label_en": "Political Participation",
+      "description": "政治面貌、政治参与、政治态度"
+    },
+    "trust": {
+      "label": "社会信任",
+      "label_en": "Social Trust",
+      "description": "人际信任、制度信任、社会信任"
+    },
+    "subjective": {
+      "label": "主观评价",
+      "label_en": "Subjective Assessment",
+      "description": "主观阶层、幸福感、满意度"
+    },
+    "attitude": {
+      "label": "价值观态度",
+      "label_en": "Values & Attitudes",
+      "description": "社会价值观、文化态度、社会观"
+    }
+  },
+  "variable_tags": {
+    "CGSS:2010:a2": ["demographic", "gender"],
+    "CGSS:2010:a3a": ["demographic", "birth_year"],
+    "CGSS:2010:a7a": ["education"],
+    "CGSS:2010:a62": ["income"]
+  },
+  "_note": "variable_tags 中的条目为 Phase 3 手工标注示例，全量标注将在 Phase 3 完成。"
+}

@@ -1,284 +1,351 @@
-# CGSS 问卷资料库（SQLite）建设方案
+# CGSS Codebook 机器可读元数据库 — 实施计划
 
-## 1. 项目概述
-
-**目标**：从 CGSS 全部波次（2003-2023）PDF 问卷出发，构建 SQLite 结构化数据库，通过 Python 脚本让 AI agent 自由查询变量。
-
-**选型**：方案 A — SQLite 结构化数据库 + FTS5 全文搜索。
-
-**覆盖范围**：首批 CGSS 全部波次（2003、2005、2006、2008、2010、2011、2012、2013、2015、2017、2018、2021），后续扩展 CFPS / CLDS / CHARLS。
+> 项目：构建 AI agent 可调用的 CGSS/CFPS codebook 元数据库
+> 启动日期：2026-07-04
+> 状态：方案已确认（方案 B：多文件分层 JSON + SQLite 索引）
 
 ---
 
-## 2. 数据库 Schema
+## 0. 项目背景
 
-### 2.1 表结构
+阿远（社会学博士）长期使用 CGSS、CFPS 等中国全国性社会科学调查数据。希望构建机器可读的 codebook 元数据库，作为调查数据的元数据层，供 AI agent 调用，实现：
+- 根据研究问题推荐可行的实证方案
+- 在提供原始数据后生成并执行 Stata 数据处理与计量分析代码
 
-```sql
--- 调查元信息
-CREATE TABLE surveys (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL UNIQUE,       -- CGSS
-    full_name TEXT,                  -- 中国综合社会调查 (Chinese General Social Survey)
-    name_cn TEXT,                    -- 中国综合社会调查
-    institution TEXT,                -- 中国人民大学中国调查与数据中心
-    website TEXT,                    -- http://cgss.ruc.edu.cn/
-    description TEXT
-);
+## 1. 需求确认
 
--- 波次
-CREATE TABLE waves (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    survey_id INTEGER NOT NULL REFERENCES surveys(id),
-    year INTEGER NOT NULL,
-    sample_size INTEGER,
-    questionnaire_type TEXT,         -- 家庭问卷 / 个人问卷 / 村居问卷
-    source_file TEXT,                -- 原始PDF/MD文件名
-    notes TEXT,
-    UNIQUE(survey_id, year, questionnaire_type)
-);
+| 维度 | 决策 |
+|---|---|
+| AI 调用方式 | 静态文件（JSON）+ SQLite 索引 + CLI 工具（非 MCP server） |
+| 首批数据 | CGSS（13 年 .dta 已就位） |
+| Tag 体系 | 粗粒度主题标签起步 |
+| 后续扩展 | CFPS |
+| Stata 路径 | `D:\Software\Stata19\StataMP-64.exe`（批量模式 `/e`） |
 
--- 变量（核心表）
-CREATE TABLE variables (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    wave_id INTEGER NOT NULL REFERENCES waves(id),
-    var_name TEXT NOT NULL,          -- a1, a2, a3a
-    section TEXT,                    -- A部分：核心模块
-    question_number TEXT,            -- A1, A1a, A1b
-    question_text TEXT NOT NULL,     -- 题干全文
-    question_type TEXT,              -- 单选题 / 多选题 / 填空题 / 开放题 / 量表题
-    interviewer_note TEXT,           -- 访题说明 / 访员注意
-    skip_pattern TEXT,               -- 跳转逻辑（如：若选3→跳至A5）
-    universe TEXT,                   -- 适用人群（如：所有受访者 / 仅已婚者）
-    is_core_module INTEGER DEFAULT 0,-- 是否核心追踪模块
-    sort_order REAL                  -- 在问卷中的排序
-);
+## 2. 数据盘点
 
--- 值标签（选项编码）
-CREATE TABLE value_labels (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    variable_id INTEGER NOT NULL REFERENCES variables(id),
-    value TEXT NOT NULL,             -- 1, 2, 97, 98, 99
-    label TEXT NOT NULL,             -- 男, 女, 不适用, 拒绝回答, 不知道
-    is_missing INTEGER DEFAULT 0,    -- 是否系统缺失值
-    sort_order INTEGER DEFAULT 0
-);
+cgss/ 目录下 13 个 .dta 文件：
 
--- 跨波次变量对照（后续扩展）
-CREATE TABLE crosswalk (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    survey_id INTEGER REFERENCES surveys(id),
-    var_name TEXT,
-    wave_a_id INTEGER REFERENCES waves(id),
-    wave_b_id INTEGER REFERENCES waves(id),
-    variable_a_id INTEGER REFERENCES variables(id),
-    variable_b_id INTEGER REFERENCES variables(id),
-    match_type TEXT,                 -- exact / similar / derived / new
-    note TEXT
-);
+| 年份 | 文件名 | 大小 |
+|---|---|---|
+| 2003 | CGSS2003.dta | 7.6 MB |
+| 2005 | cgss2005.dta | 7.6 MB |
+| 2006 | CGSS2006.dta | 22.8 MB |
+| 2008 | CGSS2008.dta | 11.8 MB |
+| 2010 | CGSS2010.dta | 13.3 MB |
+| 2011 | CGSS2011.dta | 4.3 MB |
+| 2012 | CGSS2012.dta | 54.6 MB |
+| 2013 | CGSS2013.dta | 33.5 MB |
+| 2015 | CGSS2015.dta | 84.2 MB |
+| 2017 | cgss2017.dta | 45.9 MB |
+| 2018 | CGSS2018.dta | 69.2 MB |
+| 2021 | CGSS2021.dta | 7.6 MB |
+| 2023 | CGSS2023.dta | 45.6 MB |
 
--- FTS5 全文搜索索引
-CREATE VIRTUAL TABLE variables_fts USING fts5(
-    var_name,
-    question_text,
-    section,
-    content='variables',
-    content_rowid='id'
-);
-```
+## 3. 选定方案：方案 B（多文件分层 JSON + SQLite 索引）
 
-### 2.2 索引
+### 3.1 备选方案比较（决策记录）
 
-```sql
-CREATE INDEX idx_variables_wave ON variables(wave_id);
-CREATE INDEX idx_variables_name ON variables(var_name);
-CREATE INDEX idx_variables_section ON variables(section);
-CREATE INDEX idx_value_labels_var ON value_labels(variable_id);
-CREATE INDEX idx_waves_survey_year ON waves(survey_id, year);
-```
+| 方案 | 数据结构 | 检索方式 | 维护成本 | 扩展性 | 准确性 | AI 调用便利性 |
+|---|---|---|---|---|---|---|
+| A. 单一大 JSON | 扁平 | 全文搜 | 低 | 差 | 中 | 中 |
+| **B. 多文件 JSON + SQLite** | 分层 | SQL + FTS | 中 | 好 | 高 | 高 |
+| C. 纯 SQLite | 关系型 | SQL | 中 | 中 | 高 | 中 |
+| D. Parquet + DuckDB | 列式 | SQL | 高 | 好 | 高 | 中 |
 
----
+**选 B 的理由**：JSON 人类可读、Git 可 diff、版本可控；SQLite 作为索引层加速检索；Stata ETL 最可靠。
 
-## 3. 项目目录结构
+### 3.2 目录结构
 
 ```
-D:\AI agent\Workbuddy工作\问卷codebook\
-│
-├── PLAN.md                          # 本文件：完整建设方案
-├── schema.sql                       # 数据库建表SQL
-│
+问卷codebook/
+├── cgss/                          # 原始 .dta 文件（已就位）
 ├── data/
-│   ├── pdf/                         # 原始PDF问卷（用户提供，不提交Git）
-│   │   ├── CGSS2003_questionnaire.pdf
-│   │   ├── CGSS2005_questionnaire.pdf
-│   │   └── ...
-│   ├── markdown/                    # MinerU转换后的Markdown
-│   │   ├── CGSS2003.md
-│   │   └── ...
-│   ├── json/                        # LLM提取的结构化JSON
+│   ├── codebook/                  # 元数据 JSON（每年一个文件）
 │   │   ├── CGSS2003.json
+│   │   ├── CGSS2010.json
 │   │   └── ...
-│   └── cgss.db                      # SQLite最终产物
-│
-├── scripts/
-│   ├── step1_pdf_to_md.py           # PDF → Markdown（调MinerU API）
-│   ├── step2_md_to_json.py          # Markdown → 结构化JSON（调LLM）
-│   ├── step3_json_to_db.py          # JSON → SQLite（建库写入）
-│   ├── query.py                     # AI agent入口：查询工具
-│   └── utils.py                     # 公共工具函数
-│
-├── prompts/
-│   └── extraction.md                # LLM提取的system prompt（核心！）
-│
-├── tests/
-│   └── test_queries.py              # 验证查询
-│
-└── .gitignore
+│   ├── codebook.db                # SQLite 索引（从 JSON 构建）
+│   └── variable_mapping.json      # 跨年/跨调查变量映射
+├── etl/
+│   ├── extract_metadata.do        # Stata ETL 主脚本
+│   ├── extract_single.do          # 单文件提取（被调用）
+│   └── build_sqlite.py            # JSON → SQLite 索引构建
+├── cli/
+│   └── codebook.py                # 检索 CLI 工具
+├── tags/
+│   └── topic_tags.json            # 变量主题标签映射
+├── docs/
+│   ├── SCHEMA.md                  # JSON Schema 文档
+│   └── USAGE.md                   # 使用说明
+├── .workbuddy/
+│   └── memory/                    # 工作日志
+├── PLAN.md                        # 本文件
+└── README.md
 ```
 
----
+## 4. JSON Schema 设计
 
-## 4. 流水线三步走
+### 4.1 单变量元数据结构
 
-### Step 1: PDF → Markdown
+```json
+{
+  "survey": "CGSS",
+  "year": 2010,
+  "module": "core",
+  "varname": "a2",
+  "label": "性别",
+  "label_en": "Gender",
+  "vtype": "numeric",
+  "format": "%8.0g",
+  "valuelabels": {
+    "1": "男",
+    "2": "女"
+  },
+  "missing_rules": {
+    "system": [-1, -2, -3],
+    "user": [98, 99]
+  },
+  "topic_tags": ["demographic", "gender"],
+  "cross_year_match": {
+    "same_var": ["CGSS2003:a2", "CGSS2005:a2", "CGSS2008:a2"]
+  }
+}
+```
 
-**脚本**：`scripts/step1_pdf_to_md.py`
+### 4.2 单年份文件结构
 
-**逻辑**：
-1. 扫描 `data/pdf/` 下所有 PDF
-2. 逐文件调用 MinerU API 上传并解析
-3. 等待解析完成，下载 Markdown 结果
-4. 保存到 `data/markdown/`
+```json
+{
+  "survey": "CGSS",
+  "year": 2010,
+  "source_file": "cgss/CGSS2010.dta",
+  "n_variables": 700,
+  "n_observations": 11783,
+  "extracted_at": "2026-07-04T17:00:00",
+  "stata_version": "StataMP 19",
+  "variables": [
+    { "varname": "id", ... },
+    { "varname": "a2", ... }
+  ]
+}
+```
 
-**依赖**：
-- MinerU API Key（已配置于用户环境）
-- `requests` 库
+## 5. ETL 流程（Stata → JSON）
 
-**注意事项**：
-- CGSS 早期问卷（2003-2008）排版较旧，OCR 可能需要额外校验
-- 部分 PDF 可能是扫描件，MinerU 需要启用 OCR 模式（`language=ch`）
-- 建议先抽一个样本跑通后再批量
+### 5.1 Stata 侧（extract_metadata.do）
 
----
+- 用 `describe` 提取变量名、标签、类型
+- 用 `labelbook` 提取取值标签
+- 用 `codebook` 检测缺失值模式
+- 输出 CSV 中间格式（Stata 导出 JSON 困难，CSV 稳定）
 
-### Step 2: Markdown → 结构化JSON
+**调用方式**：
+```bash
+"D:/Software/Stata19/StataMP-64.exe" /e do "etl/extract_metadata.do" <year> <dta_path> <output_dir>
+```
 
-**脚本**：`scripts/step2_md_to_json.py`
+### 5.2 Python 侧（build_json.py）
 
-**逻辑**：
-1. 读取 `data/markdown/CGSS{year}.md`
-2. 调用 LLM（DeepSeek V4 Pro），传入提取 prompt
-3. LLM 输出结构化 JSON 数组
-4. 验证 JSON schema
-5. 保存到 `data/json/CGSS{year}.json`
+- 读取 Stata 导出的多个 CSV
+- 合并、清洗、组装为符合 schema 的 JSON
+- 处理编码问题（CGSS 早期文件可能有 GBK）
 
-**LLM Prompt 设计要点**（详见 `prompts/extraction.md`）：
-- 输入：整个问卷的 Markdown 文本
-- 输出格式：JSON 数组，每个元素对应一道题
-- 提取字段：var_name, question_number, question_text, question_type, interviewer_note, skip_pattern, universe, section, value_labels
-- 处理特殊情况：表格题、矩阵题、多选题的分支（如 a1a, a1b）、嵌套跳转逻辑
+### 5.3 缺失值规则自动推断
 
-**人工抽检**：
-- 对关键年份（2003、2010、2017、2021）人工核对 20-30 道题
-- 重点检查：变量名准确率、跳转逻辑完整性、值标签缺失值标注
+- 检测负值（-1, -2, -3 是 CGSS 常见缺失码）
+- 检测 97/98/99 等高位"拒答/不知道"
+- 写入 `missing_rules`，AI agent 据此自动 recode
 
----
+## 6. SQLite 索引设计
 
-### Step 3: JSON → SQLite
-
-**脚本**：`scripts/step3_json_to_db.py`
-
-**逻辑**：
-1. 创建数据库（如不存在）
-2. 执行 `schema.sql` 建表
-3. 遍历 `data/json/` 下所有 JSON 文件
-4. 写入 surveys、waves、variables、value_labels 表
-5. 重建 FTS5 索引
-6. 执行验证 SQL
-
-**验证 SQL**（构建后必跑）：
 ```sql
--- 各波次变量数统计
-SELECT s.name, w.year, COUNT(v.id) as var_count
-FROM surveys s
-JOIN waves w ON w.survey_id = s.id
-JOIN variables v ON v.wave_id = w.id
-GROUP BY s.name, w.year
-ORDER BY w.year;
+CREATE TABLE variables (
+    survey TEXT, year INTEGER, varname TEXT,
+    label TEXT, label_en TEXT, vtype TEXT,
+    topic_tags TEXT,  -- JSON array
+    source_file TEXT,
+    PRIMARY KEY (survey, year, varname)
+);
 
--- 检查有无变量缺失值标签
-SELECT COUNT(*) FROM variables v
-LEFT JOIN value_labels vl ON vl.variable_id = v.id
-WHERE vl.id IS NULL AND v.question_type IN ('单选题', '多选题');
+CREATE TABLE valuelabels (
+    survey TEXT, year INTEGER, varname TEXT,
+    value TEXT, label TEXT
+);
+
+CREATE VIRTUAL TABLE variables_fts USING fts5(
+    varname, label, label_en, topic_tags
+);
 ```
 
----
+**检索能力**：
+- 按年份/变量名精确查
+- 按中文/英文标签模糊查（FTS5）
+- 按 topic_tag 分类查
+- 跨年对比同一变量
 
-## 5. query.py — AI Agent 入口
-
-### 使用方式
+## 7. CLI 工具（codebook.py）
 
 ```bash
-# 全文搜索
-python scripts/query.py search "生育意愿"
+# 按关键词搜索变量
+python cli/codebook.py search "性别"
+python cli/codebook.py search "income" --survey CGSS --year 2010
 
-# 精确查变量
-python scripts/query.py var --survey CGSS --wave 2017 --var a1
+# 查看某变量详情（含取值标签、缺失规则）
+python cli/codebook.py variable CGSS 2010 a2
 
-# 模糊查变量名
-python scripts/query.py var --survey CGSS --wave 2017 --like "a1*"
+# 跨年对比
+python cli/codebook.py compare a2 --years 2003,2010,2018,2023
 
-# 列出某调查所有波次
-python scripts/query.py waves --survey CGSS
+# 导出某主题所有变量（供 AI agent 消费）
+python cli/codebook.py export --tag demographic --format json
 
-# 查看某波次所有模块
-python scripts/query.py sections --survey CGSS --wave 2017
-
-# 列出某模块所有变量
-python scripts/query.py module --survey CGSS --wave 2017 --section "A部分：核心模块"
-
-# 输出数据库统计
-python scripts/query.py stats
-
-# 导出某波次为CSV
-python scripts/query.py export --survey CGSS --wave 2017 --output cgss2017.csv
+# 列出所有调查年份
+python cli/codebook.py surveys
 ```
 
-### 输出格式
+## 8. 实施阶段（4 个 Phase）
 
-终端友好的表格格式，AI agent 直接阅读理解：
+> **重要**：本项目跨多个对话框完成。每个 Phase 可独立作为一个对话框的任务。开始前请先读本 PLAN.md 和 .workbuddy/memory/ 下的日志了解上下文。
+
+### Phase 1: Schema 设计 + ETL 试点（CGSS2010）
+
+**目标**：跑通从 .dta 到 JSON 的完整流程
+
+**任务清单**：
+- [ ] 写 `docs/SCHEMA.md`（完整 JSON Schema 文档）
+- [ ] 写 `etl/extract_metadata.do`（Stata ETL 脚本）
+- [ ] 用 CGSS2010 跑试点，生成中间 CSV
+- [ ] 写 Python 脚本组装 `data/codebook/CGSS2010.json`
+- [ ] 用 Stata 交叉验证字段完整性（变量数、标签数）
+
+**验证标准**：
+- JSON 中变量数 = Stata describe 输出的变量数
+- 取值标签完整无误
+- 缺失值规则合理
+
+**产出文件**：
+- `docs/SCHEMA.md`
+- `etl/extract_metadata.do`
+- `etl/build_json.py`（Python 组装脚本）
+- `data/codebook/CGSS2010.json`
+
+### Phase 2: 全量入库 + SQLite 索引
+
+**前置**：Phase 1 完成
+
+**任务清单**：
+- [ ] 批量跑 13 年 ETL
+- [ ] 写 `etl/build_sqlite.py`（JSON → SQLite）
+- [ ] 构建 `data/codebook.db`
+- [ ] 生成 `data/variable_mapping.json`（跨年同义变量）
+- [ ] 全量验证：每年变量数对账
+
+**验证标准**：
+- 13 个 JSON 文件生成完毕
+- SQLite 可查询，FTS 可检索
+- 跨年映射至少覆盖核心人口学变量
+
+**产出文件**：
+- `data/codebook/CGSS{2003,2005,...,2023}.json`（13 个）
+- `data/codebook.db`
+- `data/variable_mapping.json`
+- `etl/build_sqlite.py`
+
+### Phase 3: CLI 工具 + Tag 体系
+
+**前置**：Phase 2 完成
+
+**任务清单**：
+- [ ] 写 `cli/codebook.py`（5 个子命令）
+- [ ] 设计粗粒度 tag 体系（demographic/income/health/education/family/labor/political/trust 等）
+- [ ] 写 `tags/topic_tags.json`（变量 → tag 映射）
+- [ ] 对核心变量（前 200 个高频变量）打标
+- [ ] 写 `docs/USAGE.md`
+
+**验证标准**：
+- `search` / `variable` / `compare` / `export` / `surveys` 五个命令可用
+- 核心变量有 tag
+
+**产出文件**：
+- `cli/codebook.py`
+- `tags/topic_tags.json`
+- `docs/USAGE.md`
+
+### Phase 4: CFPS 扩展 + 跨调查映射 + 文档完善
+
+**前置**：Phase 3 完成
+
+**任务清单**：
+- [ ] 接入 CFPS 数据（ETL 复用 Phase 1 脚本）
+- [ ] 构建 `data/codebook/CFPS*.json`
+- [ ] 生成跨调查变量映射（CGSS ↔ CFPS）
+- [ ] 写 `README.md`（项目总览）
+- [ ] 端到端测试：模拟 AI agent 调用场景
+
+**验证标准**：
+- CFPS 可检索
+- 跨调查对比可用
+- AI agent 能根据研究问题推荐变量并生成 Stata 代码
+
+**产出文件**：
+- `data/codebook/CFPS*.json`
+- `data/variable_mapping.json`（含跨调查映射）
+- `README.md`
+
+## 9. AI Agent 调用场景示例
+
+**场景**：你问"我想研究教育对收入的影响，CGSS 哪些年份有相关变量？"
 
 ```
-┌──────────┬──────────────────────────────────────┬──────────────────────┐
-│ var_name │ question_text                        │ value_labels         │
-├──────────┼──────────────────────────────────────┼──────────────────────┤
-│ a1       │ 您的性别：                           │ 1=男, 2=女           │
-│ a2       │ 您的出生日期（阳历）：____年____月    │ 开放题               │
-│ a3a      │ 您目前的户口登记地是：               │ 1=本乡/镇/街道, ...   │
-└──────────┴──────────────────────────────────────┴──────────────────────┘
+Agent 流程：
+1. cli/codebook.py search "教育" --tag education
+2. cli/codebook.py search "收入" --tag income
+3. cli/codebook.py compare a7a --years all  # 教育程度变量跨年
+4. cli/codebook.py compare a62 --years all  # 收入变量跨年
+5. 返回：2010-2018 都有 a7a（教育程度）和 a62（总收入），
+        2021 后改用 b7a/b62，给出映射
+6. 生成 Stata do 文件：合并多年 + recode 缺失值 + 回归
 ```
+
+**关键**：AI agent 通过 CLI 拿到结构化元数据，知道每个变量的取值范围和缺失码，生成的 Stata 代码准确率大幅提升。
+
+## 10. 关键设计决策
+
+1. **JSON 优先于纯 SQLite**：JSON 人类可读、Git 可 diff、易于版本管理；SQLite 作为索引层加速检索
+2. **Stata ETL 而非 pandas**：直接用 Stata 读取 .dta 最可靠，避免 pandas 读中文标签的编码坑
+3. **CSV 中间格式**：Stata 导出 JSON 困难，但导出 CSV 稳定，Python 侧组装 JSON
+4. **粗粒度 tag 起步**：demographic/income/health/education/family/labor/political/trust 等 8-10 个大类，后续按需细化
+5. **跨年映射最后做**：需要全量入库后才能识别同义变量
+6. **静态文件 + CLI 而非 MCP**：零服务依赖，AI agent 直接读文件或调 CLI
+
+## 11. 跨对话框协作约定
+
+由于 context 长度有限，本项目分多对话框完成。每个新对话框开始时：
+
+1. **AI agent 应先读**：
+   - `PLAN.md`（本文件，了解整体计划）
+   - `.workbuddy/memory/YYYY-MM-DD.md`（最新工作日志，了解进度）
+   - 当前 Phase 对应的产出文件（了解已有成果）
+
+2. **用户会在新对话框开头说明**：
+   - 当前要执行哪个 Phase
+   - 或给出具体任务
+
+3. **每个对话框结束时应**：
+   - 更新 `.workbuddy/memory/YYYY-MM-DD.md`（记录本次完成的工作）
+   - 勾选 PLAN.md 中已完成的任务项
+   - 说明下一对话框应从哪里接续
+
+## 12. 进度追踪
+
+| Phase | 状态 | 完成日期 | 备注 |
+|---|---|---|---|
+| 1. Schema + ETL 试点 | ⬜ 未开始 | - | 下一步 |
+| 2. 全量入库 + SQLite | ⬜ 未开始 | - | - |
+| 3. CLI + Tag 体系 | ⬜ 未开始 | - | - |
+| 4. CFPS + 文档 | ⬜ 未开始 | - | - |
 
 ---
 
-## 6. 执行顺序
-
-| 序号 | 步骤 | 产出 | 验证方式 |
-|------|------|------|----------|
-| 1 | 确认 PDF 路径 | CGSS全部年份PDF就位 | `ls data/pdf/` |
-| 2 | 创建项目骨架 | 目录结构、schema.sql | 检查文件存在 |
-| 3 | 跑 step1 | `data/markdown/*.md` | 抽查1-2个MD文件可读性 |
-| 4 | 写 extraction prompt | `prompts/extraction.md` | 手动测1个年份JSON质量 |
-| 5 | 跑 step2 | `data/json/*.json` | JSON schema验证 |
-| 6 | 跑 step3 | `data/cgss.db` | 验证SQL跑通 |
-| 7 | 写 query.py | 查询工具可用 | 跑 test_queries.py |
-| 8 | 人工抽检 | 质量报告 | 抽检4个关键年份 |
-
----
-
-## 7. 待决策/待提供
-
-- [ ] **CGSS PDF 存放路径**：全部年份 PDF 现在在哪里？
-- [ ] **独立 codebook**：除了问卷 PDF，是否有独立的变量编码表（.xlsx/.dta）？如有可大幅加速 step2
-- [ ] **LLM 选择**：提取用 DeepSeek V4 Pro（已配置）还是其他模型？
-- [ ] **缺失值编码规范**：不同年份的系统缺失值（97/98/99/999）需统一处理吗？
-- [ ] **Git 仓库**：是否需要初始化 GitHub 仓库？`.gitignore` 应排除 `data/pdf/`（版权）和 `data/cgss.db`（二进制大文件）
+_最后更新：2026-07-04_

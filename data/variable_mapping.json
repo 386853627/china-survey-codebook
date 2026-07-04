@@ -1,0 +1,17 @@
+{
+  "survey": "cross-survey variable mapping",
+  "_description": "跨年/跨调查同义变量映射。Phase 2 全量入库后生成。",
+  "mappings": [
+    {
+      "_example": "示例",
+      "canonical_name": "gender",
+      "label": "性别",
+      "matches": [
+        "CGSS:2003:a2",
+        "CGSS:2005:a2",
+        "CGSS:2010:a2",
+        "CGSS:2018:a2"
+      ]
+    }
+  ]
+}

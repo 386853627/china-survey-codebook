@@ -1,3 +1,7 @@
-requests>=2.28
-openai>=1.0
-python-dotenv>=1.0
+# Python 依赖（Phase 3 CLI 工具用）
+# Python 3.10+
+
+# 标准库无需列出：sqlite3, json, argparse, csv, pathlib
+
+# 第三方（暂无，保持零依赖以便最大兼容性）
+# 如 Phase 3 需要模糊搜索可考虑引入 rapidfuzz

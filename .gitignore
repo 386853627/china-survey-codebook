@@ -1,31 +1,82 @@
-# 原始PDF（版权敏感，不提交）
-data/pdf/*
-!data/pdf/.gitkeep
+# ============================================
+# China Survey Codebook - .gitignore
+# ============================================
 
-# SQLite数据库（二进制大文件，通过脚本重建）
-data/cgss.db
-*.db
+# ---- 原始调查数据（受使用协议保护，绝不公开）----
+cgss/
+cfps/
+clds/
+*.dta
+*.sav
+*.por
+*.csv.gz
 
-# MinerU中间产物
-data/markdown/*
-!data/markdown/.gitkeep
+# 中间产物
+etl/tmp/
+etl/output/
+*.tmp.csv
 
-# Python缓存
+# ---- Python ----
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# 环境变量
-.env
-config.py
+# 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# IDE
+# ---- Stata ----
+*.log
+*.smcl
+*.gph
+*.dtasys
+*.stcode
+*.stsem
+
+# ---- SQLite（可选择性忽略，因可从 JSON 重建）----
+# 建议提交，便于用户直接使用；如体积过大可取消注释
+# data/codebook.db
+# data/codebook.db-journal
+# data/codebook.db-wal
+# data/codebook.db-shm
+
+# ---- IDE / 编辑器 ----
 .vscode/
 .idea/
-
-# OS
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# WorkBuddy
+# ---- WorkBuddy / AI agent 工作目录（本地私有）----
 .workbuddy/
+.learnings/
+
+# ---- 系统文件 ----
+*.bak
+*.cache
+*.orig
