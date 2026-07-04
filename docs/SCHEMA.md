@@ -12,7 +12,6 @@
   "n_variables": 700,
   "n_observations": 11783,
   "extracted_at": "2026-07-04T17:00:00+08:00",
-  "stata_version": "StataMP 19",
   "etl_version": "1.0",
   "variables": [ ... ]
 }
@@ -26,7 +25,6 @@
 | `n_variables` | integer | 变量总数 |
 | `n_observations` | integer | 观测值数量 |
 | `extracted_at` | string | ETL 提取时间（ISO 8601） |
-| `stata_version` | string | 提取所用 Stata 版本 |
 | `etl_version` | string | ETL 脚本版本 |
 | `variables` | array | 变量元数据数组 |
 

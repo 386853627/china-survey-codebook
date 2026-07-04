@@ -20,7 +20,7 @@
 | 首批数据 | CGSS（13 年 .dta 已就位） |
 | Tag 体系 | 粗粒度主题标签起步 |
 | 后续扩展 | CFPS |
-| Stata 路径 | `D:\Software\Stata19\StataMP-64.exe`（批量模式 `/e`） |
+| ETL 工具 | Python 3.13 + pandas（`read_stata` 读取 .dta） |
 
 ## 2. 数据盘点
 
@@ -53,7 +53,7 @@ cgss/ 目录下 13 个 .dta 文件：
 | C. 纯 SQLite | 关系型 | SQL | 中 | 中 | 高 | 中 |
 | D. Parquet + DuckDB | 列式 | SQL | 高 | 好 | 高 | 中 |
 
-**选 B 的理由**：JSON 人类可读、Git 可 diff、版本可控；SQLite 作为索引层加速检索；Stata ETL 最可靠。
+**选 B 的理由**：JSON 人类可读、Git 可 diff、版本可控；SQLite 作为索引层加速检索；Python pandas `read_stata` 直接读取 .dta 元数据，单一工具链便于维护。
 
 ### 3.2 目录结构
 
@@ -68,8 +68,7 @@ cgss/ 目录下 13 个 .dta 文件：
 │   ├── codebook.db                # SQLite 索引（从 JSON 构建）
 │   └── variable_mapping.json      # 跨年/跨调查变量映射
 ├── etl/
-│   ├── extract_metadata.do        # Stata ETL 主脚本
-│   ├── extract_single.do          # 单文件提取（被调用）
+│   ├── extract_metadata.py        # Python ETL 主脚本（读取 .dta → JSON）
 │   └── build_sqlite.py            # JSON → SQLite 索引构建
 ├── cli/
 │   └── codebook.py                # 检索 CLI 工具
@@ -131,25 +130,32 @@ cgss/ 目录下 13 个 .dta 文件：
 }
 ```
 
-## 5. ETL 流程（Stata → JSON）
+## 5. ETL 流程（Python pandas 读取 .dta → JSON）
 
-### 5.1 Stata 侧（extract_metadata.do）
+### 5.1 Python ETL 主脚本（etl/extract_metadata.py）
 
-- 用 `describe` 提取变量名、标签、类型
-- 用 `labelbook` 提取取值标签
-- 用 `codebook` 检测缺失值模式
-- 输出 CSV 中间格式（Stata 导出 JSON 困难，CSV 稳定）
+单一 Python 脚本完成全流程，无需 Stata 或 CSV 中间格式：
+
+- `pandas.read_stata()` 读取 .dta，通过 `iterator=True` 获取 `StataReader` 对象
+- `reader.variable_labels()` → 变量标签
+- `reader.value_labels()` → 取值标签
+- `reader.variable_format()` → Stata 显示格式
+- `reader.dtyplabs` / `reader.varlist` → 变量名与类型
+- `reader.nobs` → 观测值数量
+- 统计实际缺失值分布（前 N 条抽样），自动推断缺失码
 
 **调用方式**：
 ```bash
-"D:/Software/Stata19/StataMP-64.exe" /e do "etl/extract_metadata.do" <year> <dta_path> <output_dir>
+python etl/extract_metadata.py <year> <dta_path> [--output data/codebook/]
+# 例：
+python etl/extract_metadata.py 2010 cgss/CGSS2010.dta
 ```
 
-### 5.2 Python 侧（build_json.py）
+### 5.2 编码处理
 
-- 读取 Stata 导出的多个 CSV
-- 合并、清洗、组装为符合 schema 的 JSON
-- 处理编码问题（CGSS 早期文件可能有 GBK）
+- pandas `read_stata` 内部处理 .dta 文件编码（Stata 13+ 为 UTF-8，早期为 ASCII/GBK）
+- 若遇乱码，回退方案：用 `read_stata(..., convert_categoricals=False)` 读取原始值，再手动映射标签
+- 输出 JSON 统一 `ensure_ascii=False`，保留中文可读
 
 ### 5.3 缺失值规则自动推断
 
@@ -214,20 +220,18 @@ python cli/codebook.py surveys
 
 **任务清单**：
 - [ ] 写 `docs/SCHEMA.md`（完整 JSON Schema 文档）
-- [ ] 写 `etl/extract_metadata.do`（Stata ETL 脚本）
-- [ ] 用 CGSS2010 跑试点，生成中间 CSV
-- [ ] 写 Python 脚本组装 `data/codebook/CGSS2010.json`
-- [ ] 用 Stata 交叉验证字段完整性（变量数、标签数）
+- [ ] 写 `etl/extract_metadata.py`（Python ETL 脚本，pandas 读取 .dta）
+- [ ] 用 CGSS2010 跑试点，生成 `data/codebook/CGSS2010.json`
+- [ ] 交叉验证字段完整性（变量数、标签数、取值标签对照）
 
 **验证标准**：
-- JSON 中变量数 = Stata describe 输出的变量数
+- JSON 中变量数 = pandas `StataReader` 报告的变量数
 - 取值标签完整无误
 - 缺失值规则合理
 
 **产出文件**：
 - `docs/SCHEMA.md`
-- `etl/extract_metadata.do`
-- `etl/build_json.py`（Python 组装脚本）
+- `etl/extract_metadata.py`（Python ETL 脚本）
 - `data/codebook/CGSS2010.json`
 
 ### Phase 2: 全量入库 + SQLite 索引
@@ -313,8 +317,8 @@ Agent 流程：
 ## 10. 关键设计决策
 
 1. **JSON 优先于纯 SQLite**：JSON 人类可读、Git 可 diff、易于版本管理；SQLite 作为索引层加速检索
-2. **Stata ETL 而非 pandas**：直接用 Stata 读取 .dta 最可靠，避免 pandas 读中文标签的编码坑
-3. **CSV 中间格式**：Stata 导出 JSON 困难，但导出 CSV 稳定，Python 侧组装 JSON
+2. **Python pandas ETL**：`read_stata` 直接读取 .dta 元数据，单一工具链便于维护，避免 Stata 批量模式的编码坑和 CSV 中间格式开销
+3. **无中间格式**：pandas 直接输出 JSON，不再经过 CSV 中转
 4. **粗粒度 tag 起步**：demographic/income/health/education/family/labor/political/trust 等 8-10 个大类，后续按需细化
 5. **跨年映射最后做**：需要全量入库后才能识别同义变量
 6. **静态文件 + CLI 而非 MCP**：零服务依赖，AI agent 直接读文件或调 CLI

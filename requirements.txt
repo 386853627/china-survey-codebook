@@ -1,7 +1,10 @@
-# Python 依赖（Phase 3 CLI 工具用）
+# Python 依赖
 # Python 3.10+
+
+# ETL（Phase 1 起）
+pandas>=2.0              # read_stata 读取 .dta 元数据
 
 # 标准库无需列出：sqlite3, json, argparse, csv, pathlib
 
-# 第三方（暂无，保持零依赖以便最大兼容性）
-# 如 Phase 3 需要模糊搜索可考虑引入 rapidfuzz
+# 可选（Phase 3 如需模糊搜索）
+# rapidfuzz

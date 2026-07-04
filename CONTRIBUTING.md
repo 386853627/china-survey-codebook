@@ -7,13 +7,14 @@
 如果你有其他 CGSS 年份或 CFPS/CLDS 等调查的 .dta 文件：
 
 1. Fork 本仓库
-2. 运行 ETL 脚本生成 JSON：
+2. 安装依赖：`pip install pandas`
+3. 运行 ETL 脚本生成 JSON：
    ```bash
-   "D:/Software/Stata19/StataMP-64.exe" /e do "etl/extract_metadata.do" <year> <dta_path> "etl/tmp"
-   python etl/build_json.py <year>
+   python etl/extract_metadata.py <year> <dta_path>
+   # 例：python etl/extract_metadata.py 2010 cgss/CGSS2010.dta
    ```
-3. 提交 `data/codebook/CGSS{year}.json`
-4. 发 PR
+4. 提交 `data/codebook/CGSS{year}.json`
+5. 发 PR
 
 ### 2. 贡献变量标签
 

@@ -35,7 +35,7 @@ china-survey-codebook/
 │   ├── codebook.db            # SQLite 索引（从 JSON 构建）
 │   └── variable_mapping.json  # 跨年/跨调查变量映射
 ├── etl/
-│   ├── extract_metadata.do    # Stata ETL 脚本
+│   ├── extract_metadata.py    # Python ETL（pandas 读取 .dta → JSON）
 │   └── build_sqlite.py        # JSON → SQLite 索引
 ├── cli/
 │   └── codebook.py            # 检索 CLI 工具
