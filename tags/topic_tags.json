@@ -52,10 +52,858 @@
     }
   },
   "variable_tags": {
-    "CGSS:2010:a2": ["demographic", "gender"],
-    "CGSS:2010:a3a": ["demographic", "birth_year"],
-    "CGSS:2010:a7a": ["education"],
-    "CGSS:2010:a62": ["income"]
+    "CGSS:*:a10": [
+      "demographic",
+      "political"
+    ],
+    "CGSS:*:a10a": [
+      "demographic",
+      "political"
+    ],
+    "CGSS:*:a18": [
+      "demographic",
+      "health"
+    ],
+    "CGSS:*:a19": [
+      "health"
+    ],
+    "CGSS:*:a2": [
+      "demographic"
+    ],
+    "CGSS:*:a6": [
+      "demographic"
+    ],
+    "CGSS:*:a9": [
+      "demographic",
+      "political"
+    ],
+    "CGSS:*:a9a": [
+      "political"
+    ],
+    "CGSS:*:a13": [
+      "political"
+    ],
+    "CGSS:*:a15": [
+      "health"
+    ],
+    "CGSS:*:a17": [
+      "health"
+    ],
+    "CGSS:*:a21": [
+      "demographic"
+    ],
+    "CGSS:*:a24": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a25": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a285": [
+      "attitude"
+    ],
+    "CGSS:*:a29": [
+      "attitude"
+    ],
+    "CGSS:*:a3010": [
+      "attitude"
+    ],
+    "CGSS:*:a3011": [
+      "attitude"
+    ],
+    "CGSS:*:a3012": [
+      "attitude"
+    ],
+    "CGSS:*:a311": [
+      "attitude"
+    ],
+    "CGSS:*:a312": [
+      "attitude"
+    ],
+    "CGSS:*:a313": [
+      "attitude"
+    ],
+    "CGSS:*:a34": [
+      "trust"
+    ],
+    "CGSS:*:a35": [
+      "attitude"
+    ],
+    "CGSS:*:a36": [
+      "subjective"
+    ],
+    "CGSS:*:a44": [
+      "political"
+    ],
+    "CGSS:*:a45": [
+      "political"
+    ],
+    "CGSS:*:a53": [
+      "income",
+      "labor"
+    ],
+    "CGSS:*:a53a": [
+      "labor"
+    ],
+    "CGSS:*:a54": [
+      "labor"
+    ],
+    "CGSS:*:a55": [
+      "labor"
+    ],
+    "CGSS:*:a58": [
+      "labor"
+    ],
+    "CGSS:*:a59a": [
+      "labor"
+    ],
+    "CGSS:*:a59aa": [
+      "labor"
+    ],
+    "CGSS:*:a59b": [
+      "labor"
+    ],
+    "CGSS:*:a59ba": [
+      "labor"
+    ],
+    "CGSS:*:a59e": [
+      "labor"
+    ],
+    "CGSS:*:a59f": [
+      "labor"
+    ],
+    "CGSS:*:a59j": [
+      "labor"
+    ],
+    "CGSS:*:a59k": [
+      "labor"
+    ],
+    "CGSS:*:a60a": [
+      "labor"
+    ],
+    "CGSS:*:a60e": [
+      "labor"
+    ],
+    "CGSS:*:a60f": [
+      "labor"
+    ],
+    "CGSS:*:a60j": [
+      "labor"
+    ],
+    "CGSS:*:a60k": [
+      "labor"
+    ],
+    "CGSS:*:a62": [
+      "family",
+      "income"
+    ],
+    "CGSS:*:a64": [
+      "family",
+      "income",
+      "subjective"
+    ],
+    "CGSS:*:a681": [
+      "family"
+    ],
+    "CGSS:*:a682": [
+      "family"
+    ],
+    "CGSS:*:a69": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a70": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a71a": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a71b": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a72": [
+      "education",
+      "family"
+    ],
+    "CGSS:*:a73": [
+      "demographic",
+      "family",
+      "political"
+    ],
+    "CGSS:*:a74": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a76": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a76a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a77": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a78": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a7a": [
+      "education"
+    ],
+    "CGSS:*:a7b": [
+      "education"
+    ],
+    "CGSS:*:a7c": [
+      "education"
+    ],
+    "CGSS:*:a80": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a81": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a82": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a82a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a83a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a87": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a88": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a89a": [
+      "demographic"
+    ],
+    "CGSS:*:a89b": [
+      "education"
+    ],
+    "CGSS:*:a89c": [
+      "demographic",
+      "political"
+    ],
+    "CGSS:*:a89d": [
+      "labor"
+    ],
+    "CGSS:*:a8a": [
+      "income"
+    ],
+    "CGSS:*:a8b": [
+      "income",
+      "labor"
+    ],
+    "CGSS:*:a90a": [
+      "demographic"
+    ],
+    "CGSS:*:a90b": [
+      "education"
+    ],
+    "CGSS:*:a90c": [
+      "demographic",
+      "political"
+    ],
+    "CGSS:*:a90d": [
+      "labor"
+    ],
+    "CGSS:*:a90da": [
+      "labor"
+    ],
+    "CGSS:*:a121": [
+      "family"
+    ],
+    "CGSS:*:a122": [
+      "family"
+    ],
+    "CGSS:*:a123": [
+      "family"
+    ],
+    "CGSS:*:a124": [
+      "family"
+    ],
+    "CGSS:*:a125": [
+      "family"
+    ],
+    "CGSS:*:a126": [
+      "family"
+    ],
+    "CGSS:*:a127": [
+      "family"
+    ],
+    "CGSS:*:a128": [
+      "family"
+    ],
+    "CGSS:*:a14": [
+      "health"
+    ],
+    "CGSS:*:a16": [
+      "health",
+      "labor"
+    ],
+    "CGSS:*:a23": [
+      "demographic"
+    ],
+    "CGSS:*:a31a": [
+      "attitude"
+    ],
+    "CGSS:*:a31b": [
+      "attitude"
+    ],
+    "CGSS:*:a38": [
+      "attitude"
+    ],
+    "CGSS:*:a39": [
+      "attitude"
+    ],
+    "CGSS:*:a40": [
+      "attitude"
+    ],
+    "CGSS:*:a41": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a421": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a422": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a423": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a424": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a425": [
+      "attitude",
+      "family"
+    ],
+    "CGSS:*:a43a": [
+      "subjective"
+    ],
+    "CGSS:*:a43b": [
+      "subjective"
+    ],
+    "CGSS:*:a43c": [
+      "subjective"
+    ],
+    "CGSS:*:a43d": [
+      "subjective"
+    ],
+    "CGSS:*:a46": [
+      "attitude"
+    ],
+    "CGSS:*:a47": [
+      "attitude"
+    ],
+    "CGSS:*:a48": [
+      "attitude",
+      "labor"
+    ],
+    "CGSS:*:a561": [
+      "labor"
+    ],
+    "CGSS:*:a562": [
+      "labor"
+    ],
+    "CGSS:*:a563": [
+      "labor"
+    ],
+    "CGSS:*:a564": [
+      "labor"
+    ],
+    "CGSS:*:a565": [
+      "labor"
+    ],
+    "CGSS:*:a566": [
+      "labor"
+    ],
+    "CGSS:*:a567": [
+      "labor"
+    ],
+    "CGSS:*:a59c": [
+      "labor"
+    ],
+    "CGSS:*:a60b": [
+      "labor"
+    ],
+    "CGSS:*:a60ba": [
+      "labor"
+    ],
+    "CGSS:*:a60c": [
+      "labor"
+    ],
+    "CGSS:*:a611": [
+      "health"
+    ],
+    "CGSS:*:a612": [
+      "family"
+    ],
+    "CGSS:*:a65": [
+      "family"
+    ],
+    "CGSS:*:a85": [
+      "family"
+    ],
+    "CGSS:*:a89da": [
+      "labor"
+    ],
+    "CGSS:*:a89g": [
+      "labor"
+    ],
+    "CGSS:*:a89h": [
+      "labor"
+    ],
+    "CGSS:*:a90g": [
+      "labor"
+    ],
+    "CGSS:*:a90h": [
+      "labor"
+    ],
+    "CGSS:*:a18a": [
+      "demographic"
+    ],
+    "CGSS:*:a20a": [
+      "demographic"
+    ],
+    "CGSS:*:a3001": [
+      "attitude"
+    ],
+    "CGSS:*:a3002": [
+      "attitude"
+    ],
+    "CGSS:*:a3003": [
+      "attitude"
+    ],
+    "CGSS:*:a3004": [
+      "attitude"
+    ],
+    "CGSS:*:a3005": [
+      "attitude"
+    ],
+    "CGSS:*:a3006": [
+      "attitude"
+    ],
+    "CGSS:*:a3007": [
+      "attitude"
+    ],
+    "CGSS:*:a3008": [
+      "attitude"
+    ],
+    "CGSS:*:a3009": [
+      "attitude"
+    ],
+    "CGSS:*:a33": [
+      "trust"
+    ],
+    "CGSS:*:a3a": [
+      "education"
+    ],
+    "CGSS:*:a3b": [
+      "education"
+    ],
+    "CGSS:*:a4a": [
+      "demographic"
+    ],
+    "CGSS:*:a54a": [
+      "labor"
+    ],
+    "CGSS:*:a58a": [
+      "labor"
+    ],
+    "CGSS:*:a58aa": [
+      "labor"
+    ],
+    "CGSS:*:a58b": [
+      "income",
+      "labor"
+    ],
+    "CGSS:*:a59g": [
+      "labor"
+    ],
+    "CGSS:*:a59h": [
+      "labor"
+    ],
+    "CGSS:*:a59ja": [
+      "labor"
+    ],
+    "CGSS:*:a59ka": [
+      "labor"
+    ],
+    "CGSS:*:a59l": [
+      "labor"
+    ],
+    "CGSS:*:a60g": [
+      "labor"
+    ],
+    "CGSS:*:a60h": [
+      "labor"
+    ],
+    "CGSS:*:a60ja": [
+      "labor"
+    ],
+    "CGSS:*:a60ka": [
+      "labor"
+    ],
+    "CGSS:*:a60l": [
+      "labor"
+    ],
+    "CGSS:*:a613": [
+      "health"
+    ],
+    "CGSS:*:a614": [
+      "family"
+    ],
+    "CGSS:*:a72a": [
+      "education",
+      "family"
+    ],
+    "CGSS:*:a74a": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a75a": [
+      "family",
+      "income"
+    ],
+    "CGSS:*:a75b": [
+      "family",
+      "income",
+      "labor"
+    ],
+    "CGSS:*:a77a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a791": [
+      "labor"
+    ],
+    "CGSS:*:a792": [
+      "labor"
+    ],
+    "CGSS:*:a793": [
+      "labor"
+    ],
+    "CGSS:*:a794": [
+      "labor"
+    ],
+    "CGSS:*:a797": [
+      "labor"
+    ],
+    "CGSS:*:a7aa": [
+      "education"
+    ],
+    "CGSS:*:a81a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a81aa": [
+      "labor"
+    ],
+    "CGSS:*:a81b": [
+      "family",
+      "income",
+      "labor"
+    ],
+    "CGSS:*:a87a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a88a": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:a89ba": [
+      "education"
+    ],
+    "CGSS:*:a89ga": [
+      "labor"
+    ],
+    "CGSS:*:a89ha": [
+      "labor"
+    ],
+    "CGSS:*:a90ba": [
+      "education"
+    ],
+    "CGSS:*:a90ga": [
+      "labor"
+    ],
+    "CGSS:*:a90ha": [
+      "labor"
+    ],
+    "CGSS:*:b5": [
+      "family"
+    ],
+    "CGSS:*:a1202": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1203": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1204": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1205": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1206": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1207": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1208": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1209": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1210": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1211": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1212": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1213": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a1214": [
+      "demographic",
+      "family"
+    ],
+    "CGSS:*:a129": [
+      "family"
+    ],
+    "CGSS:*:a129a": [
+      "family"
+    ],
+    "CGSS:*:a1402": [
+      "family"
+    ],
+    "CGSS:*:a1403": [
+      "family"
+    ],
+    "CGSS:*:a1404": [
+      "family"
+    ],
+    "CGSS:*:a1405": [
+      "family"
+    ],
+    "CGSS:*:a1406": [
+      "family"
+    ],
+    "CGSS:*:a1407": [
+      "family"
+    ],
+    "CGSS:*:a1408": [
+      "family"
+    ],
+    "CGSS:*:a1409": [
+      "family"
+    ],
+    "CGSS:*:a1410": [
+      "family"
+    ],
+    "CGSS:*:a1411": [
+      "family"
+    ],
+    "CGSS:*:a1412": [
+      "family"
+    ],
+    "CGSS:*:a1413": [
+      "family"
+    ],
+    "CGSS:*:a1414": [
+      "family"
+    ],
+    "CGSS:*:a1502": [
+      "family"
+    ],
+    "CGSS:*:a1503": [
+      "family"
+    ],
+    "CGSS:*:a1504": [
+      "family"
+    ],
+    "CGSS:*:a1505": [
+      "family"
+    ],
+    "CGSS:*:a1506": [
+      "family"
+    ],
+    "CGSS:*:a1507": [
+      "family"
+    ],
+    "CGSS:*:a1508": [
+      "family"
+    ],
+    "CGSS:*:a1509": [
+      "family"
+    ],
+    "CGSS:*:a1510": [
+      "family"
+    ],
+    "CGSS:*:a1511": [
+      "family"
+    ],
+    "CGSS:*:a1512": [
+      "family"
+    ],
+    "CGSS:*:a1513": [
+      "family"
+    ],
+    "CGSS:*:a1514": [
+      "family"
+    ],
+    "CGSS:*:a1602": [
+      "family"
+    ],
+    "CGSS:*:a1603": [
+      "family"
+    ],
+    "CGSS:*:a1604": [
+      "family"
+    ],
+    "CGSS:*:a1605": [
+      "family"
+    ],
+    "CGSS:*:a1606": [
+      "family"
+    ],
+    "CGSS:*:a1607": [
+      "family"
+    ],
+    "CGSS:*:a1608": [
+      "family"
+    ],
+    "CGSS:*:a1609": [
+      "family"
+    ],
+    "CGSS:*:a1610": [
+      "family"
+    ],
+    "CGSS:*:a1611": [
+      "family"
+    ],
+    "CGSS:*:a1612": [
+      "family"
+    ],
+    "CGSS:*:a1613": [
+      "family"
+    ],
+    "CGSS:*:a1614": [
+      "family"
+    ],
+    "CGSS:*:a372": [
+      "family"
+    ],
+    "CGSS:*:a373": [
+      "family"
+    ],
+    "CGSS:*:a511": [
+      "demographic"
+    ],
+    "CGSS:*:a512": [
+      "demographic"
+    ],
+    "CGSS:*:a513": [
+      "demographic"
+    ],
+    "CGSS:*:a514": [
+      "demographic"
+    ],
+    "CGSS:*:a515": [
+      "demographic"
+    ],
+    "CGSS:*:a516": [
+      "demographic"
+    ],
+    "CGSS:*:a517": [
+      "demographic"
+    ],
+    "CGSS:*:a518": [
+      "demographic"
+    ],
+    "CGSS:*:a519": [
+      "demographic"
+    ],
+    "CGSS:*:a520": [
+      "demographic"
+    ],
+    "CGSS:*:a57": [
+      "labor"
+    ],
+    "CGSS:*:a59m": [
+      "labor"
+    ],
+    "CGSS:*:a60m": [
+      "labor"
+    ],
+    "CGSS:*:a83": [
+      "family",
+      "labor"
+    ],
+    "CGSS:*:c4": [
+      "labor"
+    ],
+    "CGSS:*:c5": [
+      "labor"
+    ],
+    "CGSS:*:c7": [
+      "labor"
+    ],
+    "CGSS:*:s45": [
+      "political"
+    ]
   },
-  "_note": "variable_tags 中的条目为 Phase 3 手工标注示例，全量标注将在 Phase 3 完成。"
+  "_note": "Phase 3 完成：258 个高频变量（ny>=5）已打标。键格式 CGSS:*:varname 为通配符，build_sqlite 时展开为逐年记录。共 258 条。",
+  "_tag_counts": {
+    "demographic": 47,
+    "political": 11,
+    "health": 8,
+    "family": 109,
+    "attitude": 32,
+    "trust": 2,
+    "subjective": 6,
+    "income": 9,
+    "labor": 88,
+    "education": 12
+  }
 }

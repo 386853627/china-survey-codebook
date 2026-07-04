@@ -219,10 +219,10 @@ python cli/codebook.py surveys
 **目标**：跑通从 .dta 到 JSON 的完整流程
 
 **任务清单**：
-- [ ] 写 `docs/SCHEMA.md`（完整 JSON Schema 文档）
-- [ ] 写 `etl/extract_metadata.py`（Python ETL 脚本，pandas 读取 .dta）
-- [ ] 用 CGSS2010 跑试点，生成 `data/codebook/CGSS2010.json`
-- [ ] 交叉验证字段完整性（变量数、标签数、取值标签对照）
+- [x] 写 `docs/SCHEMA.md`（完整 JSON Schema 文档）
+- [x] 写 `etl/extract_metadata.py`（Python ETL 脚本，pandas 读取 .dta）
+- [x] 用 CGSS2010 跑试点，生成 `data/codebook/CGSS2010.json`
+- [x] 交叉验证字段完整性（变量数、标签数、取值标签对照）
 
 **验证标准**：
 - JSON 中变量数 = pandas `StataReader` 报告的变量数
@@ -234,47 +234,67 @@ python cli/codebook.py surveys
 - `etl/extract_metadata.py`（Python ETL 脚本）
 - `data/codebook/CGSS2010.json`
 
-### Phase 2: 全量入库 + SQLite 索引
+### Phase 2: 全量入库 + SQLite 索引 ✅ 完成（2026-07-04）
 
 **前置**：Phase 1 完成
 
 **任务清单**：
-- [ ] 批量跑 13 年 ETL
-- [ ] 写 `etl/build_sqlite.py`（JSON → SQLite）
-- [ ] 构建 `data/codebook.db`
-- [ ] 生成 `data/variable_mapping.json`（跨年同义变量）
-- [ ] 全量验证：每年变量数对账
+- [x] 批量跑 13 年 ETL
+- [x] 写 `etl/build_sqlite.py`（JSON → SQLite）
+- [x] 构建 `data/codebook.db`
+- [x] 生成 `data/variable_mapping.json`（跨年同义变量）
+- [x] 全量验证：每年变量数对账
 
-**验证标准**：
-- 13 个 JSON 文件生成完毕
-- SQLite 可查询，FTS 可检索
-- 跨年映射至少覆盖核心人口学变量
+**验证结果**：
+- 13 个 JSON 全部生成（共 11790 变量）
+- SQLite 11790 行 + valuelabels 182931 行 + FTS5 中文检索可用
+- 13 年变量数对账全部 OK
+- 跨年映射 955 条（id/weight 跨 10 年最多）
+- codebook.db 17.5 MB
+- CGSS2003 编码无乱码
+
+**关键发现**：
+- CGSS 变量命名跨年不一致：性别变量 2003=sex, 2005=qa2_01, 2006=qa01, 2010+=a2 → Phase 4 跨调查映射需处理
+- 2005/2006 有 latin-1 fallback warning 但中文标签实际正确（UTF-8 字节验证通过）
+- pandas 3.x 自动处理了所有 13 年 .dta 编码，无需手动指定
 
 **产出文件**：
 - `data/codebook/CGSS{2003,2005,...,2023}.json`（13 个）
 - `data/codebook.db`
 - `data/variable_mapping.json`
-- `etl/build_sqlite.py`
+- `etl/build_sqlite.py`（重写）
+- `etl/build_mapping.py`（新建）
 
-### Phase 3: CLI 工具 + Tag 体系
+### Phase 3: CLI 工具 + Tag 体系 ✅ 完成（2026-07-04）
 
 **前置**：Phase 2 完成
 
 **任务清单**：
-- [ ] 写 `cli/codebook.py`（5 个子命令）
-- [ ] 设计粗粒度 tag 体系（demographic/income/health/education/family/labor/political/trust 等）
-- [ ] 写 `tags/topic_tags.json`（变量 → tag 映射）
-- [ ] 对核心变量（前 200 个高频变量）打标
-- [ ] 写 `docs/USAGE.md`
+- [x] 写 `cli/codebook.py`（5 个子命令）
+- [x] 设计粗粒度 tag 体系（demographic/income/health/education/family/labor/political/trust 等）
+- [x] 写 `tags/topic_tags.json`（变量 → tag 映射）
+- [x] 对核心变量（前 200 个高频变量）打标
+- [x] 写 `docs/USAGE.md`
 
-**验证标准**：
-- `search` / `variable` / `compare` / `export` / `surveys` 五个命令可用
-- 核心变量有 tag
+**验证结果**：
+- 5 个子命令（search/variable/compare/export/surveys）全部可用，支持 `--json` 全局开关
+- 258 个高频变量（ny>=5）已打标，通配符键 `CGSS:*:varname`，build_sqlite 展开为 1802 条逐年记录
+- 10 个 tag 类别全部覆盖：family(691)/labor(661)/demographic(324)/attitude(235)/political(99)/education(90)/income(73)/health(67)/subjective(46)/trust(16)
+- DB 重建后 topic_tags 字段正确回填，2021 大写变量（A2）经大小写归一化也正确打标
+- variable 命令回读 JSON 取 missing_rules/cross_year_match（DB 未存这两字段）
+
+**关键决策**：
+- `--json` 用 argparse parents 机制，可放子命令前或后
+- a64（家庭经济档次）打双 tag: income + subjective
+- a33/a34（信任量表）归 trust，a35/a38-a40/a421-a425 归 attitude
+- trust/subjective 类别变量少是 CGSS 数据本身特点（核心模块信任题仅 2 个）
 
 **产出文件**：
-- `cli/codebook.py`
-- `tags/topic_tags.json`
-- `docs/USAGE.md`
+- `cli/codebook.py`（重写，5 子命令）
+- `tags/topic_tags.json`（扩充至 258 条）
+- `etl/build_sqlite.py`（修改，加 load_tags + resolve_tags 回填）
+- `docs/USAGE.md`（重写）
+- `data/codebook.db`（重建）
 
 ### Phase 4: CFPS 扩展 + 跨调查映射 + 文档完善
 
@@ -345,11 +365,11 @@ Agent 流程：
 
 | Phase | 状态 | 完成日期 | 备注 |
 |---|---|---|---|
-| 1. Schema + ETL 试点 | ⬜ 未开始 | - | 下一步 |
-| 2. 全量入库 + SQLite | ⬜ 未开始 | - | - |
-| 3. CLI + Tag 体系 | ⬜ 未开始 | - | - |
+| 1. Schema + ETL 试点 | ✅ 完成 | 2026-07-04 | CGSS2010: 871变量/11783观测 |
+| 2. 全量入库 + SQLite | ✅ 完成 | 2026-07-04 | 13年/11790变量/17.5MB DB/955映射 |
+| 3. CLI + Tag 体系 | ✅ 完成 | 2026-07-04 | 258变量打标/5子命令/DB回填 |
 | 4. CFPS + 文档 | ⬜ 未开始 | - | - |
 
 ---
 
-_最后更新：2026-07-04_
+_最后更新：2026-07-04（Phase 3 完成）_
