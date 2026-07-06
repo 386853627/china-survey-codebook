@@ -296,26 +296,46 @@ python cli/codebook.py surveys
 - `docs/USAGE.md`（重写）
 - `data/codebook.db`（重建）
 
-### Phase 4: CFPS 扩展 + 跨调查映射 + 文档完善
+### Phase 4: CHFS 扩展 + 跨调查映射 + 文档完善 ✅ 完成（2026-07-06）
 
 **前置**：Phase 3 完成
 
 **任务清单**：
-- [ ] 接入 CFPS 数据（ETL 复用 Phase 1 脚本）
-- [ ] 构建 `data/codebook/CFPS*.json`
-- [ ] 生成跨调查变量映射（CGSS ↔ CFPS）
-- [ ] 写 `README.md`（项目总览）
-- [ ] 端到端测试：模拟 AI agent 调用场景
+- [x] 接入 CHFS 数据（ETL 复用 Phase 1 脚本，加 --dataset 参数）
+- [x] 构建 `data/codebook/CHFS{year}_{dataset}.json`（19 个文件）
+- [x] 生成跨调查变量映射（CGSS ↔ CHFS）
+- [x] 写 `README.md`（项目总览）
+- [x] 端到端测试：模拟 AI agent 调用场景
 
-**验证标准**：
-- CFPS 可检索
-- 跨调查对比可用
-- AI agent 能根据研究问题推荐变量并生成 Stata 代码
+**验证结果**：
+- CHFS 6 wave × 3-4 dataset = 19 个 .dta → 19 个 JSON，共 17025 变量
+- SQLite 四段主键 (survey, year, dataset, varname) 升级，CGSS+CHFS 统一入库，28815 变量，26.2MB DB
+- CLI 5 子命令全部支持 --dataset，CHFS 检索正常
+- tag 体系扩展至 14 类（新增 finance/credit/asset/housing），CHFS 747 变量打标
+- variable_mapping.json 升级为 4 段键，4610 条映射（含 52 条跨调查同名）
+- cross_survey_mapping.json 新建，18 个核心主题（gender/education/n_houses 等）
+- README.md + SCHEMA.md + USAGE.md 全部更新
+
+**关键决策**：
+- CGSS dataset 统一标 "main"（不重跑 13 年 ETL，build_sqlite 回填）
+- CHFS 2021 master 拆为 master_household + master_individual 两个 dataset
+- CHFS missing_rules 不自动推断（负值正常值多）
+- CHFS tag 键 4 段通配符 `CHFS:*:dataset:varname`
+- 跨调查异名同义映射手工核对（18 主题），非自动推断
 
 **产出文件**：
-- `data/codebook/CFPS*.json`
-- `data/variable_mapping.json`（含跨调查映射）
-- `README.md`
+- `data/codebook/CHFS{year}_{dataset}.json` × 19
+- `data/codebook.db`（重建，四段主键）
+- `data/variable_mapping.json`（升级，4 段键）
+- `data/cross_survey_mapping.json`（新建，18 主题）
+- `etl/extract_metadata.py`（加 --dataset）
+- `etl/build_sqlite.py`（四段主键 + tag 4 段解析）
+- `etl/build_mapping.py`（升级去重 key）
+- `etl/tag_chfs.py`（新建，CHFS 自动打标）
+- `etl/run_chfs_etl.py`（新建，批量 ETL）
+- `cli/codebook.py`（加 --dataset + UTF-8 强制）
+- `tags/topic_tags.json`（14 类 + 1005 变量标签）
+- `docs/SCHEMA.md` + `docs/USAGE.md` + `README.md`（全部重写）
 
 ## 9. AI Agent 调用场景示例
 
@@ -368,8 +388,8 @@ Agent 流程：
 | 1. Schema + ETL 试点 | ✅ 完成 | 2026-07-04 | CGSS2010: 871变量/11783观测 |
 | 2. 全量入库 + SQLite | ✅ 完成 | 2026-07-04 | 13年/11790变量/17.5MB DB/955映射 |
 | 3. CLI + Tag 体系 | ✅ 完成 | 2026-07-04 | 258变量打标/5子命令/DB回填 |
-| 4. CFPS + 文档 | ⬜ 未开始 | - | - |
+| 4. CHFS + 文档 | ✅ 完成 | 2026-07-06 | CHFS 6年19文件/17025变量/14类tag/18跨调查映射 |
 
 ---
 
-_最后更新：2026-07-04（Phase 3 完成）_
+_最后更新：2026-07-06（Phase 4 完成）_

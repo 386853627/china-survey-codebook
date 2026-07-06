@@ -1,0 +1,117 @@
+{
+  "survey": "CHFS",
+  "year": 2021,
+  "dataset": "master_individual",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2021/chfs2021_master_individual.dta",
+  "n_variables": 7,
+  "n_observations": 68317,
+  "extracted_at": "2026-07-06T10:31:42.223920+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid",
+      "dataset": "master_individual",
+      "label": "hhid  家庭ID",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pline",
+      "dataset": "master_individual",
+      "label": "pline  个人ID",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pline_order",
+      "dataset": "master_individual",
+      "label": "pline_order  个人序号",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhead",
+      "dataset": "master_individual",
+      "label": "hhead  1=户主",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "wgt_ind",
+      "dataset": "master_individual",
+      "label": "wgt_ind  个人权重",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "wage",
+      "dataset": "master_individual",
+      "label": "个人工资性收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pensinc",
+      "dataset": "master_individual",
+      "label": "个人退休收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

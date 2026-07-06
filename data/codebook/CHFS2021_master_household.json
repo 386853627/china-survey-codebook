@@ -1,0 +1,888 @@
+{
+  "survey": "CHFS",
+  "year": 2021,
+  "dataset": "master_household",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2021/chfs2021_master_household.dta",
+  "n_variables": 57,
+  "n_observations": 22027,
+  "extracted_at": "2026-07-06T10:31:41.135484+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid",
+      "dataset": "master_household",
+      "label": "hhid  家庭ID",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "istracking",
+      "dataset": "master_household",
+      "label": "istracking  1追踪 0新访",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "rural",
+      "dataset": "master_household",
+      "label": "rural2021  1乡村 0城镇",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "istowns",
+      "dataset": "master_household",
+      "label": "istowns  是否乡镇",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "prov_code",
+      "dataset": "master_household",
+      "label": "prov_code  国标码-省（统计局2020年）",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "prov",
+      "dataset": "master_household",
+      "label": "prov  省",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%21s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "city_lab",
+      "dataset": "master_household",
+      "label": "city_lab 城市编码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%14s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "category",
+      "dataset": "master_household",
+      "label": "category  城乡分类代码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%19.0g",
+      "valuelabels": {
+        "111": "111 主城区",
+        "112": "112 城乡结合区",
+        "121": "121 镇中心区",
+        "122": "122 镇乡结合区",
+        "123": "123 特殊区域",
+        "210": "210 乡中心区",
+        "220": "220村庄"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "region",
+      "dataset": "master_household",
+      "label": "region  中东西东北地区分布",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {
+        "1": "1 东部",
+        "2": "2 中部",
+        "3": "3 西部",
+        "4": "4 东北"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "city_level",
+      "dataset": "master_household",
+      "label": "city_level  一二三线城市划分",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%30.0g",
+      "valuelabels": {
+        "1": "1 一线城市/新一线城市",
+        "2": "2 二线城市",
+        "3": "3 三线及以下城市"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhcid",
+      "dataset": "master_household",
+      "label": "hhcid 社区编码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%13s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "wgt_hh",
+      "dataset": "master_household",
+      "label": "wgt_hhadj  家庭权重_城乡调整",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pe3005",
+      "dataset": "master_household",
+      "label": "pe3005  E3005doa、E3005dob、E3005doc分卷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "ph3112",
+      "dataset": "master_household",
+      "label": "ph3112  H3112a、H3112b、H3112ac分卷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "p14a1b1",
+      "dataset": "master_household",
+      "label": "p14a1b1  模块十四分卷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pa1014",
+      "dataset": "master_household",
+      "label": "pa1014  E3005doa、E3005dob、E3005doc分卷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "interviewtype",
+      "dataset": "master_household",
+      "label": "interviewtype  访问方式",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {
+        "0": "0 网访",
+        "2": "2 电访",
+        "1": "1 面访"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "interviewtime",
+      "dataset": "master_household",
+      "label": "interviewtime 访问时间",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%19s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "total_income",
+      "dataset": "master_household",
+      "label": "家庭总收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhwage_inc",
+      "dataset": "master_household",
+      "label": "家庭工资性收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "agri_inc",
+      "dataset": "master_household",
+      "label": "农业收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "busi_inc",
+      "dataset": "master_household",
+      "label": "工商业收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "prop_inc",
+      "dataset": "master_household",
+      "label": "财产性收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "transfer_inc",
+      "dataset": "master_household",
+      "label": "转移性收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "total_consump",
+      "dataset": "master_household",
+      "label": "家庭总消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "food_con",
+      "dataset": "master_household",
+      "label": "食品消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "clothing_con",
+      "dataset": "master_household",
+      "label": "衣着消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "resident_con",
+      "dataset": "master_household",
+      "label": "居住消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "equipment_con",
+      "dataset": "master_household",
+      "label": "家庭设备及服务消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "travel_con",
+      "dataset": "master_household",
+      "label": "交通通信消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "educ_con",
+      "dataset": "master_household",
+      "label": "教育文娱消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "other_con",
+      "dataset": "master_household",
+      "label": "其他消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "medical_con",
+      "dataset": "master_household",
+      "label": "医疗保健消费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "total_asset",
+      "dataset": "master_household",
+      "label": "家庭总资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "agri_asset",
+      "dataset": "master_household",
+      "label": "农业资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "busi_asset",
+      "dataset": "master_household",
+      "label": "工商业资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hous_asset",
+      "dataset": "master_household",
+      "label": "住房资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "shop_asset",
+      "dataset": "master_household",
+      "label": "商铺资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "vehicle_asset",
+      "dataset": "master_household",
+      "label": "车辆资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "dura_asset",
+      "dataset": "master_household",
+      "label": "耐用品及高价值资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "finc_asset",
+      "dataset": "master_household",
+      "label": "金融资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "land_asset",
+      "dataset": "master_household",
+      "label": "土地资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "garag_asset",
+      "dataset": "master_household",
+      "label": "车库资产",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "total_debt",
+      "dataset": "master_household",
+      "label": "家庭总负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "agri_debt",
+      "dataset": "master_household",
+      "label": "农业负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "busi_debt",
+      "dataset": "master_household",
+      "label": "工商业负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hous_debt",
+      "dataset": "master_household",
+      "label": "住房负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "shop_debt",
+      "dataset": "master_household",
+      "label": "商铺负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "vehicle_debt",
+      "dataset": "master_household",
+      "label": "汽车负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "dura_debt",
+      "dataset": "master_household",
+      "label": "耐用品及高价值资产负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "finc_debt",
+      "dataset": "master_household",
+      "label": "金融投资负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "educ_debt",
+      "dataset": "master_household",
+      "label": "教育负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "medical_debt",
+      "dataset": "master_household",
+      "label": "医疗负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "other_debt",
+      "dataset": "master_household",
+      "label": "其他负债",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hous_comp",
+      "dataset": "master_household",
+      "label": "房屋拆迁补偿",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "land_comp",
+      "dataset": "master_household",
+      "label": "土地征收补偿",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhmed_reimb",
+      "dataset": "master_household",
+      "label": "家庭医保报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

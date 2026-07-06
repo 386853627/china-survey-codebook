@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-extract_metadata.py — CGSS/CFPS codebook ETL 主脚本
+extract_metadata.py — CGSS/CHFS codebook ETL 主脚本
 
 用 pandas.read_stata 读取 .dta 文件元数据，输出符合 docs/SCHEMA.md 的 JSON。
 
 用法:
-    python etl/extract_metadata.py <year> <dta_path> [--output data/codebook/] [--survey CGSS]
-    python etl/extract_metadata.py 2010 cgss/CGSS2010.dta
+    python etl/extract_metadata.py <year> <dta_path> [--output data/codebook/] [--survey CGSS] [--dataset main]
+    python etl/extract_metadata.py 2010 cgss/CGSS2010.dta --survey CGSS --dataset main
+    python etl/extract_metadata.py 2011 chfs/chfs2011/chfs2011_household.dta --survey CHFS --dataset household
 """
 
 import argparse
@@ -38,7 +39,7 @@ def _infer_vtype(type_code: str) -> str:
     return "string" if type_code in STRING_TYPE_CODES else "numeric"
 
 
-def extract_metadata(dta_path: str, year: int, survey: str = "CGSS") -> dict:
+def extract_metadata(dta_path: str, year: int, survey: str = "CGSS", dataset: str = "main") -> dict:
     """从 .dta 提取元数据，返回 SCHEMA.md 规范的字典。"""
     if not os.path.isfile(dta_path):
         raise FileNotFoundError(f"DTA 文件不存在: {dta_path}")
@@ -68,6 +69,7 @@ def extract_metadata(dta_path: str, year: int, survey: str = "CGSS") -> dict:
 
         variables.append({
             "varname": varname,
+            "dataset": dataset,
             "label": var_labels.get(varname, ""),
             "label_en": "",
             "vtype": _infer_vtype(typlist[i] if i < len(typlist) else ""),
@@ -82,17 +84,18 @@ def extract_metadata(dta_path: str, year: int, survey: str = "CGSS") -> dict:
     return {
         "survey": survey,
         "year": year,
+        "dataset": dataset,
         "source_file": dta_path.replace("\\", "/"),
         "n_variables": len(varlist),
         "n_observations": nobs,
         "extracted_at": datetime.now(timezone.utc).astimezone().isoformat(),
-        "etl_version": "1.0",
+        "etl_version": "1.1",
         "variables": variables,
     }
 
 
-def verify(output: dict, dta_path: str) -> None:
-    """打印验证报告到 stdout。"""
+def verify(output: dict, dta_path: str, check_vars: list = None) -> None:
+    """打印验证报告到 stdout。check_vars 默认 None 跳过抽查。"""
     reader = pd.read_stata(dta_path, iterator=True)
     reader.variable_labels()  # 触发 header 读取
     expected_nvars = len(reader._varlist)
@@ -106,26 +109,27 @@ def verify(output: dict, dta_path: str) -> None:
     print(f"观测数: JSON={output['n_observations']}  Stata={expected_nobs}  "
           f"{'OK' if output['n_observations'] == expected_nobs else 'MISMATCH'}")
 
-    # 抽查 a2 / a7a
-    print("\n--- 抽查变量 ---")
-    by_name = {v["varname"]: v for v in output["variables"]}
-    for name in ["a2", "a7a", "a3a"]:
-        v = by_name.get(name)
-        if v:
-            print(f"{name}: label={v['label']!r}  vtype={v['vtype']}  "
-                  f"fmt={v['format']}  valuelabels={len(v['valuelabels'])}条")
-            if v["valuelabels"]:
-                sample = list(v["valuelabels"].items())[:3]
-                print(f"    取值样例: {sample}")
-        else:
-            print(f"{name}: 不存在")
+    # 抽查指定变量（若提供）
+    if check_vars:
+        print("\n--- 抽查变量 ---")
+        by_name = {v["varname"]: v for v in output["variables"]}
+        for name in check_vars:
+            v = by_name.get(name)
+            if v:
+                print(f"{name}: label={v['label']!r}  vtype={v['vtype']}  "
+                      f"fmt={v['format']}  valuelabels={len(v['valuelabels'])}条")
+                if v["valuelabels"]:
+                    sample = list(v["valuelabels"].items())[:3]
+                    print(f"    取值样例: {sample}")
+            else:
+                print(f"{name}: 不存在")
 
     # labelset 覆盖统计
     has_lbl = sum(1 for v in output["variables"] if v["valuelabels"])
     print(f"\n取值标签覆盖: {has_lbl}/{output['n_variables']} 变量有取值标签")
 
     # 字段完整性
-    required = {"varname", "label", "label_en", "vtype", "format",
+    required = {"varname", "dataset", "label", "label_en", "vtype", "format",
                 "valuelabels", "missing_rules", "topic_tags", "cross_year_match"}
     missing_fields = [v["varname"] for v in output["variables"]
                       if not required.issubset(v.keys())]
@@ -139,18 +143,20 @@ def main():
     parser.add_argument("dta_path", help=".dta 文件路径")
     parser.add_argument("--output", default="data/codebook/", help="输出目录")
     parser.add_argument("--survey", default="CGSS", help="调查名")
+    parser.add_argument("--dataset", default="main", help="数据集类型 (CGSS=main; CHFS=household/master/individual/master_household/master_individual)")
+    parser.add_argument("--check-vars", nargs="*", default=None, help="抽查变量名列表，默认不抽查")
     args = parser.parse_args()
 
-    print(f"提取中: {args.survey} {args.year} <- {args.dta_path}")
-    output = extract_metadata(args.dta_path, args.year, args.survey)
+    print(f"提取中: {args.survey} {args.year} {args.dataset} <- {args.dta_path}")
+    output = extract_metadata(args.dta_path, args.year, args.survey, args.dataset)
 
     os.makedirs(args.output, exist_ok=True)
-    out_file = os.path.join(args.output, f"{args.survey}{args.year}.json")
+    out_file = os.path.join(args.output, f"{args.survey}{args.year}_{args.dataset}.json")
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"已写入: {out_file}  ({output['n_variables']} 变量, {output['n_observations']} 观测)")
-    verify(output, args.dta_path)
+    verify(output, args.dta_path, args.check_vars)
 
 
 if __name__ == "__main__":

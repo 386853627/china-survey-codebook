@@ -49,6 +49,26 @@
       "label": "价值观态度",
       "label_en": "Values & Attitudes",
       "description": "社会价值观、文化态度、社会观"
+    },
+    "finance": {
+      "label": "金融产品",
+      "label_en": "Financial Products",
+      "description": "股票、基金、债券、理财、金融投资"
+    },
+    "credit": {
+      "label": "信贷负债",
+      "label_en": "Credit & Debt",
+      "description": "信贷、借款、负债、贷款、抵押"
+    },
+    "asset": {
+      "label": "资产财富",
+      "label_en": "Assets & Wealth",
+      "description": "房产、资产、财富、净资产、存款"
+    },
+    "housing": {
+      "label": "住房",
+      "label_en": "Housing",
+      "description": "住房状况、面积、房贷、房产"
     }
   },
   "variable_tags": {
@@ -891,6 +911,2466 @@
     ],
     "CGSS:*:s45": [
       "political"
+    ],
+    "CHFS:*:household:hhid": [
+      "family"
+    ],
+    "CHFS:*:household:a1009": [
+      "demographic"
+    ],
+    "CHFS:*:household:a1010": [
+      "housing"
+    ],
+    "CHFS:*:household:a1011": [
+      "housing"
+    ],
+    "CHFS:*:household:a2000": [
+      "family"
+    ],
+    "CHFS:*:household:a4011c": [
+      "subjective"
+    ],
+    "CHFS:*:household:b1002": [
+      "family"
+    ],
+    "CHFS:*:household:b1003": [
+      "family"
+    ],
+    "CHFS:*:household:b2003a": [
+      "asset"
+    ],
+    "CHFS:*:household:b2003b": [
+      "income"
+    ],
+    "CHFS:*:household:c1001": [
+      "housing"
+    ],
+    "CHFS:*:household:c1004": [
+      "housing"
+    ],
+    "CHFS:*:household:c1008": [
+      "housing"
+    ],
+    "CHFS:*:household:c1010": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_1_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_2_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_3_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_4_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_5_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_6_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_7_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1015": [
+      "housing"
+    ],
+    "CHFS:*:household:c2001": [
+      "housing"
+    ],
+    "CHFS:*:household:c2002": [
+      "housing"
+    ],
+    "CHFS:*:household:c2002d": [
+      "housing"
+    ],
+    "CHFS:*:household:c2003_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2003_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2003_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2022_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2022_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2022_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2024_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2024_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2024_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2032_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2032_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2032_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_1_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_1_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2034_2_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_2_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2034_3_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_3_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2034_4_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_4_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2034_5_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_5_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2034_6_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:c2034_6_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2035_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2035_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2035_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2045_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2045_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2045_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2050_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2050_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2050_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2052_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2052_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2052_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c3001_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3001_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3001_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c4001": [
+      "housing"
+    ],
+    "CHFS:*:household:c4002": [
+      "housing"
+    ],
+    "CHFS:*:household:c4004": [
+      "housing"
+    ],
+    "CHFS:*:household:c4006": [
+      "housing"
+    ],
+    "CHFS:*:household:c4007": [
+      "housing"
+    ],
+    "CHFS:*:household:c4008": [
+      "housing"
+    ],
+    "CHFS:*:household:c4008b": [
+      "housing"
+    ],
+    "CHFS:*:household:c4008c": [
+      "subjective",
+      "housing"
+    ],
+    "CHFS:*:household:c7070": [
+      "health"
+    ],
+    "CHFS:*:household:c7074": [
+      "health"
+    ],
+    "CHFS:*:household:c8006": [
+      "credit",
+      "asset"
+    ],
+    "CHFS:*:household:c8007": [
+      "credit",
+      "asset"
+    ],
+    "CHFS:*:household:d1101": [
+      "asset"
+    ],
+    "CHFS:*:household:d1105": [
+      "asset"
+    ],
+    "CHFS:*:household:d2104": [
+      "asset"
+    ],
+    "CHFS:*:household:d2106": [
+      "income",
+      "asset"
+    ],
+    "CHFS:*:household:d3101": [
+      "finance"
+    ],
+    "CHFS:*:household:d3103": [
+      "finance"
+    ],
+    "CHFS:*:household:d3104": [
+      "finance"
+    ],
+    "CHFS:*:household:d3109": [
+      "finance"
+    ],
+    "CHFS:*:household:d3113": [
+      "finance"
+    ],
+    "CHFS:*:household:d3116": [
+      "finance"
+    ],
+    "CHFS:*:household:d3116a": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:d3117": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103_1": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103_2": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103_3": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103_4": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103_5": [
+      "finance"
+    ],
+    "CHFS:*:household:d4111": [
+      "income",
+      "finance"
+    ],
+    "CHFS:*:household:d5104_1_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104_2_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104_3_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5107": [
+      "finance"
+    ],
+    "CHFS:*:household:d5109": [
+      "finance"
+    ],
+    "CHFS:*:household:d7106a": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7107": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7110": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7112": [
+      "income",
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d8106": [
+      "asset"
+    ],
+    "CHFS:*:household:e1001": [
+      "credit"
+    ],
+    "CHFS:*:household:e1005": [
+      "credit"
+    ],
+    "CHFS:*:household:e1009": [
+      "credit"
+    ],
+    "CHFS:*:household:e1020": [
+      "credit"
+    ],
+    "CHFS:*:household:e1021": [
+      "credit"
+    ],
+    "CHFS:*:household:e2002": [
+      "credit"
+    ],
+    "CHFS:*:household:e3001": [
+      "credit"
+    ],
+    "CHFS:*:household:e3003_7_mc": [
+      "labor"
+    ],
+    "CHFS:*:household:g1012": [
+      "housing"
+    ],
+    "CHFS:*:household:g1014": [
+      "family"
+    ],
+    "CHFS:*:household:g1016a": [
+      "labor"
+    ],
+    "CHFS:*:household:g1019": [
+      "health"
+    ],
+    "CHFS:*:household:g2002_1_mc": [
+      "family"
+    ],
+    "CHFS:*:household:g2002_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:g2002_3_mc": [
+      "family"
+    ],
+    "CHFS:*:household:g2002_8_mc": [
+      "family"
+    ],
+    "CHFS:*:household:g2002_9_mc": [
+      "family"
+    ],
+    "CHFS:*:household:h1001": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002_10_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1002_1_mc": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002_2_mc": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002_3_mc": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002_4_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1002_5_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1002_6_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1002_7_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1002_8_mc": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002_9_mc": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h2001_3_mc": [
+      "family"
+    ],
+    "CHFS:*:household:h2003_1_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_2_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_3_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_4_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_5_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_6_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_7_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_8_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2004": [
+      "income"
+    ],
+    "CHFS:*:individual:hhid": [
+      "family"
+    ],
+    "CHFS:*:individual:a2001": [
+      "family"
+    ],
+    "CHFS:*:individual:a2003": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2005": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2006": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2012": [
+      "education",
+      "family"
+    ],
+    "CHFS:*:individual:a2015": [
+      "demographic"
+    ],
+    "CHFS:*:individual:a2019": [
+      "demographic"
+    ],
+    "CHFS:*:individual:a2022": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2024": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a3000": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3002": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3009": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3011": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3015": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3018a": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3020": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a3022": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a3023": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a3024": [
+      "family"
+    ],
+    "CHFS:*:individual:a3028": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3029": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3036": [
+      "income",
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3037": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3038": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:f1003": [
+      "health"
+    ],
+    "CHFS:*:individual:f1004": [
+      "health"
+    ],
+    "CHFS:*:individual:f1005": [
+      "health"
+    ],
+    "CHFS:*:individual:f1008": [
+      "health"
+    ],
+    "CHFS:*:individual:f1010": [
+      "health"
+    ],
+    "CHFS:*:individual:f1026": [
+      "labor",
+      "health"
+    ],
+    "CHFS:*:individual:f1027": [
+      "labor",
+      "health"
+    ],
+    "CHFS:*:individual:f1028": [
+      "labor",
+      "health"
+    ],
+    "CHFS:*:individual:f1029": [
+      "labor",
+      "health"
+    ],
+    "CHFS:*:individual:f2004": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2005": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2006": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f3001": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f4001": [
+      "family"
+    ],
+    "CHFS:*:individual:f4004": [
+      "housing"
+    ],
+    "CHFS:*:individual:f4005": [
+      "family"
+    ],
+    "CHFS:*:individual:f4008": [
+      "family"
+    ],
+    "CHFS:*:individual:f4009": [
+      "housing"
+    ],
+    "CHFS:*:individual:f4011": [
+      "family"
+    ],
+    "CHFS:*:individual:f6103": [
+      "health"
+    ],
+    "CHFS:*:individual:f6105": [
+      "health"
+    ],
+    "CHFS:*:individual:f6106": [
+      "health"
+    ],
+    "CHFS:*:individual:f6107": [
+      "health"
+    ],
+    "CHFS:*:individual:f6118": [
+      "health"
+    ],
+    "CHFS:*:individual:f6119": [
+      "health"
+    ],
+    "CHFS:*:individual:f6203": [
+      "health"
+    ],
+    "CHFS:*:individual:f6501": [
+      "health"
+    ],
+    "CHFS:*:individual:f6502": [
+      "health"
+    ],
+    "CHFS:*:individual:f6503": [
+      "health"
+    ],
+    "CHFS:*:individual:f6001_2_mc": [
+      "health"
+    ],
+    "CHFS:*:individual:f6001_5_mc": [
+      "health"
+    ],
+    "CHFS:*:individual:f6202_1_mc": [
+      "health"
+    ],
+    "CHFS:*:individual:f6202_2_mc": [
+      "health"
+    ],
+    "CHFS:*:individual:f6202_3_mc": [
+      "income",
+      "health"
+    ],
+    "CHFS:*:individual:f6202_4_mc": [
+      "health"
+    ],
+    "CHFS:*:individual:f6202_5_mc": [
+      "health"
+    ],
+    "CHFS:*:household:a2000a": [
+      "family",
+      "housing"
+    ],
+    "CHFS:*:household:a2000b": [
+      "family",
+      "housing"
+    ],
+    "CHFS:*:household:a2032_1": [
+      "education"
+    ],
+    "CHFS:*:household:a2032_2": [
+      "education"
+    ],
+    "CHFS:*:household:a2033_1": [
+      "demographic"
+    ],
+    "CHFS:*:household:a2033_2": [
+      "demographic"
+    ],
+    "CHFS:*:household:a2034_1": [
+      "demographic"
+    ],
+    "CHFS:*:household:a2034_2": [
+      "demographic"
+    ],
+    "CHFS:*:household:a2046a": [
+      "family"
+    ],
+    "CHFS:*:household:b3001_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3001_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3003_2_1_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:b3004_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3004_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3005_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3006_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3006_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3009_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3009_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030a_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3031a_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3031a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3046_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3046_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3047_1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3047_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3048_2": [
+      "credit"
+    ],
+    "CHFS:*:household:c1011": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000c_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000c_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000c_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000d_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000d_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000d_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000e_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000e_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000e_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2044_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2044_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2044_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3017b": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c4007a": [
+      "housing"
+    ],
+    "CHFS:*:household:d3110": [
+      "finance"
+    ],
+    "CHFS:*:household:d5102": [
+      "finance"
+    ],
+    "CHFS:*:household:d5103a": [
+      "finance"
+    ],
+    "CHFS:*:household:d5108": [
+      "finance"
+    ],
+    "CHFS:*:household:g2003": [
+      "family"
+    ],
+    "CHFS:*:household:g2003a": [
+      "family"
+    ],
+    "CHFS:*:household:g2003b": [
+      "family"
+    ],
+    "CHFS:*:household:g2004_4_mc": [
+      "health"
+    ],
+    "CHFS:*:household:h1002a": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1002b": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h1003c": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:household:h3045_1_mc": [
+      "asset"
+    ],
+    "CHFS:*:household:h3045_2_mc": [
+      "family"
+    ],
+    "CHFS:*:household:h3045_3_mc": [
+      "health"
+    ],
+    "CHFS:*:household:h3045_4_mc": [
+      "income",
+      "labor"
+    ],
+    "CHFS:*:household:h3045_5_mc": [
+      "health"
+    ],
+    "CHFS:*:household:h3045_6_mc": [
+      "family"
+    ],
+    "CHFS:*:household:asset": [
+      "asset"
+    ],
+    "CHFS:*:household:total_income": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a2022a": [
+      "demographic"
+    ],
+    "CHFS:*:individual:a2022b": [
+      "demographic"
+    ],
+    "CHFS:*:individual:a2025b": [
+      "family"
+    ],
+    "CHFS:*:household:a1100": [
+      "housing"
+    ],
+    "CHFS:*:household:a1101": [
+      "housing"
+    ],
+    "CHFS:*:household:a1101_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:a1105a": [
+      "demographic"
+    ],
+    "CHFS:*:household:a1110": [
+      "family"
+    ],
+    "CHFS:*:household:a1111": [
+      "family"
+    ],
+    "CHFS:*:household:b2050": [
+      "asset"
+    ],
+    "CHFS:*:household:b2050it": [
+      "asset"
+    ],
+    "CHFS:*:household:b2052": [
+      "income"
+    ],
+    "CHFS:*:household:b2052it": [
+      "income"
+    ],
+    "CHFS:*:household:b2080": [
+      "income"
+    ],
+    "CHFS:*:household:b2080it": [
+      "income"
+    ],
+    "CHFS:*:household:b2100": [
+      "family"
+    ],
+    "CHFS:*:household:b2101": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:household:b3003_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3003_2_3_mc": [
+      "labor"
+    ],
+    "CHFS:*:household:b3003_2_4_mc": [
+      "income"
+    ],
+    "CHFS:*:household:b3003_2_5_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:b3003_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3008a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3008f_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3031ait_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3045_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3045_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3046a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3050b_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3051a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3051a_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:c1013": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013_9_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1016": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000bc": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000bc_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000fit_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000fit_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2000f_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2001b": [
+      "housing"
+    ],
+    "CHFS:*:household:c2001ba": [
+      "housing"
+    ],
+    "CHFS:*:household:c2002dit": [
+      "housing"
+    ],
+    "CHFS:*:household:c2002e": [
+      "income"
+    ],
+    "CHFS:*:household:c2005a_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2005a_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2005a_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011a_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011a_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011a_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011b_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011b_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011b_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011c_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011c_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011c_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012a_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012a_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012a_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013it_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013it_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013it_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016it_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016it_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016it_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2023a": [
+      "housing"
+    ],
+    "CHFS:*:household:c2023b": [
+      "housing"
+    ],
+    "CHFS:*:household:c2023c": [
+      "housing"
+    ],
+    "CHFS:*:household:c2023d": [
+      "housing"
+    ],
+    "CHFS:*:household:c2023dit": [
+      "housing"
+    ],
+    "CHFS:*:household:c3015a": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3017aa": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3017ca": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3017cait": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3019c": [
+      "credit"
+    ],
+    "CHFS:*:household:c3019cit": [
+      "credit"
+    ],
+    "CHFS:*:household:c3024": [
+      "income"
+    ],
+    "CHFS:*:household:c3024it": [
+      "income"
+    ],
+    "CHFS:*:household:c3025": [
+      "income"
+    ],
+    "CHFS:*:household:c3025it": [
+      "income"
+    ],
+    "CHFS:*:household:c4006_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c8007it": [
+      "credit",
+      "asset"
+    ],
+    "CHFS:*:household:d1105it": [
+      "asset"
+    ],
+    "CHFS:*:household:d2104it": [
+      "asset"
+    ],
+    "CHFS:*:household:d3103it": [
+      "finance"
+    ],
+    "CHFS:*:household:d3109it": [
+      "finance"
+    ],
+    "CHFS:*:household:d3110it": [
+      "finance"
+    ],
+    "CHFS:*:household:d3116it": [
+      "finance"
+    ],
+    "CHFS:*:household:d3117it": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103it_1": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103it_2": [
+      "finance"
+    ],
+    "CHFS:*:household:d4103it_3": [
+      "finance"
+    ],
+    "CHFS:*:household:d4111it": [
+      "income",
+      "finance"
+    ],
+    "CHFS:*:household:d5108it": [
+      "finance"
+    ],
+    "CHFS:*:household:d5109it": [
+      "finance"
+    ],
+    "CHFS:*:household:d7112it": [
+      "income",
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7113": [
+      "finance"
+    ],
+    "CHFS:*:household:d7113_1_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d7113_2_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d7113_3_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d7113_4_mc": [
+      "finance",
+      "asset",
+      "housing"
+    ],
+    "CHFS:*:household:d7113_ex1": [
+      "finance"
+    ],
+    "CHFS:*:household:d8104": [
+      "asset"
+    ],
+    "CHFS:*:household:d8104it": [
+      "asset"
+    ],
+    "CHFS:*:household:d8106it": [
+      "asset"
+    ],
+    "CHFS:*:household:d9106": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:d9108": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:d9108it": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:d9110a": [
+      "asset"
+    ],
+    "CHFS:*:household:d9110ait": [
+      "asset"
+    ],
+    "CHFS:*:household:d9110b": [
+      "asset"
+    ],
+    "CHFS:*:household:d9110bit": [
+      "asset"
+    ],
+    "CHFS:*:household:e1020aa": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_1_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_2_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_3_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_4_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_5_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_6_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_7_mc": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_8_mc": [
+      "education",
+      "labor",
+      "credit"
+    ],
+    "CHFS:*:household:e1020aa_ex1": [
+      "education",
+      "credit"
+    ],
+    "CHFS:*:household:e3005a": [
+      "credit"
+    ],
+    "CHFS:*:household:e4001": [
+      "health",
+      "credit"
+    ],
+    "CHFS:*:household:g2004a_4": [
+      "health"
+    ],
+    "CHFS:*:household:h1002": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_1": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_2": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_3": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_4": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_5": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_6": [
+      "income"
+    ],
+    "CHFS:*:household:h1004a_7": [
+      "income"
+    ],
+    "CHFS:*:household:h2003": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_ex1": [
+      "income"
+    ],
+    "CHFS:*:household:c2000fit_2": [
+      "housing"
+    ],
+    "CHFS:*:individual:a1106": [
+      "family"
+    ],
+    "CHFS:*:individual:a1106c": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a1108": [
+      "family"
+    ],
+    "CHFS:*:individual:a1113": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a1114": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2000c": [
+      "family"
+    ],
+    "CHFS:*:individual:a2001_ex1": [
+      "family"
+    ],
+    "CHFS:*:individual:a2017b": [
+      "housing"
+    ],
+    "CHFS:*:individual:a2019b": [
+      "demographic",
+      "housing"
+    ],
+    "CHFS:*:individual:a2022_ex1": [
+      "demographic",
+      "family"
+    ],
+    "CHFS:*:individual:a2023g": [
+      "labor"
+    ],
+    "CHFS:*:individual:f1001a": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f1001a_ex1": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f1005it": [
+      "health"
+    ],
+    "CHFS:*:individual:f2001a": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_1": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_2": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_3": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_4": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_5": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_6": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2004_7": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2022": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2024": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f2025": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f4011it": [
+      "family"
+    ],
+    "CHFS:*:individual:f6110a": [
+      "health"
+    ],
+    "CHFS:*:master:hhid": [
+      "family"
+    ],
+    "CHFS:*:household:b2003e": [
+      "income"
+    ],
+    "CHFS:*:household:b2003eit": [
+      "income"
+    ],
+    "CHFS:*:household:b3006a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3012a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030d_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3030e_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3045c_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3056_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3056a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3057a_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3057b_2": [
+      "credit"
+    ],
+    "CHFS:*:household:b3057c_2": [
+      "credit"
+    ],
+    "CHFS:*:household:c1002c": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013b": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c": [
+      "housing"
+    ],
+    "CHFS:*:household:c1015a": [
+      "housing"
+    ],
+    "CHFS:*:household:house01ms": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2034_1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2034_2": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_2": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2034_3": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_3": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2005a_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2024_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2032_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2044_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2045_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3001_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_4": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2005a_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2024_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2032_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2044_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2045_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3001_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_5": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2005a_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2008b_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009a_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2009d_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010f_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2010fa_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2011e_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2012_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2013ms_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2016ms_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2024_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2027d_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2031_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2032_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2044_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2045_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2064_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3001_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3002_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3005_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3006_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c3007_6": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2023e": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2023eit": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c4001a": [
+      "housing"
+    ],
+    "CHFS:*:household:c7061": [
+      "credit"
+    ],
+    "CHFS:*:household:c7061it": [
+      "credit"
+    ],
+    "CHFS:*:household:d5104a": [
+      "finance"
+    ],
+    "CHFS:*:household:d7109": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109b": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7110a": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7110ait": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d8104c": [
+      "asset"
+    ],
+    "CHFS:*:household:d9109f": [
+      "finance"
+    ],
+    "CHFS:*:household:d9109e": [
+      "finance"
+    ],
+    "CHFS:*:household:e3005ba": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:e3005c_2": [
+      "health",
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_3": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_4": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_5": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_6": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005c_7": [
+      "credit"
+    ],
+    "CHFS:*:household:h1004f": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_1": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_2": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_3": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_4": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_5": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_6": [
+      "income"
+    ],
+    "CHFS:*:household:h2004_8": [
+      "income"
+    ],
+    "CHFS:*:household:b3012a_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3057a_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:b3057b_2_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:c1013c_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2006_1_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_1_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_1_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2006_2_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_2_ex1": [
+      "family",
+      "housing"
+    ],
+    "CHFS:*:household:c2035_2_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2006_3_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_3_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2035_3_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2006_4_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_4_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2035_4_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2006_5_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_5_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_5_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c2006_6_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2034_6_ex1": [
+      "housing"
+    ],
+    "CHFS:*:household:c2035_6_ex1": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:d5104a_ex1": [
+      "finance"
+    ],
+    "CHFS:*:household:d7109b_ex1": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d8104c_ex1": [
+      "asset"
+    ],
+    "CHFS:*:household:e3005ba_ex1": [
+      "credit"
+    ],
+    "CHFS:*:household:h1004f_ex1": [
+      "income"
+    ],
+    "CHFS:*:household:a1013a": [
+      "demographic"
+    ],
+    "CHFS:*:household:b2000f_7_mc": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:household:c1013_7788_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_1_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_2_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_3_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_4_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_5_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1013c_7777_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:d5104a_1_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_2_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_3_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_4_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_5_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_6_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d5104a_7777_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d7109b_1_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109b_2_mc": [
+      "health",
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109b_3_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109b_4_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109b_7777_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d_1_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d_2_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d_3_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d_4_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7109d_5_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d7113_7777_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d7113_7788_mc": [
+      "finance"
+    ],
+    "CHFS:*:household:d8104c_1_mc": [
+      "health",
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:d8104c_2_mc": [
+      "asset",
+      "housing"
+    ],
+    "CHFS:*:household:d8104c_3_mc": [
+      "asset"
+    ],
+    "CHFS:*:household:d8104c_7777_mc": [
+      "asset"
+    ],
+    "CHFS:*:household:e3005ba_1_mc": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:e3005ba_2_mc": [
+      "health",
+      "credit"
+    ],
+    "CHFS:*:household:e3005ba_3_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005ba_4_mc": [
+      "finance",
+      "credit"
+    ],
+    "CHFS:*:household:e3005ba_5_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005ba_6_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:e3005ba_7777_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:h1004f_1_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_2_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_3_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_4_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_5_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_6_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h1004f_7777_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_7777_mc": [
+      "income"
+    ],
+    "CHFS:*:household:h2003_7788_mc": [
+      "income"
+    ],
+    "CHFS:*:household:c1000bf_1_mc": [
+      "finance",
+      "asset"
+    ],
+    "CHFS:*:household:c1000bf_4_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c1000bf_5_mc": [
+      "credit",
+      "housing"
+    ],
+    "CHFS:*:household:c1000bf_6_mc": [
+      "housing"
+    ],
+    "CHFS:*:household:c1000bf_7_mc": [
+      "credit"
+    ],
+    "CHFS:*:household:c2003_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2003_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2003_6": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_4": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_5": [
+      "housing"
+    ],
+    "CHFS:*:household:c2004_6": [
+      "housing"
+    ],
+    "CHFS:*:household:b2003ait": [
+      "asset"
+    ],
+    "CHFS:*:household:b2003d": [
+      "asset"
+    ],
+    "CHFS:*:household:b2003dit": [
+      "asset"
+    ],
+    "CHFS:*:household:b2003bit": [
+      "income"
+    ],
+    "CHFS:*:household:c2016_4": [
+      "housing"
+    ],
+    "CHFS:*:household:h3514": [
+      "subjective"
+    ],
+    "CHFS:*:individual:a3118": [
+      "family"
+    ],
+    "CHFS:*:individual:a3132": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3133": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3134": [
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3136": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a3136it": [
+      "income",
+      "family"
+    ],
+    "CHFS:*:individual:a3136a": [
+      "income",
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3136ait": [
+      "income",
+      "labor",
+      "family"
+    ],
+    "CHFS:*:individual:a3137": [
+      "family"
+    ],
+    "CHFS:*:individual:a3137it": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_ex1": [
+      "family"
+    ],
+    "CHFS:*:individual:f6001a": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:a3118_1_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_2_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_3_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_4_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_5_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_6_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_7_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:a3118_7777_mc": [
+      "family"
+    ],
+    "CHFS:*:individual:f6001a_1_mc": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f6001a_2_mc": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f6001a_3_mc": [
+      "health",
+      "family"
+    ],
+    "CHFS:*:individual:f6001a_7788_mc": [
+      "health",
+      "family"
     ]
   },
   "_note": "Phase 3 完成：258 个高频变量（ny>=5）已打标。键格式 CGSS:*:varname 为通配符，build_sqlite 时展开为逐年记录。共 258 条。",

@@ -1,0 +1,164 @@
+{
+  "survey": "CHFS",
+  "year": 2015,
+  "dataset": "master",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2015/chfs2015_master.dta",
+  "n_variables": 8,
+  "n_observations": 37289,
+  "extracted_at": "2026-07-06T10:31:32.528305+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid",
+      "dataset": "master",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "prov_CHN",
+      "dataset": "master",
+      "label": "省份信息",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%21s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "province",
+      "dataset": "master",
+      "label": "province",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%29.0g",
+      "valuelabels": {
+        "11": "beijing",
+        "12": "tianjin",
+        "13": "hebei",
+        "14": "shanxi",
+        "21": "liaoning",
+        "22": "jilin",
+        "23": "heilongjiang",
+        "31": "shanghai",
+        "32": "jiangsu",
+        "33": "zhejiang",
+        "34": "anhui",
+        "35": "fujian",
+        "36": "jiangxi",
+        "37": "shandong",
+        "41": "henan",
+        "42": "hubei",
+        "43": "hunan",
+        "44": "guangdong",
+        "45": "guangxi",
+        "46": "hainan",
+        "50": "chongqing",
+        "51": "sichuan",
+        "52": "guizhou",
+        "53": "yunnan",
+        "61": "shaanxi",
+        "62": "gansu",
+        "63": "qinghai",
+        "64": "ningxia",
+        "65": "xinjiang",
+        "15": "neimenggu（Inner Mongolia）",
+        "54": "xizang（Tibet）"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "rural",
+      "dataset": "master",
+      "label": "城乡 1=农村 0=城镇",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "swgt",
+      "dataset": "master",
+      "label": "省内分层计算的权重",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "region",
+      "dataset": "master",
+      "label": "地区 1=东部 2=中部 3=西部",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "aorb",
+      "dataset": "master",
+      "label": "a/b问卷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "city_lab",
+      "dataset": "master",
+      "label": "是否同一城市识别码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

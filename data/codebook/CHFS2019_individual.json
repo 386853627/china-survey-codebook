@@ -1,0 +1,6357 @@
+{
+  "survey": "CHFS",
+  "year": 2019,
+  "dataset": "individual",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2019/chfs2019_individual.dta",
+  "n_variables": 423,
+  "n_observations": 107008,
+  "extracted_at": "2026-07-06T10:31:37.355653+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid",
+      "dataset": "individual",
+      "label": "hhid 家庭ID",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pline",
+      "dataset": "individual",
+      "label": "pline 个人ID",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pline_order",
+      "dataset": "individual",
+      "label": "pline_order 个人序号",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhead",
+      "dataset": "individual",
+      "label": "hhead 1=户主",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1106",
+      "dataset": "individual",
+      "label": "a1106 原家庭成员确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1106c",
+      "dataset": "individual",
+      "label": "a1106c 原家庭成员出生年份修正",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1106d",
+      "dataset": "individual",
+      "label": "a1106d 原家庭成员性别修正",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1108",
+      "dataset": "individual",
+      "label": "a1108 原家庭成员脱离家庭确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1113",
+      "dataset": "individual",
+      "label": "a1113 （新增）家庭成员性别",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a1114",
+      "dataset": "individual",
+      "label": "a1114 家庭成员出生年",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2000c",
+      "dataset": "individual",
+      "label": "a2000c 是否与受访者同住",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2001",
+      "dataset": "individual",
+      "label": "a2001 目前家庭成员关系",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2001_ex1",
+      "dataset": "individual",
+      "label": "a2001_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%32s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2003",
+      "dataset": "individual",
+      "label": "a2003 家庭成员性别",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2005",
+      "dataset": "individual",
+      "label": "a2005 家庭成员出生年",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2006",
+      "dataset": "individual",
+      "label": "a2006 6周岁以下家庭成员出生月",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2007",
+      "dataset": "individual",
+      "label": "a2007 3周岁以下家庭成员出生日",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2011b",
+      "dataset": "individual",
+      "label": "a2011b 家庭成员民族状况",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2012",
+      "dataset": "individual",
+      "label": "a2012 家庭成员文化程度",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2012b",
+      "dataset": "individual",
+      "label": "a2012b 是否在读",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2015",
+      "dataset": "individual",
+      "label": "a2015 是否是党员或预备党员",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2016b_city_lab",
+      "dataset": "individual",
+      "label": "a2016b_city_lab 未同住家庭成员常住地-城市伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2016b_county_lab",
+      "dataset": "individual",
+      "label": "a2016b_county_lab 未同住家庭成员常住地-区县伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2016b_prov",
+      "dataset": "individual",
+      "label": "a2016b_prov 未同住家庭成员常住地-省",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%24s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2016b_prov_code",
+      "dataset": "individual",
+      "label": "a2016b_prov_code 未同住家庭成员常住地-省国标码(统计局2018年)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2017b",
+      "dataset": "individual",
+      "label": "a2017b 现在居住房屋类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2017b_ex1",
+      "dataset": "individual",
+      "label": "a2017b_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%55s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019_city_lab",
+      "dataset": "individual",
+      "label": "a2019_city_lab 现在户口-城市伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019_county_lab",
+      "dataset": "individual",
+      "label": "a2019_county_lab 现在户口-区县伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019_prov",
+      "dataset": "individual",
+      "label": "a2019_prov 现在户口-省",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%24s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019_prov_code",
+      "dataset": "individual",
+      "label": "a2019_prov_code 现在户口-省国标码(统计局2018年)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019b",
+      "dataset": "individual",
+      "label": "a2019b 户口是否在目前居住乡镇/街道",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019f",
+      "dataset": "individual",
+      "label": "a2019f 来到省市的年份",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022",
+      "dataset": "individual",
+      "label": "a2022 家庭成员户口类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022_ex1",
+      "dataset": "individual",
+      "label": "a2022_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%55s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022a",
+      "dataset": "individual",
+      "label": "a2022a 是否农转非农户口",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022b",
+      "dataset": "individual",
+      "label": "a2022b 农转非农户口年份",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022c",
+      "dataset": "individual",
+      "label": "a2022c 农转非农的原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022c_ex1",
+      "dataset": "individual",
+      "label": "a2022c_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%60s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022g",
+      "dataset": "individual",
+      "label": "a2022g 户口迁出原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022g_ex1",
+      "dataset": "individual",
+      "label": "a2022g_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%90s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022ha",
+      "dataset": "individual",
+      "label": "a2022ha 愿意获得居住地的城镇地区户口吗",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022k",
+      "dataset": "individual",
+      "label": "a2022k 有过跨区/县迁户口吗",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022l",
+      "dataset": "individual",
+      "label": "a2022l 最近跨区/县迁户口是哪一年",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022m_city_lab",
+      "dataset": "individual",
+      "label": "a2022m_city_lab 最近一次户口迁出地-城市伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022m_county_lab",
+      "dataset": "individual",
+      "label": "a2022m_county_lab 最近一次户口迁出地-区县伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022m_prov",
+      "dataset": "individual",
+      "label": "a2022m_prov 最近一次户口迁出地-省",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%24s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022m_prov_code",
+      "dataset": "individual",
+      "label": "a2022m_prov_code 最近一次户口迁出地-省国标码(统计局2018年)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023g",
+      "dataset": "individual",
+      "label": "a2023g 在外地有过半年以上生活或工作吗",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023i",
+      "dataset": "individual",
+      "label": "a2023i 家庭成员回到现在户口的时间",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023i0",
+      "dataset": "individual",
+      "label": "a2023i0 家庭成员回到现在户口的位置",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023i0_ex1",
+      "dataset": "individual",
+      "label": "a2023i0_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%56s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023ia",
+      "dataset": "individual",
+      "label": "a2023ia 家庭成员回来原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023ia_ex1",
+      "dataset": "individual",
+      "label": "a2023ia_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%77s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023j_city_lab",
+      "dataset": "individual",
+      "label": "a2023j_city_lab 之前住过哪个地区-城市伪码",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023j_prov",
+      "dataset": "individual",
+      "label": "a2023j_prov 之前住过哪个地区-省",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%24s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023j_prov_code",
+      "dataset": "individual",
+      "label": "a2023j_prov_code 之前住过哪个地区-省国标码(统计局2018年)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023k",
+      "dataset": "individual",
+      "label": "a2023k 哪一年去外地",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023lb",
+      "dataset": "individual",
+      "label": "a2023lb 在外地的工作性质",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023lc",
+      "dataset": "individual",
+      "label": "a2023lc 在外地工作的年收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2024",
+      "dataset": "individual",
+      "label": "a2024 家庭成员婚姻状况",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2025b",
+      "dataset": "individual",
+      "label": "a2025b 家庭成员身体状况",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3100a",
+      "dataset": "individual",
+      "label": "a3100a 目前家庭成员有无工作",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3116a",
+      "dataset": "individual",
+      "label": "a3116a 家庭成员单程上班时间",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3117",
+      "dataset": "individual",
+      "label": "a3117 家庭成员单程上班距离",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118",
+      "dataset": "individual",
+      "label": "a3118 家庭成员交通工具",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%14s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_1_mc",
+      "dataset": "individual",
+      "label": "a3118_1_mc 公共交通",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_2_mc",
+      "dataset": "individual",
+      "label": "a3118_2_mc 私家车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_3_mc",
+      "dataset": "individual",
+      "label": "a3118_3_mc 打车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_4_mc",
+      "dataset": "individual",
+      "label": "a3118_4_mc 电动车或摩托车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_5_mc",
+      "dataset": "individual",
+      "label": "a3118_5_mc 自行车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_6_mc",
+      "dataset": "individual",
+      "label": "a3118_6_mc 步行",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_7_mc",
+      "dataset": "individual",
+      "label": "a3118_7_mc 单位班车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_7777_mc",
+      "dataset": "individual",
+      "label": "a3118_7777_mc 其他（请注明）",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3118_ex1",
+      "dataset": "individual",
+      "label": "a3118_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%56s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3131a",
+      "dataset": "individual",
+      "label": "a3131a 家庭成员无工作原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3131a_ex1",
+      "dataset": "individual",
+      "label": "a3131a_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%110s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132",
+      "dataset": "individual",
+      "label": "a3132 家庭成员去年工作月数",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132b",
+      "dataset": "individual",
+      "label": "a3132b 家庭成员有无工作",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132c",
+      "dataset": "individual",
+      "label": "a3132c 家庭成员去年工作单位类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132c_ex1",
+      "dataset": "individual",
+      "label": "a3132c_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%73s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132d",
+      "dataset": "individual",
+      "label": "a3132d 家庭成员去年工作性质",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132e",
+      "dataset": "individual",
+      "label": "a3132e 家庭成员工作类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132e_ex1",
+      "dataset": "individual",
+      "label": "a3132e_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%56s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132e_ex2",
+      "dataset": "individual",
+      "label": "a3132e_ex2 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%33s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132f",
+      "dataset": "individual",
+      "label": "a3132f 家庭成员去年工作行业",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132f_ex1",
+      "dataset": "individual",
+      "label": "a3132f_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%58s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132g",
+      "dataset": "individual",
+      "label": "a3132g 家庭成员去年工作职业",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132h",
+      "dataset": "individual",
+      "label": "a3132h 家庭成员去年工作合同性质",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3132ha",
+      "dataset": "individual",
+      "label": "a3132ha 家庭成员去年劳动合同签订对象",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3133",
+      "dataset": "individual",
+      "label": "a3133 家庭成员去年平均每月工作天数",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3134",
+      "dataset": "individual",
+      "label": "a3134 家庭成员去年平均每天工作时长",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3135",
+      "dataset": "individual",
+      "label": "a3135 家庭成员去年平均加班时长",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3135a",
+      "dataset": "individual",
+      "label": "a3135a 家庭成员去年是否有加班费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3135b",
+      "dataset": "individual",
+      "label": "a3135b 家庭成员去年平均每小时加班费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136",
+      "dataset": "individual",
+      "label": "a3136 家庭成员去年工资收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136a",
+      "dataset": "individual",
+      "label": "a3136a 家庭成员去年工作奖金收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136a_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136a_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136aa",
+      "dataset": "individual",
+      "label": "a3136aa 自由职业者去年收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136aa_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136aa_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136aait",
+      "dataset": "individual",
+      "label": "a3136aait 自由职业者去年收入范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ait",
+      "dataset": "individual",
+      "label": "a3136ait 家庭成员去年税后工作奖金收入范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136b",
+      "dataset": "individual",
+      "label": "a3136b 去年工作提供的现金和实物福利加总",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136b_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136b_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba",
+      "dataset": "individual",
+      "label": "a3136ba 家庭成员去年工作中的现金福利",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%12s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_1_mc",
+      "dataset": "individual",
+      "label": "a3136ba_1_mc 交通费补贴",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_2_mc",
+      "dataset": "individual",
+      "label": "a3136ba_2_mc 餐费补贴",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_3_mc",
+      "dataset": "individual",
+      "label": "a3136ba_3_mc 住房补贴",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_4_mc",
+      "dataset": "individual",
+      "label": "a3136ba_4_mc 通讯费补贴",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_5_mc",
+      "dataset": "individual",
+      "label": "a3136ba_5_mc 出差补贴",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_6_mc",
+      "dataset": "individual",
+      "label": "a3136ba_6_mc 过节费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_7777_mc",
+      "dataset": "individual",
+      "label": "a3136ba_7777_mc 其他（请注明）",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_7788_mc",
+      "dataset": "individual",
+      "label": "a3136ba_7788_mc 以上都没有",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136ba_ex1",
+      "dataset": "individual",
+      "label": "a3136ba_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%61s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_1",
+      "dataset": "individual",
+      "label": "a3136bb_1 家庭成员去年工作中的交通补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_1it",
+      "dataset": "individual",
+      "label": "a3136bb_1it 家庭成员去年工作中的交通补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_2",
+      "dataset": "individual",
+      "label": "a3136bb_2 家庭成员去年工作中的餐费补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_2it",
+      "dataset": "individual",
+      "label": "a3136bb_2it 家庭成员去年工作中的餐费补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_3",
+      "dataset": "individual",
+      "label": "a3136bb_3 家庭成员去年工作中的住房补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_3it",
+      "dataset": "individual",
+      "label": "a3136bb_3it 家庭成员去年工作中的住房补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_4",
+      "dataset": "individual",
+      "label": "a3136bb_4 家庭成员去年工作中的通讯费补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_4it",
+      "dataset": "individual",
+      "label": "a3136bb_4it 家庭成员去年工作中的通讯费补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_5",
+      "dataset": "individual",
+      "label": "a3136bb_5 家庭成员去年工作中的出差补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_5_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_5_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_5it",
+      "dataset": "individual",
+      "label": "a3136bb_5it 家庭成员去年工作中的出差补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_6",
+      "dataset": "individual",
+      "label": "a3136bb_6 家庭成员去年工作中的过节费税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_6_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_6_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_6it",
+      "dataset": "individual",
+      "label": "a3136bb_6it 家庭成员去年工作中的过节费税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_7777",
+      "dataset": "individual",
+      "label": "a3136bb_7777 家庭成员去年工作中的其他补贴税后金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_7777_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_7777_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bb_7777it",
+      "dataset": "individual",
+      "label": "a3136bb_7777it 家庭成员去年工作中的其他补贴税后金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc",
+      "dataset": "individual",
+      "label": "a3136bc 家庭成员去年工作中的实物福利",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%12s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_1_mc",
+      "dataset": "individual",
+      "label": "a3136bc_1_mc 免费早/中/晚餐",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_2_mc",
+      "dataset": "individual",
+      "label": "a3136bc_2_mc 免费住宿",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_3_mc",
+      "dataset": "individual",
+      "label": "a3136bc_3_mc 单位配车/班车",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_4_mc",
+      "dataset": "individual",
+      "label": "a3136bc_4_mc 购物卡/购物",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_5_mc",
+      "dataset": "individual",
+      "label": "a3136bc_5_mc 米、油、牛奶等食品",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_6_mc",
+      "dataset": "individual",
+      "label": "a3136bc_6_mc 日常生活用品（卫生纸、牙膏、洗衣液等）",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_7777_mc",
+      "dataset": "individual",
+      "label": "a3136bc_7777_mc 其他（请注明）",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_7788_mc",
+      "dataset": "individual",
+      "label": "a3136bc_7788_mc 以上都没有",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bc_ex1",
+      "dataset": "individual",
+      "label": "a3136bc_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%53s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_1",
+      "dataset": "individual",
+      "label": "a3136bd_1 家庭成员去年工作中的免费早/中/晚餐折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_1it",
+      "dataset": "individual",
+      "label": "a3136bd_1it 家庭成员去年工作中的免费早/中/晚餐折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_2",
+      "dataset": "individual",
+      "label": "a3136bd_2 家庭成员去年工作中的免费住宿折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_2it",
+      "dataset": "individual",
+      "label": "a3136bd_2it 家庭成员去年工作中的免费住宿折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_3",
+      "dataset": "individual",
+      "label": "a3136bd_3 家庭成员去年工作中的单位配车/班车折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_3it",
+      "dataset": "individual",
+      "label": "a3136bd_3it 家庭成员去年工作中的单位配车/班车折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_4",
+      "dataset": "individual",
+      "label": "a3136bd_4 家庭成员去年工作中的免费购物卡/购物券折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_4it",
+      "dataset": "individual",
+      "label": "a3136bd_4it 家庭成员去年工作中的免费购物卡/购物券折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_5",
+      "dataset": "individual",
+      "label": "a3136bd_5 家庭成员去年工作中的米、油、牛奶等食品折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_5_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_5_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_5it",
+      "dataset": "individual",
+      "label": "a3136bd_5it 家庭成员去年工作中的米、油、牛奶等食品折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_6",
+      "dataset": "individual",
+      "label": "a3136bd_6 家庭成员去年工作中的日常生活用品（卫生纸、牙膏、洗衣液等）折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_6_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_6_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_6it",
+      "dataset": "individual",
+      "label": "a3136bd_6it 家庭成员去年工作中的日常生活用品（卫生纸、牙膏、洗衣液等）折算金额范",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_7777",
+      "dataset": "individual",
+      "label": "a3136bd_7777 家庭成员去年工作中的其他实物福利折算金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_7777_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_7777_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136bd_7777it",
+      "dataset": "individual",
+      "label": "a3136bd_7777it 家庭成员去年工作中的其他实物福利折算金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3136it",
+      "dataset": "individual",
+      "label": "a3136it 家庭成员去年工资收入范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3137",
+      "dataset": "individual",
+      "label": "a3137 家庭成员去年缴纳个税",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3137_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3137_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3137it",
+      "dataset": "individual",
+      "label": "a3137it 家庭成员去年缴纳个税范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3138a",
+      "dataset": "individual",
+      "label": "a3138a 是否通过报销个人消费发票的方式从单位获得收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3138b",
+      "dataset": "individual",
+      "label": "a3138b 工资是否包含报销个人消费发票折算的金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3138c",
+      "dataset": "individual",
+      "label": "a3138c 个人消费发票报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3154a",
+      "dataset": "individual",
+      "label": "a3154a 是否在寻找工作",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3156a",
+      "dataset": "individual",
+      "label": "a3156a 没有找工作的原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3156a_ex1",
+      "dataset": "individual",
+      "label": "a3156a_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%51s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3160",
+      "dataset": "individual",
+      "label": "a3160 两周内是否能开始工作",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3160a",
+      "dataset": "individual",
+      "label": "a3160a 就业预期",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3160b",
+      "dataset": "individual",
+      "label": "a3160b 失业预期",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3170",
+      "dataset": "individual",
+      "label": "a3170 家庭成员去年是否从事其他工作",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3170a",
+      "dataset": "individual",
+      "label": "a3170a 家庭成员去年其他工作性质",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3170d",
+      "dataset": "individual",
+      "label": "a3170d 家庭成员工作的类别",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3170d_ex1",
+      "dataset": "individual",
+      "label": "a3170d_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%36s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3170d_ex2",
+      "dataset": "individual",
+      "label": "a3170d_ex2 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%18s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3171",
+      "dataset": "individual",
+      "label": "a3171 家庭成员去年其他工作收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3171_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3171_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3171it",
+      "dataset": "individual",
+      "label": "a3171it 家庭成员去年其他工作收入范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3172",
+      "dataset": "individual",
+      "label": "a3172 家庭成员去年其他工作缴纳个税",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3172_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3172_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3172it",
+      "dataset": "individual",
+      "label": "a3172it 家庭成员去年其他工作缴纳个税范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3173",
+      "dataset": "individual",
+      "label": "a3173 家庭成员寄回收入",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a202201",
+      "dataset": "individual",
+      "label": "a202201 获得统一户口之前的户口类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a202201_ex1",
+      "dataset": "individual",
+      "label": "a202201_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%58s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1001a",
+      "dataset": "individual",
+      "label": "f1001a 家庭成员社会养老保险类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1001a_ex1",
+      "dataset": "individual",
+      "label": "f1001a_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%92s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1003",
+      "dataset": "individual",
+      "label": "f1003 社会养老保险领取确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1004",
+      "dataset": "individual",
+      "label": "f1004 社会养老保险开始领取年份",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005",
+      "dataset": "individual",
+      "label": "f1005 社会养老保险每月领取金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005it",
+      "dataset": "individual",
+      "label": "f1005it 社会养老保险每月领取金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1006",
+      "dataset": "individual",
+      "label": "f1006 城职保累计缴纳年限",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008",
+      "dataset": "individual",
+      "label": "f1008 社会养老保险每月缴纳金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008a",
+      "dataset": "individual",
+      "label": "f1008a 社会养老保险每年缴纳金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008a_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008a_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1009",
+      "dataset": "individual",
+      "label": "f1009 社会养老保险开始缴纳时间",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1009a",
+      "dataset": "individual",
+      "label": "f1009a 社会养老保险累计缴纳时间",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1026",
+      "dataset": "individual",
+      "label": "f1026 职业年金或补充养老保险确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1027",
+      "dataset": "individual",
+      "label": "f1027 职业年金或补充养老保险领取确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028",
+      "dataset": "individual",
+      "label": "f1028 去年每月职业年金或补充养老保险领取金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028_censor",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028_imp_censor",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1029",
+      "dataset": "individual",
+      "label": "f1029 去年每月职业年金或补充养老保险缴纳金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031",
+      "dataset": "individual",
+      "label": "f1031 年金个人账户余额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031it",
+      "dataset": "individual",
+      "label": "f1031it 年金个人账户余额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2001a",
+      "dataset": "individual",
+      "label": "f2001a 家庭成员社会医疗保险类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2001c",
+      "dataset": "individual",
+      "label": "f2001c 是否拥有大病保险",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2004",
+      "dataset": "individual",
+      "label": "f2004 去年家庭成员医疗保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2005",
+      "dataset": "individual",
+      "label": "f2005 家庭成员医疗保险账户确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006",
+      "dataset": "individual",
+      "label": "f2006 家庭成员医疗保险账户余额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006ait",
+      "dataset": "individual",
+      "label": "f2006ait 家庭成员医疗保险账户余额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2022",
+      "dataset": "individual",
+      "label": "f2022 家庭成员去年住院确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2024",
+      "dataset": "individual",
+      "label": "f2024 家庭成员去年住院支出",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2024_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2024_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_1",
+      "dataset": "individual",
+      "label": "f2025_1 家庭成员住院支出城镇职工基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_2",
+      "dataset": "individual",
+      "label": "f2025_2 家庭成员住院支出城镇居民基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_3",
+      "dataset": "individual",
+      "label": "f2025_3 家庭成员住院支出新型农村合作医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_4",
+      "dataset": "individual",
+      "label": "f2025_4 家庭成员住院支出城乡居民基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_5",
+      "dataset": "individual",
+      "label": "f2025_5 家庭成员住院支出公费医疗报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_5_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2025_5_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2027",
+      "dataset": "individual",
+      "label": "f2027 去年非家庭成员代付医疗费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2027_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2027_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2028",
+      "dataset": "individual",
+      "label": "f2028 家庭成员非住院医疗费用",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2028_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2028_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_1",
+      "dataset": "individual",
+      "label": "f2029_1 家庭成员非住院支出城镇职工基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_2",
+      "dataset": "individual",
+      "label": "f2029_2 家庭成员非住院支出城镇居民基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_3",
+      "dataset": "individual",
+      "label": "f2029_3 家庭成员非住院支出新型农村合作医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_4",
+      "dataset": "individual",
+      "label": "f2029_4 家庭成员非住院支出城乡居民基本医疗保险报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_5",
+      "dataset": "individual",
+      "label": "f2029_5 家庭成员非住院支出公费医疗报销金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_5_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2029_5_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3001",
+      "dataset": "individual",
+      "label": "f3001 家庭成员失业保险确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3002a",
+      "dataset": "individual",
+      "label": "f3002a 是否领过失业保险金",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3003a",
+      "dataset": "individual",
+      "label": "f3003a 家庭成员领取失业救济月数",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3004a",
+      "dataset": "individual",
+      "label": "f3004a 家庭成员每月领取失业救济金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3004a_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3004a_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4001",
+      "dataset": "individual",
+      "label": "f4001 家庭成员公积金确认",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4004",
+      "dataset": "individual",
+      "label": "f4004 住房公积金是否连续缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4005",
+      "dataset": "individual",
+      "label": "f4005 去年家庭成员公积金每月缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4005ait",
+      "dataset": "individual",
+      "label": "f4005ait 去年家庭成员公积金每月缴费范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4007",
+      "dataset": "individual",
+      "label": "f4007 公积金缴纳时长",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008",
+      "dataset": "individual",
+      "label": "f4008 家庭成员公积金账户余额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008ait",
+      "dataset": "individual",
+      "label": "f4008ait 家庭成员公积金账户余额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4009",
+      "dataset": "individual",
+      "label": "f4009 是否提取住房公积金",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4010b",
+      "dataset": "individual",
+      "label": "f4010b 提取住房公积金原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4010b_ex1",
+      "dataset": "individual",
+      "label": "f4010b_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%48s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011",
+      "dataset": "individual",
+      "label": "f4011 家庭成员去年提取公积金金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011it",
+      "dataset": "individual",
+      "label": "f4011it 家庭成员去年提取公积金金额范围",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001a",
+      "dataset": "individual",
+      "label": "f6001a 家庭成员购买商业保险类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001a_1_mc",
+      "dataset": "individual",
+      "label": "f6001a_1_mc 商业人寿保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001a_2_mc",
+      "dataset": "individual",
+      "label": "f6001a_2_mc 商业健康保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001a_3_mc",
+      "dataset": "individual",
+      "label": "f6001a_3_mc 其他商业保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001a_7788_mc",
+      "dataset": "individual",
+      "label": "f6001a_7788_mc 都没有 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6103",
+      "dataset": "individual",
+      "label": "f6103 商业人寿保险保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6105",
+      "dataset": "individual",
+      "label": "f6105 商业人寿保险是否分红",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6106",
+      "dataset": "individual",
+      "label": "f6106 去年商业人寿保险分红",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6106_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6106_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6107",
+      "dataset": "individual",
+      "label": "f6107 商业人寿保险是否返还本金",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6110a",
+      "dataset": "individual",
+      "label": "f6110a 去年商业人寿保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6110a_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6110a_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6118",
+      "dataset": "individual",
+      "label": "f6118 去年是否获得商业人寿保险赔付",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6119",
+      "dataset": "individual",
+      "label": "f6119 去年商业人寿保险赔付",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6119_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6119_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202",
+      "dataset": "individual",
+      "label": "f6202 购买的商业健康保险类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_1_mc",
+      "dataset": "individual",
+      "label": "f6202_1_mc 商业医疗保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_2_mc",
+      "dataset": "individual",
+      "label": "f6202_2_mc 重大疾病保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_3_mc",
+      "dataset": "individual",
+      "label": "f6202_3_mc 收入保障保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_4_mc",
+      "dataset": "individual",
+      "label": "f6202_4_mc 长期看护保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202b_1",
+      "dataset": "individual",
+      "label": "f6202b_1 商业医疗保险的总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202b_2",
+      "dataset": "individual",
+      "label": "f6202b_2 重大疾病保险保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202b_3",
+      "dataset": "individual",
+      "label": "f6202b_3 收入保障保险保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202b_4",
+      "dataset": "individual",
+      "label": "f6202b_4 长期看护保险",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202b_9999",
+      "dataset": "individual",
+      "label": "f6202b_9999 去年商业健康保险总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203_1",
+      "dataset": "individual",
+      "label": "f6203_1 去年商业医疗保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203_2",
+      "dataset": "individual",
+      "label": "f6203_2 去年重大疾病保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203_3",
+      "dataset": "individual",
+      "label": "f6203_3 去年收入保障保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203_4",
+      "dataset": "individual",
+      "label": "f6203_4 去年长期看护保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203_9999",
+      "dataset": "individual",
+      "label": "f6203_9999 去年商业健康保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_1",
+      "dataset": "individual",
+      "label": "f6204_1 去年商业医疗保险报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_2",
+      "dataset": "individual",
+      "label": "f6204_2 去年重大疾病保险报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_3",
+      "dataset": "individual",
+      "label": "f6204_3 去年收入保障保险报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_4",
+      "dataset": "individual",
+      "label": "f6204_4 去年长期看护保险报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_9999",
+      "dataset": "individual",
+      "label": "f6204_9999 去年商业健康保险总报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_9999_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204_9999_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_1",
+      "dataset": "individual",
+      "label": "f6204a_1 商业医疗保险分红金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_2",
+      "dataset": "individual",
+      "label": "f6204a_2 重大疾病保险分红",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_3",
+      "dataset": "individual",
+      "label": "f6204a_3 收入保障保险分红",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_4",
+      "dataset": "individual",
+      "label": "f6204a_4 长期看护保险分红",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_9999",
+      "dataset": "individual",
+      "label": "f6204a_9999 商业健康保险获得分红金额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_9999_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204a_9999_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a",
+      "dataset": "individual",
+      "label": "f6501a 去年其他商业保险类型",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_1_mc",
+      "dataset": "individual",
+      "label": "f6501a_1_mc 意外伤害保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_2_mc",
+      "dataset": "individual",
+      "label": "f6501a_2_mc 家庭财产保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_3_mc",
+      "dataset": "individual",
+      "label": "f6501a_3_mc 农业保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_4_mc",
+      "dataset": "individual",
+      "label": "f6501a_4_mc 少儿教育保险 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_7777_mc",
+      "dataset": "individual",
+      "label": "f6501a_7777_mc 其他 ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501a_ex1",
+      "dataset": "individual",
+      "label": "f6501a_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%48s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501b_1",
+      "dataset": "individual",
+      "label": "f6501b_1 意外伤害保险保险的总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501b_2",
+      "dataset": "individual",
+      "label": "f6501b_2 家庭财产保险总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501b_3",
+      "dataset": "individual",
+      "label": "f6501b_3 农业保险总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501b_4",
+      "dataset": "individual",
+      "label": "f6501b_4 少儿教育保险总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501b_7777",
+      "dataset": "individual",
+      "label": "f6501b_7777 其他保险总保额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_1",
+      "dataset": "individual",
+      "label": "f6502_1 去年意外伤害保险保险缴费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_2",
+      "dataset": "individual",
+      "label": "f6502_2 家庭财产保险缴纳保费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_3",
+      "dataset": "individual",
+      "label": "f6502_3 农业保险缴纳保费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_4",
+      "dataset": "individual",
+      "label": "f6502_4 少儿教育保险缴纳保费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_7777",
+      "dataset": "individual",
+      "label": "f6502_7777 其他保险缴纳保费",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_7777_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502_7777_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_1",
+      "dataset": "individual",
+      "label": "f6503_1 去年意外伤害保险保险报销",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_1_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_1_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_2",
+      "dataset": "individual",
+      "label": "f6503_2 家庭财产保险总共赔付或返还额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_2_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_2_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_3",
+      "dataset": "individual",
+      "label": "f6503_3 农业保险总共赔付或返还额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_3_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_3_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_4",
+      "dataset": "individual",
+      "label": "f6503_4 少儿教育保险总共赔付或返还额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_4_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_4_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_7777",
+      "dataset": "individual",
+      "label": "f6503_7777 其他保险总共赔付或返还额",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_7777_imp",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503_7777_imp_dummy",
+      "dataset": "individual",
+      "label": " ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3002a",
+      "dataset": "individual",
+      "label": "h3002a 家庭成员是否申报过个人所得税专项附件扣除",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a",
+      "dataset": "individual",
+      "label": "h3003a 申报项目",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%11s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_1_mc",
+      "dataset": "individual",
+      "label": "h3003a_1_mc 子女教育",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_2_mc",
+      "dataset": "individual",
+      "label": "h3003a_2_mc 继续教育",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_3_mc",
+      "dataset": "individual",
+      "label": "h3003a_3_mc 大病医疗",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_4_mc",
+      "dataset": "individual",
+      "label": "h3003a_4_mc 住房贷款利息",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_5_mc",
+      "dataset": "individual",
+      "label": "h3003a_5_mc 住房租金",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3003a_6_mc",
+      "dataset": "individual",
+      "label": "h3003a_6_mc 赡养老人",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3004a",
+      "dataset": "individual",
+      "label": "h3004a 没有申报原因",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "h3004a_ex1",
+      "dataset": "individual",
+      "label": "h3004a_ex1 其他",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%49s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "s1001b",
+      "dataset": "individual",
+      "label": "s1001b 保姆工资",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "s2013b",
+      "dataset": "individual",
+      "label": "s2013b 幼儿园小孩的保姆工资",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

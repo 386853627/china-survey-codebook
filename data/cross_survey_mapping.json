@@ -1,0 +1,291 @@
+{
+  "description": "CGSS ↔ CHFS 跨调查语义映射（异名同义变量）",
+  "generated_at": "2026-07-06",
+  "note": "手工核对核心人口学/收入/住房/教育变量。matches 格式: survey:year:dataset:varname。CGSS dataset=main；CHFS 视变量所在表定 dataset。",
+  "n_topics": 18,
+  "topics": {
+    "gender": {
+      "description": "性别",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a2"},
+        {"year": 2011, "dataset": "main", "varname": "a2"},
+        {"year": 2012, "dataset": "main", "varname": "a2"},
+        {"year": 2013, "dataset": "main", "varname": "a2"},
+        {"year": 2015, "dataset": "main", "varname": "a2"},
+        {"year": 2017, "dataset": "main", "varname": "a2"},
+        {"year": 2018, "dataset": "main", "varname": "a2"},
+        {"year": 2023, "dataset": "main", "varname": "a2"}
+      ],
+      "CHFS": [
+        {"year": 2011, "dataset": "individual", "varname": "a2003"},
+        {"year": 2013, "dataset": "individual", "varname": "a2003"},
+        {"year": 2015, "dataset": "individual", "varname": "a2003"},
+        {"year": 2017, "dataset": "individual", "varname": "a2003"},
+        {"year": 2019, "dataset": "individual", "varname": "a2003"},
+        {"year": 2021, "dataset": "individual", "varname": "a2003"}
+      ],
+      "note": "CHFS a2003 是家庭成员性别（个人级），CGSS a2 是受访者性别。合并时注意 CGSS 受访者即户主，CHFS 需筛户主记录（a2001=0 或同 hhid）。"
+    },
+
+    "birth_year": {
+      "description": "出生年",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a3a"},
+        {"year": 2011, "dataset": "main", "varname": "a3a"},
+        {"year": 2012, "dataset": "main", "varname": "a3a"},
+        {"year": 2013, "dataset": "main", "varname": "a3a"},
+        {"year": 2023, "dataset": "main", "varname": "a3a"}
+      ],
+      "CHFS": [
+        {"year": 2011, "dataset": "individual", "varname": "a2005"},
+        {"year": 2013, "dataset": "individual", "varname": "a2005"},
+        {"year": 2015, "dataset": "individual", "varname": "a2005"},
+        {"year": 2017, "dataset": "individual", "varname": "a2005"},
+        {"year": 2019, "dataset": "individual", "varname": "a2005"},
+        {"year": 2021, "dataset": "individual", "varname": "a2005"}
+      ],
+      "note": "CGSS 2008 的 a3a 实为教育程度（变量命名跨年不一致），勿用。年龄 = 调查年 - 出生年。"
+    },
+
+    "education": {
+      "description": "最高教育程度",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a7a"},
+        {"year": 2011, "dataset": "main", "varname": "a7a"},
+        {"year": 2012, "dataset": "main", "varname": "a7a"},
+        {"year": 2013, "dataset": "main", "varname": "a7a"},
+        {"year": 2015, "dataset": "main", "varname": "a7a"},
+        {"year": 2017, "dataset": "main", "varname": "a7a"},
+        {"year": 2018, "dataset": "main", "varname": "a7a"},
+        {"year": 2023, "dataset": "main", "varname": "a7a"}
+      ],
+      "CHFS": [
+        {"year": 2011, "dataset": "individual", "varname": "a2012"},
+        {"year": 2013, "dataset": "individual", "varname": "a2012"},
+        {"year": 2015, "dataset": "individual", "varname": "a2012"},
+        {"year": 2017, "dataset": "individual", "varname": "a2012"},
+        {"year": 2019, "dataset": "individual", "varname": "a2012"},
+        {"year": 2021, "dataset": "individual", "varname": "a2012"}
+      ],
+      "note": "两调查教育程度取值编码不完全一致，合并前需统一 recode（如 CGSS 1=无，CHFS 可能 1=小学）。"
+    },
+
+    "hukou_status": {
+      "description": "户口登记状况",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a18"},
+        {"year": 2011, "dataset": "main", "varname": "a18"},
+        {"year": 2012, "dataset": "main", "varname": "a18"},
+        {"year": 2013, "dataset": "main", "varname": "a18"},
+        {"year": 2015, "dataset": "main", "varname": "a18"},
+        {"year": 2017, "dataset": "main", "varname": "a18"},
+        {"year": 2018, "dataset": "main", "varname": "a18"},
+        {"year": 2023, "dataset": "main", "varname": "a18"}
+      ],
+      "CHFS": [],
+      "note": "CHFS 户口变量名待补（多在 master 表，命名不固定）。CGSS a18 取值：1=农业户口，2=非农业户口，3=居民户口（改革后），等。"
+    },
+
+    "marital_status": {
+      "description": "婚姻状况",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a18"}
+      ],
+      "CHFS": [],
+      "note": "CGSS 婚姻变量名待核（a18 在部分年份是户口）。CHFS 婚姻变量多在 individual 表 a2xxx 系列。此条待后续核对补全。"
+    },
+
+    "family_total_income": {
+      "description": "家庭全年总收入",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a62"},
+        {"year": 2011, "dataset": "main", "varname": "a62"},
+        {"year": 2012, "dataset": "main", "varname": "a62"},
+        {"year": 2013, "dataset": "main", "varname": "a62"},
+        {"year": 2015, "dataset": "main", "varname": "a62"},
+        {"year": 2017, "dataset": "main", "varname": "a62"},
+        {"year": 2018, "dataset": "main", "varname": "a62"},
+        {"year": 2023, "dataset": "main", "varname": "a62"}
+      ],
+      "CHFS": [],
+      "note": "CHFS 家庭收入变量分散在 household 表 g1xxx/g2xxx 系列（按收入来源分项），无单一总收变量。需 sum 各分项或查 codebook 找 '家庭总收入' 关键词。后续补全。"
+    },
+
+    "family_economic_level": {
+      "description": "家庭经济状况自评档次",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a64"},
+        {"year": 2011, "dataset": "main", "varname": "a64"},
+        {"year": 2012, "dataset": "main", "varname": "a64"},
+        {"year": 2013, "dataset": "main", "varname": "a64"},
+        {"year": 2015, "dataset": "main", "varname": "a64"},
+        {"year": 2017, "dataset": "main", "varname": "a64"},
+        {"year": 2018, "dataset": "main", "varname": "a64"},
+        {"year": 2023, "dataset": "main", "varname": "a64"}
+      ],
+      "CHFS": [],
+      "note": "CHFS 主观经济档次变量待核（若有，应在 household 表）。CGSS a64 取值 1-10 档。"
+    },
+
+    "n_houses": {
+      "description": "家庭拥有房产数量",
+      "CGSS": [
+        {"year": 2010, "dataset": "main", "varname": "a65"},
+        {"year": 2012, "dataset": "main", "varname": "a65"},
+        {"year": 2013, "dataset": "main", "varname": "a65"},
+        {"year": 2015, "dataset": "main", "varname": "a65"},
+        {"year": 2017, "dataset": "main", "varname": "a65"},
+        {"year": 2018, "dataset": "main", "varname": "a65"},
+        {"year": 2023, "dataset": "main", "varname": "a65"}
+      ],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c2002"},
+        {"year": 2017, "dataset": "household", "varname": "c2002"},
+        {"year": 2019, "dataset": "household", "varname": "c2002"},
+        {"year": 2021, "dataset": "household", "varname": "c2002"}
+      ],
+      "note": "CHFS c2002 = 拥有几套住房（2015+）。CGSS a65 = 现有几处房产。取值语义接近，可直接对比。CHFS 2011/2013 命名不同。"
+    },
+
+    "house_area_built": {
+      "description": "住房建筑面积（平方米）",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c2003_1"},
+        {"year": 2017, "dataset": "household", "varname": "c2003_1"},
+        {"year": 2019, "dataset": "household", "varname": "c2003_1"},
+        {"year": 2021, "dataset": "household", "varname": "c2003_1"}
+      ],
+      "note": "CGSS 无直接对应变量（住房面积题在部分年份问卷但变量名不固定）。CHFS c2003_1 = 第一套住房建筑面积，_2/_3 为第二/三套。"
+    },
+
+    "house_area_used": {
+      "description": "住房使用面积（平方米）",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c2004_1"},
+        {"year": 2017, "dataset": "household", "varname": "c2004_1"},
+        {"year": 2019, "dataset": "household", "varname": "c2004_1"},
+        {"year": 2021, "dataset": "household", "varname": "c2004_1"}
+      ],
+      "note": "CHFS c2004_1 = 第一套住房使用面积。CGSS 无对应。"
+    },
+
+    "own_house": {
+      "description": "是否拥有自有住房",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c2001"},
+        {"year": 2017, "dataset": "household", "varname": "c2001"},
+        {"year": 2019, "dataset": "household", "varname": "c2001"},
+        {"year": 2021, "dataset": "household", "varname": "c2001"}
+      ],
+      "note": "CHFS c2001 = 是否拥有自有住房（0/1）。CGSS 通过 a65（房产数）>0 间接判断。"
+    },
+
+    "house_mortgage": {
+      "description": "是否有住房抵押贷款",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c3017aa"},
+        {"year": 2017, "dataset": "household", "varname": "c3017aa"},
+        {"year": 2019, "dataset": "household", "varname": "c3017aa"},
+        {"year": 2021, "dataset": "household", "varname": "c3017aa"}
+      ],
+      "note": "CHFS c3017aa = 是否自有住宅抵押贷款。CGSS 无对应。"
+    },
+
+    "house_value_other": {
+      "description": "其他住房总市值",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "c2023d"},
+        {"year": 2017, "dataset": "household", "varname": "c2023d"},
+        {"year": 2019, "dataset": "household", "varname": "c2023d"},
+        {"year": 2021, "dataset": "household", "varname": "c2023d"}
+      ],
+      "note": "CHFS c2023d = 其他住房总市值（除主要居住房外）。"
+    },
+
+    "house_repair_expense": {
+      "description": "去年住房装修维修支出",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2015, "dataset": "household", "varname": "g1012"},
+        {"year": 2017, "dataset": "household", "varname": "g1012"},
+        {"year": 2019, "dataset": "household", "varname": "g1012"},
+        {"year": 2021, "dataset": "household", "varname": "g1012"}
+      ],
+      "note": "CHFS g1012 = 去年住房装修维修支出。"
+    },
+
+    "family_member_relation": {
+      "description": "家庭成员与受访者关系",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2011, "dataset": "individual", "varname": "a2001"},
+        {"year": 2013, "dataset": "individual", "varname": "a2001"},
+        {"year": 2015, "dataset": "individual", "varname": "a2001"},
+        {"year": 2017, "dataset": "individual", "varname": "a2001"},
+        {"year": 2019, "dataset": "individual", "varname": "a2001"},
+        {"year": 2021, "dataset": "individual", "varname": "a2001"}
+      ],
+      "note": "CHFS individual 表特有，a2001=0 通常为户主本人。CGSS 受访者即户主，无此变量。"
+    },
+
+    "household_id": {
+      "description": "家庭ID",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2011, "dataset": "master", "varname": "hhid_2011"},
+        {"year": 2013, "dataset": "master", "varname": "hhid"},
+        {"year": 2015, "dataset": "master", "varname": "hhid"},
+        {"year": 2017, "dataset": "master", "varname": "hhid"},
+        {"year": 2019, "dataset": "master", "varname": "hhid"},
+        {"year": 2021, "dataset": "master_household", "varname": "hhid"}
+      ],
+      "note": "CHFS 跨年追踪键。2011 命名 hhid_2011，其余年份 hhid。CGSS 无追踪（每波独立截面）。"
+    },
+
+    "province": {
+      "description": "省份",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2011, "dataset": "master", "varname": "province"},
+        {"year": 2013, "dataset": "master", "varname": "province"},
+        {"year": 2015, "dataset": "master", "varname": "province"},
+        {"year": 2017, "dataset": "master", "varname": "province"},
+        {"year": 2019, "dataset": "master", "varname": "province"},
+        {"year": 2021, "dataset": "master_household", "varname": "province"}
+      ],
+      "note": "CHFS master 表省份编码。CGSS 省份变量名待核（多在 s5 或 province）。"
+    },
+
+    "rural": {
+      "description": "是否农村",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2011, "dataset": "master", "varname": "rural"},
+        {"year": 2013, "dataset": "master", "varname": "rural"},
+        {"year": 2015, "dataset": "master", "varname": "rural"},
+        {"year": 2017, "dataset": "master", "varname": "rural"},
+        {"year": 2019, "dataset": "master", "varname": "rural"},
+        {"year": 2021, "dataset": "master_household", "varname": "rural"}
+      ],
+      "note": "CHFS rural=1 if 农村地区（统计局口径）。CGSS 城乡变量名待核。"
+    },
+
+    "sampling_weight": {
+      "description": "抽样权重",
+      "CGSS": [],
+      "CHFS": [
+        {"year": 2011, "dataset": "master", "varname": "swgt"},
+        {"year": 2013, "dataset": "master", "varname": "swgt"},
+        {"year": 2015, "dataset": "master", "varname": "swgt"},
+        {"year": 2017, "dataset": "master", "varname": "swgt"},
+        {"year": 2019, "dataset": "master", "varname": "swgt"}
+      ],
+      "note": "CHFS 抽样权重。CGSS 权重变量名为 weight（待核）。"
+    }
+  }
+}

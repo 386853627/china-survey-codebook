@@ -1,25 +1,27 @@
 # 使用说明
 
-> China Survey Codebook CLI — 检索 CGSS/CFPS 变量元数据
+> China Survey Codebook CLI — 检索 CGSS/CHFS 变量元数据
 
 ## 快速开始
 
 ```bash
-# 列出所有调查年份
+# 列出所有调查-年份-数据集
 python cli/codebook.py surveys
 
-# 搜索变量
+# 搜索变量（跨调查）
 python cli/codebook.py search "性别"
-python cli/codebook.py search "income" --survey CGSS --year 2010
+python cli/codebook.py search "住房" --survey CHFS --dataset household
 
-# 查看变量详情
+# 查看变量详情（CHFS 需指定 --dataset）
 python cli/codebook.py variable CGSS 2010 a2
+python cli/codebook.py variable CHFS 2017 a2003 --dataset individual
 
 # 跨年对比
-python cli/codebook.py compare a2 --years all
+python cli/codebook.py compare a2 --years all --survey CGSS
+python cli/codebook.py compare a2003 --years all --survey CHFS --dataset individual
 
 # 按主题导出
-python cli/codebook.py export --tag demographic --format json
+python cli/codebook.py export --tag housing --survey CHFS --format json
 ```
 
 ## 全局参数
@@ -42,7 +44,7 @@ python cli/codebook.py search "性别" --json
 ### 1. `search` — 按关键词搜索变量
 
 ```bash
-python cli/codebook.py search <keyword> [--survey S] [--year Y] [--tag T]
+python cli/codebook.py search <keyword> [--survey S] [--year Y] [--dataset D] [--tag T]
 ```
 
 搜索范围：变量名、中文标签、英文标签（FTS5 全文检索，支持中文）。
@@ -51,26 +53,32 @@ python cli/codebook.py search <keyword> [--survey S] [--year Y] [--tag T]
 # 搜索所有含"教育"的变量
 python cli/codebook.py search "教育"
 
-# 限定 2010 年
-python cli/codebook.py search "教育" --year 2010
+# 限定 CHFS household 表
+python cli/codebook.py search "住房" --survey CHFS --dataset household
 
-# 限定 education 主题标签
-python cli/codebook.py search "教育" --tag education
+# 限定 housing 主题标签
+python cli/codebook.py search "面积" --tag housing
 
 # 组合过滤
-python cli/codebook.py search "收入" --survey CGSS --year 2010 --tag income
+python cli/codebook.py search "收入" --survey CHFS --year 2017
 ```
 
-输出列：调查、年份、变量名、标签、Tags。最多返回 200 条。
+输出列：调查、年份、数据集、变量名、标签。最多返回 200 条。
 
 ### 2. `variable` — 查看变量详情
 
 ```bash
-python cli/codebook.py variable <survey> <year> <varname>
+python cli/codebook.py variable <survey> <year> <varname> [--dataset D]
 ```
 
 ```bash
+# CGSS（dataset 默认 main）
 python cli/codebook.py variable CGSS 2010 a2
+
+# CHFS（必须指定 --dataset）
+python cli/codebook.py variable CHFS 2017 a2003 --dataset individual
+python cli/codebook.py variable CHFS 2015 c2002 --dataset household
+python cli/codebook.py variable CHFS 2011 province --dataset master
 ```
 
 输出：
@@ -80,132 +88,143 @@ python cli/codebook.py variable CGSS 2010 a2
 - 缺失规则（`missing_rules`，从 JSON 回读）
 - 跨年匹配（`cross_year_match`，从 JSON 回读）
 
-### 3. `compare` — 跨年对比同一变量
+### 3. `compare` — 跨年/跨数据集对比同一变量
 
 ```bash
-python cli/codebook.py compare <varname> --years Y1,Y2,...|all
+python cli/codebook.py compare <varname> --years Y1,Y2,...|all [--survey S] [--dataset D]
 ```
 
 ```bash
-# 对比所有年份
-python cli/codebook.py compare a2 --years all
+# CGSS 性别变量跨年对比
+python cli/codebook.py compare a2 --years all --survey CGSS
+
+# CHFS 性别变量跨年对比（限定 individual 表）
+python cli/codebook.py compare a2003 --years all --survey CHFS --dataset individual
 
 # 指定年份
-python cli/codebook.py compare a62 --years 2010,2015,2018,2023
+python cli/codebook.py compare a62 --years 2010,2015,2018,2023 --survey CGSS
 ```
 
 输出：
-- 每年的标签、Tags、取值标签
-- Label 一致性检测（跨年 label 是否变化）
+- 每条记录的 survey、year、dataset、label、取值标签
+- Label 一致性检测
 - 取值标签一致性检测
 
-**注意**：CGSS 变量命名跨年不一致（如 2003=sex, 2005=qa2_01, 2010+=a2），`compare` 仅对比变量名相同的年份。跨年同义变量映射见 `data/variable_mapping.json`。
+**注意**：CHFS 同名变量可能跨 dataset 出现（如 master 和 individual 都有 hhid），不加 `--dataset` 会返回全部记录。
 
 ### 4. `export` — 按主题导出
 
 ```bash
-python cli/codebook.py export --tag <T> [--format json|csv]
+python cli/codebook.py export --tag <T> [--survey S] [--dataset D] [--format json|csv]
 ```
 
 ```bash
-# 导出所有 demographic 变量为 JSON
-python cli/codebook.py export --tag demographic --format json
+# 导出所有 housing 变量（CHFS 为主）
+python cli/codebook.py export --tag housing --format json
 
-# 导出 income 变量为 CSV
-python cli/codebook.py export --tag income --format csv
+# 仅导出 CHFS household 表的 asset 变量
+python cli/codebook.py export --tag asset --survey CHFS --dataset household --format csv
+
+# 导出 CGSS demographic 变量
+python cli/codebook.py export --tag demographic --survey CGSS --format json
 ```
 
-导出所有年份中带有该 tag 的变量，含取值标签。
+可用 tag（14 类）：
+- 基础：`demographic` / `education` / `income` / `labor` / `health` / `family` / `political` / `trust` / `subjective` / `attitude`
+- CHFS 特色：`finance` / `credit` / `asset` / `housing`
 
-可用 tag：`demographic` / `education` / `income` / `labor` / `health` / `family` / `political` / `trust` / `subjective` / `attitude`。
-
-### 5. `surveys` — 列出所有调查年份
+### 5. `surveys` — 列出所有调查-年份-数据集
 
 ```bash
 python cli/codebook.py surveys
 ```
 
-输出每个调查-年份的变量数。
+输出每个 (survey, year, dataset) 组合的变量数。
 
-## 主题标签体系
+## 跨调查映射
 
-| Tag | 中文 | 覆盖范围 |
-|---|---|---|
-| `demographic` | 人口学特征 | 性别、年龄、民族、户口、婚姻 |
-| `education` | 教育 | 教育程度、学历、受教育年限 |
-| `income` | 收入 | 个人/家庭收入、收入来源 |
-| `labor` | 劳动就业 | 就业状态、职业、工时、工作性质 |
-| `health` | 健康 | 自评健康、就医、医保、健康行为 |
-| `family` | 家庭 | 家庭结构、子女、家务、家庭关系 |
-| `political` | 政治参与 | 政治面貌、政治参与、政治态度 |
-| `trust` | 社会信任 | 人际信任、制度信任 |
-| `subjective` | 主观评价 | 主观阶层、幸福感、满意度 |
-| `attitude` | 价值观态度 | 社会价值观、文化态度 |
+### variable_mapping.json（同名变量映射）
 
-标签定义见 `tags/topic_tags.json`。变量打标采用通配符键 `CGSS:*:varname`，适用于所有年份。
+`data/variable_mapping.json` 记录所有同名变量跨年/跨调查的出现情况，matches 格式 `survey:year:dataset:varname`。
+
+```bash
+# 查看哪些变量名跨 CGSS+CHFS 都存在
+python -c "
+import json
+d = json.load(open('data/variable_mapping.json', encoding='utf-8'))
+cross = [m for m in d['mappings'] if m['n_surveys'] >= 2]
+print(f'跨调查同名变量: {len(cross)} 个')
+"
+```
+
+### cross_survey_mapping.json（异名同义映射）
+
+`data/cross_survey_mapping.json` 记录 CGSS↔CHFS 异名但同义的变量映射（如 CGSS a2 性别 ↔ CHFS a2003 性别）。
+
+当前覆盖 18 个核心主题：gender / birth_year / education / hukou_status / marital_status / family_total_income / family_economic_level / n_houses / house_area_built / house_area_used / own_house / house_mortgage / house_value_other / house_repair_expense / family_member_relation / household_id / province / rural / sampling_weight。
 
 ## AI Agent 集成
 
 AI agent 通过 `--json` 开关获取结构化输出：
 
 ```bash
-# 1. 搜索教育相关变量
-python cli/codebook.py search "教育" --tag education --json
+# 1. 搜索住房相关变量（CHFS）
+python cli/codebook.py search "住房" --survey CHFS --tag housing --json
 
 # 2. 查看变量详情（含取值标签和缺失码）
-python cli/codebook.py variable CGSS 2010 a7a --json
+python cli/codebook.py variable CHFS 2017 c2002 --dataset household --json
 
 # 3. 跨年可用性
-python cli/codebook.py compare a7a --years all --json
+python cli/codebook.py compare c2002 --years all --survey CHFS --dataset household --json
 
 # 4. 导出某主题全部变量
-python cli/codebook.py export --tag income --format json
+python cli/codebook.py export --tag housing --survey CHFS --format json
 ```
 
-### 典型场景：研究"教育对收入的影响"
+### 典型场景：研究"住房资产对家庭收入的影响"（CHFS）
 
 ```bash
-# Step 1: 找教育变量
-python cli/codebook.py search "教育" --tag education --json
-# → a7a（最高教育程度），2010-2023 都有
+# Step 1: 找住房变量
+python cli/codebook.py search "住房" --survey CHFS --tag housing --json
+# → c2001（是否自有住房）、c2002（住房套数）、c2003_1（建筑面积）
 
 # Step 2: 找收入变量
-python cli/codebook.py search "收入" --tag income --json
-# → a62（家庭总收入）、a8a（个人总收入）
+python cli/codebook.py search "收入" --survey CHFS --tag income --json
 
-# Step 3: 查看取值标签和缺失码
-python cli/codebook.py variable CGSS 2010 a7a --json
-python cli/codebook.py variable CGSS 2010 a62 --json
+# Step 3: 查看取值标签
+python cli/codebook.py variable CHFS 2017 c2001 --dataset household --json
+python cli/codebook.py variable CHFS 2017 c2002 --dataset household --json
 
 # Step 4: 跨年对比
-python cli/codebook.py compare a7a --years all --json
-python cli/codebook.py compare a62 --years all --json
+python cli/codebook.py compare c2002 --years all --survey CHFS --dataset household --json
 
 # Step 5: AI agent 据此生成 Stata do 文件
-# （知道 a7a 取值 1-13 对应不同学历，a62 含 -1/-2/-3 缺失码）
+# （知道 c2001 取值 0/1，c2002 为住房套数，2015-2021 都有）
 ```
 
 ## 数据覆盖
 
-| 调查 | 年份 | 变量数 |
+### CGSS（中国综合社会调查）
+
+| 年份 | dataset | 变量数 |
 |---|---|---|
-| CGSS | 2003 | 898 |
-| CGSS | 2005 | 554 |
-| CGSS | 2006 | 1610 |
-| CGSS | 2008 | 1504 |
-| CGSS | 2010 | 871 |
-| CGSS | 2011 | 595 |
-| CGSS | 2012 | 687 |
-| CGSS | 2013 | 722 |
-| CGSS | 2015 | 1398 |
-| CGSS | 2017 | 783 |
-| CGSS | 2018 | 1029 |
-| CGSS | 2021 | 700 |
-| CGSS | 2023 | 439 |
+| 2003, 2005, 2006, 2008, 2010, 2011, 2012, 2013, 2015, 2017, 2018, 2021, 2023 | main | 11790 |
 | **合计** | | **11790** |
 
-CFPS 待接入（Phase 4）。
+### CHFS（中国家庭金融调查）
+
+| 年份 | dataset | 变量数 |
+|---|---|---|
+| 2011 | household / master / individual | 1207 + 5 + 239 |
+| 2013 | household / master / individual | 2018 + 6 + 315 |
+| 2015 | household / master / individual | 3011 + 8 + 309 |
+| 2017 | household / master / individual | 2457 + 15 + 387 |
+| 2019 | household / master / individual | 2656 + 54 + 423 |
+| 2021 | household / individual / master_household / master_individual | 3443 + 408 + 57 + 7 |
+| **合计** | | **17025** |
+
+**CGSS + CHFS 总变量数：28815**
 
 ---
 
-_Phase 3 完成于 2026-07-04_
+_Phase 4 完成于 2026-07-06_

@@ -1,0 +1,117 @@
+{
+  "survey": "CHFS",
+  "year": 2011,
+  "dataset": "master",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2011/chfs2011_master.dta",
+  "n_variables": 5,
+  "n_observations": 8438,
+  "extracted_at": "2026-07-06T10:31:24.783697+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid_2011",
+      "dataset": "master",
+      "label": "household id in 2011",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "province",
+      "dataset": "master",
+      "label": "Province",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%13.0g",
+      "valuelabels": {
+        "11": "Beijing",
+        "12": "Tianjin",
+        "13": "Hebei",
+        "14": "Shanxi",
+        "15": "InnerMongolia",
+        "21": "Liaoning",
+        "22": "Jilin",
+        "23": "Heilongjiang",
+        "31": "Shanghai",
+        "32": "Jiangsu",
+        "33": "Zhejiang",
+        "34": "Anhui",
+        "35": "Fujian",
+        "36": "Jiangxi",
+        "37": "Shandong",
+        "41": "Henan",
+        "42": "Hubei",
+        "43": "Hunan",
+        "44": "Guangdong",
+        "45": "Guangxi",
+        "46": "Hainan",
+        "50": "Chongqing",
+        "51": "Sichuan",
+        "52": "Guizhou",
+        "53": "Yunnan",
+        "61": "Shaanxi",
+        "62": "Gansu",
+        "63": "Qinghai",
+        "64": "Ningxia"
+      },
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "rural",
+      "dataset": "master",
+      "label": "=1 if rural area, stat dept' rule",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "region",
+      "dataset": "master",
+      "label": "1=east, 2=middle, 3=west",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "swgt",
+      "dataset": "master",
+      "label": "sampling weight",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

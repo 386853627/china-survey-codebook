@@ -1,0 +1,3597 @@
+{
+  "survey": "CHFS",
+  "year": 2011,
+  "dataset": "individual",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2011/chfs2011_individual.dta",
+  "n_variables": 239,
+  "n_observations": 29324,
+  "extracted_at": "2026-07-06T10:31:23.277926+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid",
+      "dataset": "individual",
+      "label": "household id",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "pline",
+      "dataset": "individual",
+      "label": "individual id with household",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2000",
+      "dataset": "individual",
+      "label": "¼ÒÍ¥³ÉÔ±¸öÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2001",
+      "dataset": "individual",
+      "label": "ÓëÊÜ·ÃÕß¹ØÏµ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2001p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%20s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2003",
+      "dataset": "individual",
+      "label": "ÐÔ±ð",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2004",
+      "dataset": "individual",
+      "label": "³£×¡Óë·ñ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2005",
+      "dataset": "individual",
+      "label": "³öÉúÄê",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2006",
+      "dataset": "individual",
+      "label": "³öÉúÔÂ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2008",
+      "dataset": "individual",
+      "label": "³öÉúÄêÔÂÒõÀú»òÑôÀú",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2009",
+      "dataset": "individual",
+      "label": "ÊôÏà",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2010",
+      "dataset": "individual",
+      "label": "¹ú¼®",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2011",
+      "dataset": "individual",
+      "label": "Ãñ×å",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2012",
+      "dataset": "individual",
+      "label": "ÎÄ»¯³Ì¶È",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2012a",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ¹úÍâ»ñµÃÑ§Î»",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2015",
+      "dataset": "individual",
+      "label": "ÕþÖÎÃæÃ²",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2017",
+      "dataset": "individual",
+      "label": "È¥ÄêÊÇ·ñ³£×¡",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2018",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ±¾ÊÐ»§¿Ú",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2019",
+      "dataset": "individual",
+      "label": "»§¿ÚËùÔÚÊ¡",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%20s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2020",
+      "dataset": "individual",
+      "label": "»§¿ÚËùÔÚÊÐ/ÏØ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%40s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2021",
+      "dataset": "individual",
+      "label": "¿ªÊ¼×¡ÔÚÕâÀïÄê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2022",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÅ©Òµ»§¿Ú",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2023",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ´óÐÕ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2024",
+      "dataset": "individual",
+      "label": "»éÒö×´¿ö",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2024p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2025",
+      "dataset": "individual",
+      "label": "½á»é(Í¬¾Ó)Äê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2028",
+      "dataset": "individual",
+      "label": "Ç×ÐÖµÜ¸öÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2029",
+      "dataset": "individual",
+      "label": "Ç×½ãÃÃ¸öÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a2030",
+      "dataset": "individual",
+      "label": "ÅÅÐÐ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3000",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÓÐ¹¤×÷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3001",
+      "dataset": "individual",
+      "label": "Ã»¹¤×÷µÄÔ­Òò",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3001p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3002",
+      "dataset": "individual",
+      "label": "¼¸·Ý¹¤×÷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3003",
+      "dataset": "individual",
+      "label": "¹¤×÷ÐÔÖÊ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3005",
+      "dataset": "individual",
+      "label": "Ö°Òµ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3006",
+      "dataset": "individual",
+      "label": "ÐÐÒµ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3006p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3007",
+      "dataset": "individual",
+      "label": "¹¤×÷ÄêÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3008",
+      "dataset": "individual",
+      "label": "×¨Òµ¼¼ÊõÖ°³Æ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3009",
+      "dataset": "individual",
+      "label": "¹¤×÷Ö°Îñ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3009p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3010",
+      "dataset": "individual",
+      "label": "µ£ÈÎÖ°ÎñÄêÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3011",
+      "dataset": "individual",
+      "label": "È¥Äê¹¤×÷ÔÂÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3012",
+      "dataset": "individual",
+      "label": "Ã¿ÖÜ¹¤×÷ÌìÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3013",
+      "dataset": "individual",
+      "label": "Ã¿Ìì¹¤×÷Ð¡Ê±Êý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3014",
+      "dataset": "individual",
+      "label": "¹¤×÷µ¥Î»ÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3014p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3015",
+      "dataset": "individual",
+      "label": "±àÖÆÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3016",
+      "dataset": "individual",
+      "label": "µ¥Î»ÐÔÖÊ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3016p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%20s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3018a",
+      "dataset": "individual",
+      "label": "µ¥Î»ÊÇ·ñÉÏÊÐ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3020",
+      "dataset": "individual",
+      "label": "È¥ÄêÊµÊÕ»õ±ÒÊÕÈë(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3022",
+      "dataset": "individual",
+      "label": "Ë°ºó½±½ðÊÕÈë(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3023",
+      "dataset": "individual",
+      "label": "Ë°ºó²¹ÌùÊÕÈë»òÊµÎïÊÕÈë(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3024",
+      "dataset": "individual",
+      "label": "¸öË°×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3028",
+      "dataset": "individual",
+      "label": "µÚ¶þ¹¤×÷ÐÔÖÊ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3029",
+      "dataset": "individual",
+      "label": "È¥ÄêµÚ¶þ¹¤×÷ÔÂÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3030",
+      "dataset": "individual",
+      "label": "µÚ¶þ¹¤×÷ÌìÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3031",
+      "dataset": "individual",
+      "label": "µÚ¶þ¹¤×÷Ð¡Ê±Êý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3036",
+      "dataset": "individual",
+      "label": "µÚ¶þ¹¤×÷µÄË°ºóÊÕÈë(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3037",
+      "dataset": "individual",
+      "label": "µÚ¶þ¹¤×÷Ëù½É¸öË°(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3038",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÔø¾­¹¤×÷¹ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3039",
+      "dataset": "individual",
+      "label": "¿ªÊ¼¹¤×÷ËêÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3040",
+      "dataset": "individual",
+      "label": "Ôø´ÓÊÂ¹¤×÷·ÝÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%34s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1001",
+      "dataset": "individual",
+      "label": "ÍËÐÝÑøÀÏ·½Ê½",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1002",
+      "dataset": "individual",
+      "label": "Éç»áÑøÀÏ±£ÏÕÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1003",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ¿ªÊ¼ÁìÉç±£",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1004",
+      "dataset": "individual",
+      "label": "ÁìÈ¡Äê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005",
+      "dataset": "individual",
+      "label": "ÉÏÔÂÁìÈ¡ÑøÀÏ½ðÊý¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1007",
+      "dataset": "individual",
+      "label": "±£·ÑÓÉË­½ÉÄÉ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1008",
+      "dataset": "individual",
+      "label": "ÉÏÔÂ×Ô¼º½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1010",
+      "dataset": "individual",
+      "label": "Éç±£¸öÈËÕË»§Óà¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1011",
+      "dataset": "individual",
+      "label": "Éç±£½É·ÑÓÐÎÞÖÐ¶Ï¹ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1012",
+      "dataset": "individual",
+      "label": "ÖÐ¶Ï½É·ÑÔ­Òò",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1012p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%99s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1013",
+      "dataset": "individual",
+      "label": "ÖÐ¶ÏÔÂÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1014",
+      "dataset": "individual",
+      "label": "²Î¼ÓÐÂÅ©±£Äê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1015",
+      "dataset": "individual",
+      "label": "ÄêÐÂÅ©±£½É·ÑÓÐÎÞÖÐ¶Ï",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1016a",
+      "dataset": "individual",
+      "label": "ÐÂÅ©±£Ò»´ÎÐÔ½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1016",
+      "dataset": "individual",
+      "label": "ÎªÐÂÅ©±£½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1017",
+      "dataset": "individual",
+      "label": "Õþ¸®²¹Öú½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1018",
+      "dataset": "individual",
+      "label": "ÖÐ¶Ï½É·ÑÔ­Òò",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1019",
+      "dataset": "individual",
+      "label": "Àë/ÍËÐÝ½ðÊÇ·ñÁìÈ¡",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1020",
+      "dataset": "individual",
+      "label": "ÀëÐÝ»¹ÊÇÍËÐÝ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1021",
+      "dataset": "individual",
+      "label": "ÀëÐÝÄê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1022",
+      "dataset": "individual",
+      "label": "ÉÏÔÂÀëÐÝ¹¤×Ê(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1023",
+      "dataset": "individual",
+      "label": "ÍËÐÝÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1023p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%30s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1024",
+      "dataset": "individual",
+      "label": "ÍËÐÝÄê·Ý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1025",
+      "dataset": "individual",
+      "label": "ÉÏÔÂÍËÐÝ¹¤×Ê(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1026",
+      "dataset": "individual",
+      "label": "ÓÐÎÞÆóÒµÄê½ð",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1027",
+      "dataset": "individual",
+      "label": "ÁìÈ¡ÆóÒµÄê½ðÓë·ñ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1028",
+      "dataset": "individual",
+      "label": "ÉÏÔÂÁìÈ¡ÆóÒµÄê½ðÊý¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1029",
+      "dataset": "individual",
+      "label": "ÉÏÔÂ×Ô¼º½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1030",
+      "dataset": "individual",
+      "label": "ÉÏÔÂµ¥Î»½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031",
+      "dataset": "individual",
+      "label": "ÆóÒµÄê½ð¸öÈËÕË»§Óà¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1032",
+      "dataset": "individual",
+      "label": "Ö÷ÒªÑøÀÏ·½Ê½",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1032p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2001",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÓµÓÐÉç»áÒ½ÁÆ±£ÏÕ£¬²»°üÀ¨ÉÌÒµÒ½ÁÆ±£ÏÕ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2003",
+      "dataset": "individual",
+      "label": "Ä¿Ç°×îÖ÷ÒªÒ½±£ÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2003p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2004",
+      "dataset": "individual",
+      "label": "½ÉÄÉÒ½±£±£·Ñ(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2005",
+      "dataset": "individual",
+      "label": "¸ÃÒ½±£ÓÐÎÞ¸öÈËÕË»§",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006",
+      "dataset": "individual",
+      "label": "¸öÈËÕË»§Óà¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2019",
+      "dataset": "individual",
+      "label": "ÉÏ¸öÔÂÒ½ÁÆ×ÜÖ§³ö(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2020",
+      "dataset": "individual",
+      "label": "ÆäÖÐÒ½±£Ö§¸¶½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2021",
+      "dataset": "individual",
+      "label": "ÉíÌå×´¿ö",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3001",
+      "dataset": "individual",
+      "label": "ÓÐÎÞÊ§Òµ±£ÏÕ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3002",
+      "dataset": "individual",
+      "label": "È¥ÄêÊÇ·ñÊ§Òµ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3003",
+      "dataset": "individual",
+      "label": "ÊÇ·ñµÇ¼ÇÊ§Òµ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3004",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÁìÈ¡Ê§Òµ±£ÏÕ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f3005",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÁìÈ¡Ê§Òµ±£ÏÕ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4001",
+      "dataset": "individual",
+      "label": "ÊÇ·ñÓÐ×¡·¿¹«»ý½ð",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4004",
+      "dataset": "individual",
+      "label": "Ä¿Ç°ÊÇ·ñ¼ÌÐø½ÉÄÉ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4005",
+      "dataset": "individual",
+      "label": "È¥ÄêÃ¿ÔÂ½ÉÄÉ½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4007",
+      "dataset": "individual",
+      "label": "ÒÑÀÛ¼Æ½ÉÄÉÔÂÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008",
+      "dataset": "individual",
+      "label": "Ä¿Ç°¹«»ý½ðÕË»§Óà¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4009",
+      "dataset": "individual",
+      "label": "È¥ÄêÊÇ·ñÌáÈ¡/Ê¹ÓÃ×¡·¿¹«»ý½ð",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4010",
+      "dataset": "individual",
+      "label": "Ê¹ÓÃ¹«»ý½ðÔ­Òò",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4010p",
+      "dataset": "individual",
+      "label": "ÆäËü",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%18s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011",
+      "dataset": "individual",
+      "label": "È¥ÄêÊ¹ÓÃ×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6101",
+      "dataset": "individual",
+      "label": "¹ºÂòÈËÊÙ±£ÏÕÕß",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6103",
+      "dataset": "individual",
+      "label": "×Ü±£¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6104",
+      "dataset": "individual",
+      "label": "±£ÏÕÀàÐÍ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6104p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%244s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6105",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ·Öºì",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6106",
+      "dataset": "individual",
+      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6107",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ·µ»¹±¾½ð",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6108",
+      "dataset": "individual",
+      "label": "È¥Äê·µ»¹±¾½ð(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6109",
+      "dataset": "individual",
+      "label": "¶à¾Ã½ÉÄÉÒ»´Î",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6109p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%23s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6110",
+      "dataset": "individual",
+      "label": "Ã¿´Î½ÉÄÉ±£·Ñ½ð¶î£¨Ôª£©",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6111",
+      "dataset": "individual",
+      "label": "Ðë½ÉÄÉÄêÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6112",
+      "dataset": "individual",
+      "label": "ÒÑ½ÉÄÉÔÂÊý",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6118",
+      "dataset": "individual",
+      "label": "È¥ÄêÊÇ·ñ»ñµÃÈËÊÙ±£ÏÕÅâ¸¶",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6119",
+      "dataset": "individual",
+      "label": "Åâ¸¶½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6201",
+      "dataset": "individual",
+      "label": "½¡¿µ±£ÏÕ¹ºÂòÕß",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6203",
+      "dataset": "individual",
+      "label": "È¥Äê±£·Ñ×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6204",
+      "dataset": "individual",
+      "label": "È¥Äê±¨Ïú×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6301",
+      "dataset": "individual",
+      "label": "ÉÌÒµÑøÀÏ±£ÏÕ¹ºÂòÕß",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6302",
+      "dataset": "individual",
+      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6304",
+      "dataset": "individual",
+      "label": "È¥Äê±¨Ïú½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6305",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ·Öºì",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6306",
+      "dataset": "individual",
+      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6307",
+      "dataset": "individual",
+      "label": "Ä¿Ç°ÊÇ·ñ¿ªÊ¼ÁìÈ¡",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6308",
+      "dataset": "individual",
+      "label": "ÉÏÔÂÁìÈ¡½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6401",
+      "dataset": "individual",
+      "label": "ÉÌÒµ²Æ²ú±£ÏÕ×Ü±£¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402p",
+      "dataset": "individual",
+      "label": "ÆäËû",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%12s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6403",
+      "dataset": "individual",
+      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6404",
+      "dataset": "individual",
+      "label": "ÊÇ·ñ·Öºì",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6405",
+      "dataset": "individual",
+      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6406",
+      "dataset": "individual",
+      "label": "È¥ÄêÅâ¸¶½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6501",
+      "dataset": "individual",
+      "label": "ÆäËüÉÌÒµ±£ÏÕÃû³Æ",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%50s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6502",
+      "dataset": "individual",
+      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6503",
+      "dataset": "individual",
+      "label": "È¥ÄêÅâ¸¶½ð¶î(Ôª)",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhead",
+      "dataset": "individual",
+      "label": "1=»§Ö÷,0=·Ç»§Ö÷",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_1_mc",
+      "dataset": "individual",
+      "label": "a3041_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_2_mc",
+      "dataset": "individual",
+      "label": "a3041_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_3_mc",
+      "dataset": "individual",
+      "label": "a3041_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_4_mc",
+      "dataset": "individual",
+      "label": "a3041_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_5_mc",
+      "dataset": "individual",
+      "label": "a3041_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_6_mc",
+      "dataset": "individual",
+      "label": "a3041_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3041_7_mc",
+      "dataset": "individual",
+      "label": "a3041_7: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_1_mc",
+      "dataset": "individual",
+      "label": "a3042_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_2_mc",
+      "dataset": "individual",
+      "label": "a3042_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_3_mc",
+      "dataset": "individual",
+      "label": "a3042_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_4_mc",
+      "dataset": "individual",
+      "label": "a3042_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_5_mc",
+      "dataset": "individual",
+      "label": "a3042_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_6_mc",
+      "dataset": "individual",
+      "label": "a3042_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_7_mc",
+      "dataset": "individual",
+      "label": "a3042_7: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_8_mc",
+      "dataset": "individual",
+      "label": "a3042_8: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_9_mc",
+      "dataset": "individual",
+      "label": "a3042_9: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_10_mc",
+      "dataset": "individual",
+      "label": "a3042_10: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_11_mc",
+      "dataset": "individual",
+      "label": "a3042_11: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_12_mc",
+      "dataset": "individual",
+      "label": "a3042_12: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_13_mc",
+      "dataset": "individual",
+      "label": "a3042_13: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_14_mc",
+      "dataset": "individual",
+      "label": "a3042_14: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_15_mc",
+      "dataset": "individual",
+      "label": "a3042_15: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_16_mc",
+      "dataset": "individual",
+      "label": "a3042_16: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_17_mc",
+      "dataset": "individual",
+      "label": "a3042_17: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_18_mc",
+      "dataset": "individual",
+      "label": "a3042_18: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_19_mc",
+      "dataset": "individual",
+      "label": "a3042_19: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_20_mc",
+      "dataset": "individual",
+      "label": "a3042_20: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3042_21_mc",
+      "dataset": "individual",
+      "label": "a3042_21: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_1_mc",
+      "dataset": "individual",
+      "label": "f2002_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_2_mc",
+      "dataset": "individual",
+      "label": "f2002_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_3_mc",
+      "dataset": "individual",
+      "label": "f2002_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_4_mc",
+      "dataset": "individual",
+      "label": "f2002_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_5_mc",
+      "dataset": "individual",
+      "label": "f2002_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_6_mc",
+      "dataset": "individual",
+      "label": "f2002_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_7_mc",
+      "dataset": "individual",
+      "label": "f2002_7: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2002_8_mc",
+      "dataset": "individual",
+      "label": "f2002_8: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_1_mc",
+      "dataset": "individual",
+      "label": "f6001_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_2_mc",
+      "dataset": "individual",
+      "label": "f6001_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_3_mc",
+      "dataset": "individual",
+      "label": "f6001_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_4_mc",
+      "dataset": "individual",
+      "label": "f6001_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_5_mc",
+      "dataset": "individual",
+      "label": "f6001_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6001_6_mc",
+      "dataset": "individual",
+      "label": "f6001_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_1_mc",
+      "dataset": "individual",
+      "label": "f6102_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_2_mc",
+      "dataset": "individual",
+      "label": "f6102_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_3_mc",
+      "dataset": "individual",
+      "label": "f6102_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_4_mc",
+      "dataset": "individual",
+      "label": "f6102_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_5_mc",
+      "dataset": "individual",
+      "label": "f6102_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_6_mc",
+      "dataset": "individual",
+      "label": "f6102_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_7_mc",
+      "dataset": "individual",
+      "label": "f6102_7: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_8_mc",
+      "dataset": "individual",
+      "label": "f6102_8: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_9_mc",
+      "dataset": "individual",
+      "label": "f6102_9: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6102_10_mc",
+      "dataset": "individual",
+      "label": "f6102_10: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_1_mc",
+      "dataset": "individual",
+      "label": "f6202_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_2_mc",
+      "dataset": "individual",
+      "label": "f6202_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_3_mc",
+      "dataset": "individual",
+      "label": "f6202_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_4_mc",
+      "dataset": "individual",
+      "label": "f6202_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6202_5_mc",
+      "dataset": "individual",
+      "label": "f6202_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_1_mc",
+      "dataset": "individual",
+      "label": "f6402_1: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_2_mc",
+      "dataset": "individual",
+      "label": "f6402_2: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_3_mc",
+      "dataset": "individual",
+      "label": "f6402_3: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_4_mc",
+      "dataset": "individual",
+      "label": "f6402_4: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_5_mc",
+      "dataset": "individual",
+      "label": "f6402_5: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_6_mc",
+      "dataset": "individual",
+      "label": "f6402_6: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f6402_7_mc",
+      "dataset": "individual",
+      "label": "f6402_7: multiple choice",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%8.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3020_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3022_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "a3036_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1010_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1031_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f2006_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4008_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4011_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1005_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1022_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f1025_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "f4005_imp",
+      "dataset": "individual",
+      "label": "",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "labor_inc",
+      "dataset": "individual",
+      "label": "ind. labor income",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "censor_labor_inc",
+      "dataset": "individual",
+      "label": "=1 if labor_inc right censored at 2000000",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "censor_f1031",
+      "dataset": "individual",
+      "label": "=1 if f1031 right censored at 2000000",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "censor_f1031_imp",
+      "dataset": "individual",
+      "label": "=1 if f1031_imp right censored at 2000000",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "respond",
+      "dataset": "individual",
+      "label": "1=ÊÜ·ÃÕß,0=·ÇÊÜ·ÃÕß",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}

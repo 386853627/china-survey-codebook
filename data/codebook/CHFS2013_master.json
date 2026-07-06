@@ -1,0 +1,102 @@
+{
+  "survey": "CHFS",
+  "year": 2013,
+  "dataset": "master",
+  "source_file": "D:/AI agent/Workbuddy工作/问卷codebook/chfs/chfs2013/chfs2013_master.dta",
+  "n_variables": 6,
+  "n_observations": 28141,
+  "extracted_at": "2026-07-06T10:31:29.085401+08:00",
+  "etl_version": "1.1",
+  "variables": [
+    {
+      "varname": "hhid_2011",
+      "dataset": "master",
+      "label": "household id in 2011",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "hhid_2013",
+      "dataset": "master",
+      "label": "household id in 2013",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "prov",
+      "dataset": "master",
+      "label": "prov",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%16s",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "rural",
+      "dataset": "master",
+      "label": "=1 if rural area, stat dept'rule",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%10.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "swgt",
+      "dataset": "master",
+      "label": "sampling weight",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    },
+    {
+      "varname": "region",
+      "dataset": "master",
+      "label": "1=east,2=middle,3=west",
+      "label_en": "",
+      "vtype": "numeric",
+      "format": "%9.0g",
+      "valuelabels": {},
+      "missing_rules": {
+        "system": [],
+        "user": []
+      },
+      "topic_tags": [],
+      "cross_year_match": {}
+    }
+  ]
+}
