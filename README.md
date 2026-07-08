@@ -52,6 +52,11 @@ china-survey-codebook/
 ├── docs/
 │   ├── SCHEMA.md                  # JSON Schema 文档
 │   └── USAGE.md                   # 使用说明
+├── test/
+│   ├── README.md                  # 测试场景说明
+│   ├── test_rural_college.py              # CHFS 2021 农村大学生测试
+│   ├── test_urban_college_2011.py         # CHFS 2011 城镇大学生测试
+│   └── test_rural_college_cgss2023.py     # CGSS 2023 农村大学生测试
 ├── PLAN.md                        # 实施计划
 └── README.md
 ```
@@ -145,6 +150,71 @@ python cli/codebook.py export --tag housing --survey CHFS --format json
 # 5. AI agent 据此生成 Stata do 文件
 #    （知道 c2001 取值 0/1，c2002 住房套数，2015-2021 都有）
 ```
+
+## 测试验证与演示
+
+> 三个端到端测试验证 codebook 元数据在实际研究场景中的可用性。
+> 详见 [test/README.md](test/README.md)。
+
+| 测试 | 调查 | 年份 | 场景 | 验证点 |
+|---|---|---|---|---|
+| CHFS 2021 农村大学生 | CHFS | 2021 | 农业户口 + 大专以上样本量 | 标签正常、取值标签完整、category 读入 |
+| CHFS 2011 城镇大学生 | CHFS | 2011 | 非农业户口 + 大专以上样本量 | GBK 乱码修复、取值标签缺失兜底、float64 读入 |
+| CGSS 2023 农村大学生 | CGSS | 2023 | 农业户口 + 大专以上样本量 | UTF-8 标签、跨调查户口变量映射 |
+
+**测试 1：CHFS 2021 农村大学生**
+
+从 codebook 查询变量编码 → 读 DTA → 按条件统计，验证元数据完整可用。
+
+```bash
+# 从 codebook 查到 a2022（户口）取值：1=农业, 2=非农业, 3=统一居民户口
+# 查到 a2012（教育）取值：6=大专/高职, 7=本科, ..., 9=博士
+python cli/codebook.py variable CHFS 2021 a2022 --dataset individual
+python cli/codebook.py variable CHFS 2021 a2012 --dataset individual
+```
+
+```python
+# 验证脚本（约 100 行）的核心逻辑
+df = pd.read_stata("chfs/chfs2021/chfs2021_individual.dta", columns=["a2022", "a2012"])
+is_rural = df["a2022"] == "1 农业"
+is_college = df["a2012"].isin({"6 大专/高职", "7 大学本科", "8 硕士研究生", "9 博士研究生"})
+rural_college_count = (is_rural & is_college).sum()
+# → 成功统计农户大学生样本量，codebook 元数据与 DTA 实际数据一致
+```
+
+**测试 2：CHFS 2011 城镇大学生**
+
+验证 label 乱码修复机制（`encode('latin-1').decode('gbk')`）和取值标签缺失时的兜底策略。
+
+```python
+# 乱码修复（CHFS 2011/2013 特有）
+def fix_gbk(s):
+    return s.encode("latin-1").decode("gbk")
+
+# 取值标签缺失时，参照 CHFS 问卷手工指定编码
+# a2022: 1=农业, 2=非农业
+# a2012: 1..5=中学及以下, 6=大专, 7=本科, 8=硕士, 9=博士
+df = pd.read_stata("chfs/chfs2011/chfs2011_individual.dta", columns=["a2022", "a2012"])
+is_urban = df["a2022"] == 2
+is_college = df["a2012"] >= 6
+# → 即使 codebook 元数据不完美，测试场景仍然可执行
+```
+
+**测试 3：CGSS 2023 农村大学生**
+
+验证 CGSS 跨调查覆盖，确认 codebook 中 CGSS 和 CHFS 都有对应的户口变量（a18 ↔ a2022）和学历变量（a7a ↔ a2012）。
+
+```python
+# CGSS 2023 取值标签无数字前缀，直接字符串比较
+# a18: 1=农业户口, 2=非农业户口, 3=居民户口
+# a7a: 9=大专, 10=本科, 11=硕士, 12=博士, 13=博士(与 12 区分)
+df = pd.read_stata("cgss/CGSS2023.dta", columns=["a18", "a7a"])
+is_rural = df["a18"] == "农业户口"
+is_college = df["a7a"].isin({"大专", "大学本科", "硕士研究生", "博士"})
+# → 与 CHFS 测试形成对照，验证跨调查一致性
+```
+
+三个测试覆盖了 2 个调查 × 3 种 DTA 读入行为 × 2 种编码场景，验证了 codebook 元数据在生产研究中的可用性。
 
 ## 许可证
 

@@ -227,4 +227,111 @@ python cli/codebook.py compare c2002 --years all --survey CHFS --dataset househo
 
 ---
 
+## 实际研究场景：农户大学生样本统计
+
+以"研究农业户口大学生的教育和就业问题"为例，展示如何在真实研究中使用 codebook 完成从变量定位到数据分析的完整链路。
+
+### Step 1：搜索目标变量
+
+先用 CLI 搜索户口和学历变量：
+
+```bash
+# 在 CHFS 中搜索户口变量
+python cli/codebook.py search "户口" --survey CHFS --dataset individual
+
+# 在 CHFS 中搜索教育变量
+python cli/codebook.py search "教育" --survey CHFS --dataset individual
+
+# 在 CGSS 中搜索户口变量
+python cli/codebook.py search "户口" --survey CGSS
+
+# 在 CGSS 中搜索教育变量
+python cli/codebook.py search "教育" --survey CGSS
+```
+
+### Step 2：查看变量编码
+
+确定目标变量后，查看具体的取值标签和缺失值规则：
+
+```bash
+# CHFS 2021 户口编码
+python cli/codebook.py variable CHFS 2021 a2022 --dataset individual
+# → 1=农业, 2=非农业, 3=统一居民户口（无需手工翻问卷）
+
+# CHFS 2021 教育编码
+python cli/codebook.py variable CHFS 2021 a2012 --dataset individual
+# → 6=大专/高职, 7=本科, 8=硕士, 9=博士
+
+# CGSS 2023 户口编码
+python cli/codebook.py variable CGSS 2023 a18
+# → 1=农业户口, 2=非农业户口, 3=居民户口(以前是非农户口)
+
+# CGSS 2023 教育编码
+python cli/codebook.py variable CGSS 2023 a7a
+# → 9=大专, 10=本科, 11=硕士, 12=博士, 13=博士(与 12 区分)
+```
+
+### Step 3：跨年可用性确认
+
+确认变量在多个年份都存在，且编码一致：
+
+```bash
+# CHFS 户口变量跨年对比
+python cli/codebook.py compare a2022 --years all --survey CHFS --dataset individual
+# → Label 一致: 是（各年都是"户口登记状况"）
+
+# CHFS 教育变量跨年对比
+python cli/codebook.py compare a2012 --years all --survey CHFS --dataset individual
+# → Label 一致: 是
+```
+
+### Step 4：跨调查映射（CGSS ↔ CHFS）
+
+需要合并 CGSS 和 CHFS 数据时，用跨调查映射找对应变量：
+
+```bash
+# 查看 cross_survey_mapping.json 中教育变量的映射
+python -c "
+import json
+m = json.load(open('data/cross_survey_mapping.json', encoding='utf-8'))
+edu = m['topics']['education']
+print('CGSS:', [v['varname'] for v in edu['CGSS'] if v['year']==2023])
+print('CHFS:', [v['varname'] for v in edu['CHFS'] if v['year']==2021])
+"
+# → CGSS: ['a7a']  ↔  CHFS: ['a2012']
+```
+
+### Step 5：生成数据分析代码
+
+```python
+import pandas as pd
+
+# CHFS 2021 — 读 DTA，按编码筛选
+df = pd.read_stata("chfs/chfs2021/chfs2021_individual.dta",
+                    columns=["a2022", "a2012"])
+is_rural = df["a2022"] == "1 农业"           # codebook 确认取值
+is_college = df["a2012"].isin({
+    "6 大专/高职", "7 大学本科",
+    "8 硕士研究生", "9 博士研究生"
+})
+rural_college = (is_rural & is_college).sum()
+print(f"CHFS 2021 农户大学生样本: {rural_college}")
+
+# 如需合并多轮数据，先用 compare 确认跨年变量名和编码一致
+```
+
+### 总结
+
+| 步骤 | 工具 | 产出 |
+|---|---|---|
+| 找变量 | `search` | 变量名 + 数据源 |
+| 查编码 | `variable` | 取值标签 + 缺失码 |
+| 对年份 | `compare` | 跨年一致性确认 |
+| 跨调查 | `cross_survey_mapping.json` | CGSS↔CHFS 映射 |
+| 写代码 | codebook 元数据 | 准确的筛选条件 |
+
+> 完整测试脚本见 [test/](../test/) 目录。
+
+---
+
 _Phase 4 完成于 2026-07-06_

@@ -356,19 +356,21 @@ python cli/codebook.py surveys
 
 **任务清单**：
 
-#### P5-1: 修复 CHFS 2011/2013 标签 GBK 乱码
-- [ ] 修改 `etl/extract_metadata.py`，增加编码检测逻辑
-- [ ] 对 CHFS 2011/2013 的 .dta 文件重跑 ETL，生成正确 UTF-8 标签
-- [ ] 验证：`fix_gkb(label)` 不再需要，JSON 标签直接可读
-- [ ] 重建 SQLite DB
+#### P5-1: 修复 CHFS 2011/2013 标签 GBK 乱码 ✅ 完成（2026-07-07）
+- [x] 修改 `etl/extract_metadata.py`，增加编码检测逻辑
+- [x] 对 CHFS 2011/2013 的 .dta 文件重跑 ETL，生成正确 UTF-8 标签
+- [x] 验证：`fix_gkb(label)` 不再需要，JSON 标签直接可读
+- [x] 重建 SQLite DB
 
 **方案**：pandas `read_stata` 对 CHFS 2011/2013 .dta 文件以 latin-1 解码了 GBK 字节。需在 ETL 中检测并修复：`label.encode('latin-1').decode('gbk')`，或指定 `convert_categoricals=False` 后手动解码。
 
-#### P5-2: 补全 CHFS 2011/2013 取值标签
-- [ ] 排查 CHFS 2011/2013 .dta 中 valuelabels 缺失原因（DTA 文件本身无标签 vs pandas 未读取）
-- [ ] 若 DTA 本身有标签集（labelset）但未绑定变量，手工建立变量→编码映射
-- [ ] 若 DTA 本身无标签，参照 CHFS 问卷文档补录核心变量（a2012 文化程度 / a2022 户口等）的编码
-- [ ] 写入 JSON 并重建 DB
+**实际做法**：创建 `etl/fix_chfs_labels.py`，用 CHFS 官方问卷 JSON（`chfs/chfs20XX/CHFS20XX_codebook.json`）覆盖乱码标签和填充空取值标签。问卷未匹配的变量再尝试 GBK→UTF-8 修复。CHFS 2011 household 补入 1085 条 valuelabels，CHFS 2013 household 补入 2399 条。
+
+#### P5-2: 补全 CHFS 2011/2013 取值标签 ✅ 完成（2026-07-07）
+- [x] 排查 CHFS 2011/2013 .dta 中 valuelabels 缺失原因（DTA 文件本身无标签 vs pandas 未读取）
+- [x] 若 DTA 本身有标签集（labelset）但未绑定变量，手工建立变量→编码映射
+- [x] 若 DTA 本身无标签，参照 CHFS 问卷文档补录核心变量（a2012 文化程度 / a2022 户口等）的编码
+- [x] 写入 JSON 并重建 DB
 
 #### P5-3: CGSS JSON 补 dataset 字段
 - [ ] 批量给 13 个 CGSS JSON 顶层加 `"dataset": "main"`
@@ -477,7 +479,7 @@ Agent 流程：
 | 2. 全量入库 + SQLite | ✅ 完成 | 2026-07-04 | 13年/11790变量/17.5MB DB/955映射 |
 | 3. CLI + Tag 体系 | ✅ 完成 | 2026-07-04 | 258变量打标/5子命令/DB回填 |
 | 4. CHFS + 文档 | ✅ 完成 | 2026-07-06 | CHFS 6年19文件/17025变量/14类tag/18跨调查映射 |
-| 5. 质量修复 + 查询辅助层 | 📋 计划中 | — | 6项问题修复/Python查询API/跨调查编码归一 |
+| 5. 质量修复 + 查询辅助层 | 🔄 进行中 | — | P5-1/P5-2 ✅, P5-3~P5-6 📋 |
 
 ---
 
