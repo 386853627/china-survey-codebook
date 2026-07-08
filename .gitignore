@@ -4,6 +4,7 @@
 
 # ---- 原始调查数据（受使用协议保护，绝不公开）----
 cgss/
+chfs/
 cfps/
 clds/
 *.dta
@@ -75,6 +76,9 @@ desktop.ini
 # ---- WorkBuddy / AI agent 工作目录（本地私有）----
 .workbuddy/
 .learnings/
+
+# ---- 工作计划（本地私有）----
+PLAN.md
 
 # ---- 系统文件 ----
 *.bak
