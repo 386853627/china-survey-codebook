@@ -26,7 +26,7 @@
     {
       "varname": "a1003",
       "dataset": "household",
-      "label": "±¾·¿ÎÝ¾Ó×¡¼ÒÍ¥Êý",
+      "label": "本房屋居住家庭数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -41,11 +41,14 @@
     {
       "varname": "a1007",
       "dataset": "household",
-      "label": "Ö÷Òª¾­¼Ã»î¶¯",
+      "label": "主要经济活动",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "不是"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -56,11 +59,14 @@
     {
       "varname": "a1008",
       "dataset": "household",
-      "label": "ÊÇ·ñ³£×¡±¾ÊÐ",
+      "label": "是否常住本市",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有（更换访问家庭）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -71,11 +77,15 @@
     {
       "varname": "a1009",
       "dataset": "household",
-      "label": "ÓÐÎÞÍâ¹ú¹ú¼®",
+      "label": "有无外国国籍",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "全家都是（更换访问家庭）",
+        "3": "没有",
+        "2": "有些是"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -86,7 +96,7 @@
     {
       "varname": "a1010",
       "dataset": "household",
-      "label": "±¾Ð¡ÇøÄÚ±¾×¡Õ¬Íâ·¿ÎÝÊý",
+      "label": "本小区内本住宅外房屋数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -101,7 +111,7 @@
     {
       "varname": "a1011",
       "dataset": "household",
-      "label": "´å¾ÓÍâ³ý´ËÍâµÄ×¡·¿Ì×Êý",
+      "label": "村居外除此外的住房套数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -116,11 +126,22 @@
     {
       "varname": "a1014",
       "dataset": "household",
-      "label": "Óë»§Ö÷µÄ¹ØÏµ",
+      "label": "与户主的关系",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "本人",
+        "2": "不包括保姆、司机等",
+        "7": "儿媳/女婿",
+        "8": "孙子/孙女",
+        "3": "父母",
+        "9": "孙媳/孙女婿",
+        "4": "岳父母/公婆",
+        "10": "兄弟姐妹",
+        "5": "祖父母/外祖父母",
+        "11": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -131,7 +152,7 @@
     {
       "varname": "a1014p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -146,7 +167,7 @@
     {
       "varname": "a2000",
       "dataset": "household",
-      "label": "¼ÒÍ¥³ÉÔ±¸öÊý",
+      "label": "家庭成员个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -266,7 +287,7 @@
     {
       "varname": "a4001p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -416,7 +437,7 @@
     {
       "varname": "a4002p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -431,11 +452,17 @@
     {
       "varname": "a4003",
       "dataset": "household",
-      "label": "Í¶×Ê·çÏÕÌ¬¶È",
+      "label": "投资风险态度",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "高风险、高回报的项目",
+        "4": "略低风险、略低回报的项目",
+        "2": "略高风险、略高回报的项目",
+        "5": "不愿意承担任何风险",
+        "3": "平均风险、平均回报的项目"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -446,11 +473,17 @@
     {
       "varname": "a4004",
       "dataset": "household",
-      "label": "×Ê²ú¼ÛÖµÉÏÉýÊÇ·ñÔ¸Òâ¶à»¨Ç®",
+      "label": "资产价值上升是否愿意多花钱",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "很愿意",
+        "4": "不愿意",
+        "2": "愿意",
+        "5": "很不愿",
+        "3": "一般"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -461,11 +494,17 @@
     {
       "varname": "a4005",
       "dataset": "household",
-      "label": "Ô¤ÆÚÎ´À´¾­¼ÃÐÎÊÆ",
+      "label": "预期未来经济形势",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "非常好",
+        "4": "较差",
+        "2": "较好",
+        "5": "非常差",
+        "3": "几乎不变"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -476,11 +515,17 @@
     {
       "varname": "a4006",
       "dataset": "household",
-      "label": "±¾µØÉç»áÖÎ°²Çé¿ö",
+      "label": "本地社会治安情况",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "非常好",
+        "4": "不太好",
+        "2": "好",
+        "5": "很差",
+        "3": "一般"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -491,11 +536,17 @@
     {
       "varname": "a4007",
       "dataset": "household",
-      "label": "Î´À´Ò»ÄêÔ¤ÆÚÀûÂÊ±ä»¯",
+      "label": "未来一年预期利率变化",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "上升很多",
+        "4": "降低一点",
+        "2": "上升一点",
+        "5": "降低很多",
+        "3": "几乎不变"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -506,11 +557,17 @@
     {
       "varname": "a4008",
       "dataset": "household",
-      "label": "Î´À´Ò»ÄêÔ¤ÆÚÎï¼Û±ä»¯",
+      "label": "未来一年预期物价变化",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "上升很多",
+        "4": "降低一点",
+        "2": "上升一点",
+        "5": "降低很多",
+        "3": "几乎不变"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -521,11 +578,17 @@
     {
       "varname": "a4008a",
       "dataset": "household",
-      "label": "Î´À´Ò»ÄêÔ¤ÆÚ·¿¼Û±ä»¯",
+      "label": "未来一年预期房价变化",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "上升很多",
+        "4": "降低一点",
+        "2": "上升一点",
+        "5": "降低很多",
+        "3": "几乎不变"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -536,11 +599,15 @@
     {
       "varname": "a4008b",
       "dataset": "household",
-      "label": "ÊÇ·ñ¾­³£×¢ÒâÏµºÃ°²È«´ø",
+      "label": "是否经常注意系好安全带",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "3": "否",
+        "2": "看情况"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -551,7 +618,7 @@
     {
       "varname": "a4009",
       "dataset": "household",
-      "label": "ãë´¨µØÕð¾èÔù×Ü¼ÛÖµ(Ôª)",
+      "label": "汶川地震捐赠总价值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -566,11 +633,15 @@
     {
       "varname": "a4010",
       "dataset": "household",
-      "label": "ÊÇ·ñ×ñÑ­½»Í¨¹æÔò",
+      "label": "是否遵循交通规则",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "总是遵守",
+        "3": "看情况",
+        "2": "偶尔不遵守"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -581,11 +652,15 @@
     {
       "varname": "a4010a",
       "dataset": "household",
-      "label": "ÊÇ·ñ´òËãËÍ×ÓÅ®³ö¹ú",
+      "label": "是否打算送子女出国",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "3": "否",
+        "2": "看情况"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -596,11 +671,16 @@
     {
       "varname": "a4011c",
       "dataset": "household",
-      "label": "×ÜÌåÐÒ¸£³Ì¶È",
+      "label": "总体幸福程度",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "非常幸福",
+        "4": "不幸福",
+        "2": "幸福",
+        "5": "非常不幸福"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -611,7 +691,7 @@
     {
       "varname": "a4012",
       "dataset": "household",
-      "label": "1000ÔªÑ¡Ôñ",
+      "label": "1000元选择",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -626,11 +706,14 @@
     {
       "varname": "b1001",
       "dataset": "household",
-      "label": "È¥ÄêÊÇ·ñ´ÓÊÂÅ©ÒµÉú²ú¾­Óª",
+      "label": "去年是否从事农业生产经营",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -641,7 +724,7 @@
     {
       "varname": "b1002",
       "dataset": "household",
-      "label": "ÓÐ¼¸¸ö¼ÒÍ¥³ÉÔ±´ÓÊÂ",
+      "label": "有几个家庭成员从事",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -656,7 +739,7 @@
     {
       "varname": "b1003",
       "dataset": "household",
-      "label": "´ÓÊÂÔÂÊý",
+      "label": "从事月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -761,7 +844,7 @@
     {
       "varname": "b1004p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -776,11 +859,14 @@
     {
       "varname": "b1005",
       "dataset": "household",
-      "label": "Ã«ÊÕÈë(Ôª)",
+      "label": "毛收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "4": "10 万-20 万 9 . 500 万-1000 万 5 . 20 万-50 万",
+        "10": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -806,11 +892,14 @@
     {
       "varname": "b1006",
       "dataset": "household",
-      "label": "ÊÇ·ñ»ñµÃÅ©Òµ²¹Ìù",
+      "label": "是否获得农业补贴",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -821,7 +910,7 @@
     {
       "varname": "b1007",
       "dataset": "household",
-      "label": "²¹ÌùÀàÐÍ",
+      "label": "补贴类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -836,7 +925,7 @@
     {
       "varname": "b1008",
       "dataset": "household",
-      "label": "²¹Ìù½ð¶î(Ôª)",
+      "label": "补贴金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -941,7 +1030,7 @@
     {
       "varname": "b1009p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -956,7 +1045,7 @@
     {
       "varname": "b1010",
       "dataset": "household",
-      "label": "ÊµÎï²¹ÌùÊÐ¼Û(Ôª)",
+      "label": "实物补贴市价(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -971,7 +1060,7 @@
     {
       "varname": "b1011",
       "dataset": "household",
-      "label": "Å©Òµ¹ÍÈË³É±¾(Ôª)",
+      "label": "农业雇人成本(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -986,7 +1075,7 @@
     {
       "varname": "b1012",
       "dataset": "household",
-      "label": "Å©ÒµÉú²ú¾­Óª×Ü³É±¾(Ôª)",
+      "label": "农业生产经营总成本(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1151,7 +1240,7 @@
     {
       "varname": "b1013a",
       "dataset": "household",
-      "label": "Å©²úÆ·×Ü¼ÛÖµ(Ôª)",
+      "label": "农产品总价值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1166,7 +1255,7 @@
     {
       "varname": "b1013p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%30s",
@@ -1181,7 +1270,7 @@
     {
       "varname": "b1014",
       "dataset": "household",
-      "label": "Å©Òµ»úÐµ×ÜÊÐÖµ(Ôª)",
+      "label": "农业机械总市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1196,11 +1285,14 @@
     {
       "varname": "b2001",
       "dataset": "household",
-      "label": "ÊÇ·ñ´ÓÊÂ¹¤ÉÌÒµÉú²ú¾­Óª",
+      "label": "是否从事工商业生产经营",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否（ （如果受访者不知道，请记录-9；如果受访者不愿意回答，请记录-7）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1211,7 +1303,7 @@
     {
       "varname": "b2002",
       "dataset": "household",
-      "label": "²ÎÓëÏîÄ¿¸öÊý",
+      "label": "参与项目个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1226,7 +1318,7 @@
     {
       "varname": "b2003a",
       "dataset": "household",
-      "label": "ÏîÄ¿×Ü×Ê²ú(Ôª)",
+      "label": "项目总资产(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1241,7 +1333,7 @@
     {
       "varname": "b2003b",
       "dataset": "household",
-      "label": "ÏîÄ¿×ÜÓªÒµÊÕÈë(Ôª)",
+      "label": "项目总营业收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1256,7 +1348,7 @@
     {
       "varname": "b2003c",
       "dataset": "household",
-      "label": "ÏîÄ¿¾»ÀûÈó(Ôª)",
+      "label": "项目净利润(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1271,7 +1363,7 @@
     {
       "varname": "b2004",
       "dataset": "household",
-      "label": "¿ªÊ¼×îÖ÷ÒªÏîÄ¿Äê·Ý",
+      "label": "开始最主要项目年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1286,11 +1378,17 @@
     {
       "varname": "b2005",
       "dataset": "household",
-      "label": "ÏîÄ¿¿ªÊ¼·½Ê½",
+      "label": "项目开始方式",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "创立",
+        "4": "加入成为合伙人",
+        "2": "购买",
+        "5": "其它",
+        "3": "继承/赠与"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1301,7 +1399,7 @@
     {
       "varname": "b2005p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%48s",
@@ -1316,7 +1414,7 @@
     {
       "varname": "b2006",
       "dataset": "household",
-      "label": "Äú¼ÒÏîÄ¿·Ý¶î(%)",
+      "label": "您家项目份额(%)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -1331,11 +1429,32 @@
     {
       "varname": "b2007",
       "dataset": "household",
-      "label": "ÏîÄ¿ËùÊôÐÐÒµ",
+      "label": "项目所属行业",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "采矿业",
+        "2": "制造业",
+        "3": "电力、煤气及水的生产和供应业",
+        "4": "建筑业",
+        "5": "交通运输、仓储及邮政业",
+        "6": "信息传输、计算机服务和软件业",
+        "7": "批发和零售业",
+        "8": "住宿和餐饮业",
+        "9": "金融业",
+        "10": "房地产业",
+        "11": "租赁和商务服务业",
+        "12": "科学研究、技术服务和地质勘察业",
+        "13": "水利、环境和公共设施管理业",
+        "14": "居民服务和其它服务业",
+        "15": "教育业",
+        "16": "卫生、社会保障和社会福利业",
+        "17": "文化、体育和娱乐业",
+        "18": "公共管理和社会组织",
+        "19": "国际组织",
+        "20": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1346,7 +1465,7 @@
     {
       "varname": "b2007p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%18s",
@@ -1361,11 +1480,17 @@
     {
       "varname": "b2008",
       "dataset": "household",
-      "label": "ÏîÄ¿×éÖ¯ÐÎÊ½",
+      "label": "项目组织形式",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "股份有限公司",
+        "4": "独资企业",
+        "2": "有限责任公司",
+        "5": "个体户/个体工商户",
+        "3": "合伙企业"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1376,7 +1501,7 @@
     {
       "varname": "b2009",
       "dataset": "household",
-      "label": "¹ÍÓÃÔ±¹¤Êý",
+      "label": "雇用员工数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -1391,11 +1516,14 @@
     {
       "varname": "b2010",
       "dataset": "household",
-      "label": "ÊÇ·ñ»ý¼«²ÎÓëÏîÄ¿¹ÜÀí",
+      "label": "是否积极参与项目管理",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1406,7 +1534,7 @@
     {
       "varname": "b2012",
       "dataset": "household",
-      "label": "Ã¿ÖÜ¼¸Ìì´ÓÊÂ´ËÏîÄ¿(Ìì)",
+      "label": "每周几天从事此项目(天)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1421,11 +1549,14 @@
     {
       "varname": "b2013",
       "dataset": "household",
-      "label": "´ËÏîÄ¿×Ü×Ê²ú(Ôª)",
+      "label": "此项目总资产(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "4": "10 万-20 万 9 . 500 万-1000 万5 . 20 万-50 万",
+        "10": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1451,11 +1582,14 @@
     {
       "varname": "b2014",
       "dataset": "household",
-      "label": "´ËÏîÄ¿Ã«ÊÕÈë(Ôª)",
+      "label": "此项目毛收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "4": "10 万-20 万 9 . 500 万-1000 万 5 . 20 万-50 万",
+        "10": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1481,11 +1615,15 @@
     {
       "varname": "b2014a",
       "dataset": "household",
-      "label": "´ËÏîÄ¿ÊÇ·ñÓ¯Àû",
+      "label": "此项目是否盈利",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "盈利",
+        "2": "亏损",
+        "3": "持平"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1496,11 +1634,14 @@
     {
       "varname": "b2015",
       "dataset": "household",
-      "label": "´ËÏîÄ¿Ó¯Àû(¿÷Ëð)(Ôª)",
+      "label": "此项目盈利(亏损)(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "4": "10 万-20 万 9 . 500 万-1000 万5 . 20 万-50 万",
+        "10": "1000 万以上 ## 农业/工商业相关的银行贷款"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1526,11 +1667,14 @@
     {
       "varname": "b3001",
       "dataset": "household",
-      "label": "Éú²ú¾­ÓªÓÐÎÞÒøÐÐ´û¿î",
+      "label": "生产经营有无银行贷款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "无"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1541,11 +1685,16 @@
     {
       "varname": "b3002",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îÔ­Òò",
+      "label": "没有银行贷款原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "3": "申请过被拒绝",
+        "2": "需要，但没有申请过",
+        "4": "曾经有贷款，现已经还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1616,7 +1765,7 @@
     {
       "varname": "b3002ap",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%32s",
@@ -1721,7 +1870,7 @@
     {
       "varname": "b3003p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%38s",
@@ -1736,7 +1885,7 @@
     {
       "varname": "b3004",
       "dataset": "household",
-      "label": "ÓÐ¼¸±ÊÒøÐÐ´û¿î",
+      "label": "有几笔银行贷款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1751,7 +1900,7 @@
     {
       "varname": "b3004a",
       "dataset": "household",
-      "label": "ÒøÐÐ´û¿î½ð¶î(Ôª)",
+      "label": "银行贷款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1766,11 +1915,14 @@
     {
       "varname": "b3005",
       "dataset": "household",
-      "label": "»¹Ç·½ð¶î(Ôª)",
+      "label": "还欠金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "4": "10 万-20 万 9 . 500 万-1000 万5 . 20 万-50 万",
+        "10": "1000 万以上 若"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1796,7 +1948,7 @@
     {
       "varname": "b3006",
       "dataset": "household",
-      "label": "×î´óÒøÐÐ´û¿îÄê·Ý",
+      "label": "最大银行贷款年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1811,7 +1963,7 @@
     {
       "varname": "b3007",
       "dataset": "household",
-      "label": "È¥ÄêÀûÏ¢Ö§³ö",
+      "label": "去年利息支出",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1826,7 +1978,7 @@
     {
       "varname": "b3008",
       "dataset": "household",
-      "label": "×î´ó´û¿î½ð¶î(Ôª)",
+      "label": "最大贷款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -1841,11 +1993,16 @@
     {
       "varname": "b3009",
       "dataset": "household",
-      "label": "´û¿îÀàÐÍ",
+      "label": "贷款类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "抵押贷款",
+        "3": "保证贷款",
+        "2": "质押贷款",
+        "4": "信用贷款"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1856,7 +2013,7 @@
     {
       "varname": "b3010",
       "dataset": "household",
-      "label": "ÄÄ¼ÒÒøÐÐ´ûµÄ",
+      "label": "哪家银行贷的",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1871,7 +2028,7 @@
     {
       "varname": "b3010p",
       "dataset": "household",
-      "label": "ÆäËüÒøÐÐ",
+      "label": "其它银行",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12s",
@@ -2066,7 +2223,7 @@
     {
       "varname": "b3011p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%42s",
@@ -2081,7 +2238,7 @@
     {
       "varname": "b3018",
       "dataset": "household",
-      "label": "Ä¿Ç°Ã»»¹½ð¶î(Ôª)",
+      "label": "目前没还金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2096,7 +2253,7 @@
     {
       "varname": "b3022",
       "dataset": "household",
-      "label": "´û¿îÊ±µÄÄêÀûÂÊ(%)",
+      "label": "贷款时的年利率(%)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2111,11 +2268,14 @@
     {
       "varname": "b3023",
       "dataset": "household",
-      "label": "´ËÀûÂÊ¿É·ñµ÷Õû",
+      "label": "此利率可否调整",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "可以",
+        "2": "不可以"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2126,11 +2286,15 @@
     {
       "varname": "b3024",
       "dataset": "household",
-      "label": "×î½üÀûÂÊÔõÃ´µ÷Õû",
+      "label": "最近利率怎么调整",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "上升",
+        "3": "没有调整",
+        "2": "下降"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2141,7 +2305,7 @@
     {
       "varname": "b3025",
       "dataset": "household",
-      "label": "´û¿îÏÖÄêÀûÂÊ(%)",
+      "label": "贷款现年利率(%)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2156,11 +2320,14 @@
     {
       "varname": "b3030",
       "dataset": "household",
-      "label": "ÊÇ·ñ´ÓÆäËûÇþµÀ½èÇ®",
+      "label": "是否从其他渠道借钱",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2171,7 +2338,7 @@
     {
       "varname": "b3031",
       "dataset": "household",
-      "label": "ÆäËû½è¿î½ð¶î(Ôª)",
+      "label": "其他借款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2186,11 +2353,14 @@
     {
       "varname": "b3033",
       "dataset": "household",
-      "label": "Ä¿Ç°»¹Ç·¶àÉÙ(Ôª)",
+      "label": "目前还欠多少(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2 万以下 2 . 2 万-5 万 3 . 5 万-10 万 7 . 100 万-200 万",
+        "10": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2321,7 +2491,7 @@
     {
       "varname": "b3035p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%24s",
@@ -2336,11 +2506,14 @@
     {
       "varname": "b3039a",
       "dataset": "household",
-      "label": "ÓÐÎÞÃ÷È·Ô¼¶¨»¹¿îÆÚÏÞ",
+      "label": "有无明确约定还款期限",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2351,7 +2524,7 @@
     {
       "varname": "b3043a",
       "dataset": "household",
-      "label": "½è¿îÖ§¸¶ÁË¶àÉÙÀûÏ¢(Ôª)",
+      "label": "借款支付了多少利息(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2366,11 +2539,23 @@
     {
       "varname": "c1001",
       "dataset": "household",
-      "label": "·¿ÎÝ×ÔÓÐ»¹ÊÇ×âÁÞ",
+      "label": "房屋自有还是租赁",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国家",
+        "7": "孙子/孙媳",
+        "2": "单位",
+        "8": "孙女/孙女婿",
+        "3": "父母",
+        "9": "兄弟姐妹",
+        "4": "岳父母/公婆",
+        "10": "其他亲属",
+        "5": "儿子/儿媳",
+        "11": "非亲属",
+        "6": "女儿/女婿"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2381,7 +2566,7 @@
     {
       "varname": "c1002",
       "dataset": "household",
-      "label": "·¿ÎÝËùÓÐÕß",
+      "label": "房屋所有者",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2396,7 +2581,7 @@
     {
       "varname": "c1003",
       "dataset": "household",
-      "label": "×âÁÞ·¿ÎÝÒ»²¿·Ö»¹ÊÇÈ«²¿",
+      "label": "租赁房屋一部分还是全部",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2411,7 +2596,7 @@
     {
       "varname": "c1004",
       "dataset": "household",
-      "label": "¸Ã·¿ÎÝÊ¹ÓÃÃæ»ý(Æ½·½Ã×)",
+      "label": "该房屋使用面积(平方米)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2426,7 +2611,7 @@
     {
       "varname": "c1005",
       "dataset": "household",
-      "label": "×âÁÞ²¿·ÖÊ¹ÓÃÃæ»ý(Æ½·½Ã×)",
+      "label": "租赁部分使用面积(平方米)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2441,7 +2626,7 @@
     {
       "varname": "c1006",
       "dataset": "household",
-      "label": "µ½×î½üÊÐ/ÏØÖÐÐÄ·ÖÖÓ",
+      "label": "到最近市/县中心分钟",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -2456,11 +2641,19 @@
     {
       "varname": "c1007",
       "dataset": "household",
-      "label": "½»Í¨¹¤¾ß",
+      "label": "交通工具",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "步行",
+        "5": "乘坐地铁/轻轨",
+        "2": "骑自行车",
+        "6": "自己开车",
+        "3": "骑摩托车或电动车",
+        "7": "其他（请注明）",
+        "4": "乘坐公交车"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2471,7 +2664,7 @@
     {
       "varname": "c1007p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%14s",
@@ -2486,11 +2679,17 @@
     {
       "varname": "c1008",
       "dataset": "household",
-      "label": "×¡½ø¸Ã·¿Äê·Ý",
+      "label": "住进该房年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "毛坯/清水",
+        "4": "精装",
+        "2": "简装",
+        "5": "豪装",
+        "3": "中装→"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2501,7 +2700,7 @@
     {
       "varname": "c1010",
       "dataset": "household",
-      "label": "·¿ÎÝ×°ÐÞÀàÐÍ",
+      "label": "房屋装修类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2516,7 +2715,7 @@
     {
       "varname": "c1012",
       "dataset": "household",
-      "label": "Ö§¸¶ÆµÂÊ",
+      "label": "支付频率",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2531,7 +2730,7 @@
     {
       "varname": "c1012a",
       "dataset": "household",
-      "label": "·¿ÎÝ×â½ð(Ôª)",
+      "label": "房屋租金(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2546,7 +2745,7 @@
     {
       "varname": "c1012p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%70s",
@@ -2681,11 +2880,20 @@
     {
       "varname": "c1014",
       "dataset": "household",
-      "label": "·¿ÎÝÊÐ³¡×â½ð(Ôª)",
+      "label": "房屋市场租金(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "水费",
+        "5": "光纤费",
+        "2": "电费",
+        "6": "电话费",
+        "3": "燃料费",
+        "7": "网络费",
+        "4": "物业费",
+        "8": "都不包括"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2696,7 +2904,7 @@
     {
       "varname": "c1015",
       "dataset": "household",
-      "label": "·¿ÎÝ¹À¼ÆÊÐ¼Û(ÍòÔª)",
+      "label": "房屋估计市价(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2711,7 +2919,7 @@
     {
       "varname": "c2001",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐ×ÔÓÐ·¿ÎÝ",
+      "label": "是否拥有自有房屋",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2726,7 +2934,7 @@
     {
       "varname": "c2002",
       "dataset": "household",
-      "label": "ÓµÓÐ·¿×ÓÌ×Êý",
+      "label": "拥有房子套数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2741,7 +2949,7 @@
     {
       "varname": "c2002a",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ö×â×Ô¼Ò·¿ÎÝ",
+      "label": "是否出租自家房屋",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2756,7 +2964,7 @@
     {
       "varname": "c2002d",
       "dataset": "household",
-      "label": "È¥Äê·¿×â×Ü¶î(Ôª)",
+      "label": "去年房租总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2771,7 +2979,7 @@
     {
       "varname": "c2003_1",
       "dataset": "household",
-      "label": "·¿×Ó½¨ÖþÃæ»ý(Æ½·½Ã×)[1]",
+      "label": "房子建筑面积(平方米)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2786,7 +2994,7 @@
     {
       "varname": "c2003_2",
       "dataset": "household",
-      "label": "·¿×Ó½¨ÖþÃæ»ý(Æ½·½Ã×)[2]",
+      "label": "房子建筑面积(平方米)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2801,7 +3009,7 @@
     {
       "varname": "c2003_3",
       "dataset": "household",
-      "label": "·¿×Ó½¨ÖþÃæ»ý(Æ½·½Ã×)[3]",
+      "label": "房子建筑面积(平方米)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2816,7 +3024,7 @@
     {
       "varname": "c2004_1",
       "dataset": "household",
-      "label": "·¿×ÓÊ¹ÓÃÃæ»ý(Æ½·½Ã×)[1]",
+      "label": "房子使用面积(平方米)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2831,7 +3039,7 @@
     {
       "varname": "c2004_2",
       "dataset": "household",
-      "label": "·¿×ÓÊ¹ÓÃÃæ»ý(Æ½·½Ã×)[2]",
+      "label": "房子使用面积(平方米)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2846,7 +3054,7 @@
     {
       "varname": "c2004_3",
       "dataset": "household",
-      "label": "·¿×ÓÊ¹ÓÃÃæ»ý(Æ½·½Ã×)[3]",
+      "label": "房子使用面积(平方米)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -2861,7 +3069,7 @@
     {
       "varname": "c2005_1",
       "dataset": "household",
-      "label": "²ÞËùÍâ·¿¼äÊý[1]",
+      "label": "厕所外房间数[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -2876,7 +3084,7 @@
     {
       "varname": "c2005_2",
       "dataset": "household",
-      "label": "²ÞËùÍâ·¿¼äÊý[2]",
+      "label": "厕所外房间数[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2891,7 +3099,7 @@
     {
       "varname": "c2005_3",
       "dataset": "household",
-      "label": "²ÞËùÍâ·¿¼äÊý[3]",
+      "label": "厕所外房间数[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2906,11 +3114,20 @@
     {
       "varname": "c2006_1",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃ·½Ê½[1]",
+      "label": "房屋获得方式[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买商品房/小产权房",
+        "2": "购买经济适用房",
+        "3": "继承或赠与",
+        "4": "低于市场价从单位购买",
+        "5": "集资建房",
+        "6": "自建/扩建",
+        "7": "拆迁换房",
+        "8": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2921,11 +3138,20 @@
     {
       "varname": "c2006_2",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃ·½Ê½[2]",
+      "label": "房屋获得方式[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买商品房/小产权房",
+        "2": "购买经济适用房",
+        "3": "继承或赠与",
+        "4": "低于市场价从单位购买",
+        "5": "集资建房",
+        "6": "自建/扩建",
+        "7": "拆迁换房",
+        "8": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2936,11 +3162,20 @@
     {
       "varname": "c2006_3",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃ·½Ê½[3]",
+      "label": "房屋获得方式[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买商品房/小产权房",
+        "2": "购买经济适用房",
+        "3": "继承或赠与",
+        "4": "低于市场价从单位购买",
+        "5": "集资建房",
+        "6": "自建/扩建",
+        "7": "拆迁换房",
+        "8": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2951,7 +3186,7 @@
     {
       "varname": "c2006p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%54s",
@@ -2966,7 +3201,7 @@
     {
       "varname": "c2006p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%46s",
@@ -2981,7 +3216,7 @@
     {
       "varname": "c2006p_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -2996,11 +3231,17 @@
     {
       "varname": "c2008_1",
       "dataset": "household",
-      "label": "·¿×Ó²úÈ¨ÐÎÊ½[1]",
+      "label": "房子产权形式[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "部分产权",
+        "2": "全部产权",
+        "3": "小产权",
+        "4": "农村集体土地使用权",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3011,11 +3252,17 @@
     {
       "varname": "c2008_2",
       "dataset": "household",
-      "label": "·¿×Ó²úÈ¨ÐÎÊ½[2]",
+      "label": "房子产权形式[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "部分产权",
+        "2": "全部产权",
+        "3": "小产权",
+        "4": "农村集体土地使用权",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3026,11 +3273,17 @@
     {
       "varname": "c2008_3",
       "dataset": "household",
-      "label": "·¿×Ó²úÈ¨ÐÎÊ½[3]",
+      "label": "房子产权形式[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "部分产权",
+        "2": "全部产权",
+        "3": "小产权",
+        "4": "农村集体土地使用权",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3041,7 +3294,7 @@
     {
       "varname": "c2008p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -3056,7 +3309,7 @@
     {
       "varname": "c2008p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -3071,7 +3324,7 @@
     {
       "varname": "c2008p_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -3086,11 +3339,14 @@
     {
       "varname": "c2009a_1",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÔÚ±¾ÊÐ[1]",
+      "label": "房子是否在本市[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3101,11 +3357,14 @@
     {
       "varname": "c2009a_2",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÔÚ±¾ÊÐ[2]",
+      "label": "房子是否在本市[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3116,11 +3375,14 @@
     {
       "varname": "c2009a_3",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÔÚ±¾ÊÐ[3]",
+      "label": "房子是否在本市[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3131,7 +3393,7 @@
     {
       "varname": "c2010_1",
       "dataset": "household",
-      "label": "·¿×Óµ½±¾ÊÐ/ ÏØ·ÖÖÓ[1]",
+      "label": "房子到本市/ 县分钟[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -3146,7 +3408,7 @@
     {
       "varname": "c2010_2",
       "dataset": "household",
-      "label": "·¿×Óµ½±¾ÊÐ/ ÏØ·ÖÖÓ[2]",
+      "label": "房子到本市/ 县分钟[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3161,7 +3423,7 @@
     {
       "varname": "c2010_3",
       "dataset": "household",
-      "label": "·¿×Óµ½±¾ÊÐ/ ÏØ·ÖÖÓ[3]",
+      "label": "房子到本市/ 县分钟[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3176,11 +3438,19 @@
     {
       "varname": "c2011_1",
       "dataset": "household",
-      "label": "½»Í¨·½Ê½[1]",
+      "label": "交通方式[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "步行",
+        "2": "骑自行车",
+        "3": "骑摩托车或电动车",
+        "4": "乘坐公交车",
+        "5": "乘坐地铁/轻轨",
+        "6": "自己开车",
+        "7": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3191,11 +3461,19 @@
     {
       "varname": "c2011_2",
       "dataset": "household",
-      "label": "½»Í¨·½Ê½[2]",
+      "label": "交通方式[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "步行",
+        "2": "骑自行车",
+        "3": "骑摩托车或电动车",
+        "4": "乘坐公交车",
+        "5": "乘坐地铁/轻轨",
+        "6": "自己开车",
+        "7": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3206,11 +3484,19 @@
     {
       "varname": "c2011_3",
       "dataset": "household",
-      "label": "½»Í¨·½Ê½[3]",
+      "label": "交通方式[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "步行",
+        "2": "骑自行车",
+        "3": "骑摩托车或电动车",
+        "4": "乘坐公交车",
+        "5": "乘坐地铁/轻轨",
+        "6": "自己开车",
+        "7": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3221,7 +3507,7 @@
     {
       "varname": "c2011p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%28s",
@@ -3236,7 +3522,7 @@
     {
       "varname": "c2011p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -3251,7 +3537,7 @@
     {
       "varname": "c2011p_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -3266,7 +3552,7 @@
     {
       "varname": "c2012_1",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃÄê·Ý[1]",
+      "label": "房屋获得年份[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -3281,7 +3567,7 @@
     {
       "varname": "c2012_2",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃÄê·Ý[2]",
+      "label": "房屋获得年份[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3296,7 +3582,7 @@
     {
       "varname": "c2012_3",
       "dataset": "household",
-      "label": "·¿ÎÝ»ñµÃÄê·Ý[3]",
+      "label": "房屋获得年份[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3311,11 +3597,20 @@
     {
       "varname": "c2013_1",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ»¨Ïú(ÍòÔª)[1]",
+      "label": "获得房屋花销(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3341,11 +3636,20 @@
     {
       "varname": "c2013_2",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ»¨Ïú(ÍòÔª)[2]",
+      "label": "获得房屋花销(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3371,11 +3675,20 @@
     {
       "varname": "c2013_3",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ»¨Ïú(ÍòÔª)[3]",
+      "label": "获得房屋花销(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3401,7 +3714,7 @@
     {
       "varname": "c2013a_1",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ½ÉË°(ÍòÔª)[1]",
+      "label": "获得房屋缴税(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -3416,7 +3729,7 @@
     {
       "varname": "c2013a_2",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ½ÉË°(ÍòÔª)[2]",
+      "label": "获得房屋缴税(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -3431,7 +3744,7 @@
     {
       "varname": "c2013a_3",
       "dataset": "household",
-      "label": "»ñµÃ·¿ÎÝ½ÉË°(ÍòÔª)[3]",
+      "label": "获得房屋缴税(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -3446,11 +3759,20 @@
     {
       "varname": "c2016_1",
       "dataset": "household",
-      "label": "Ä¿Ç°·¿×ÓÊÐÖµ(ÍòÔª)[1]",
+      "label": "目前房子市值(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3476,11 +3798,20 @@
     {
       "varname": "c2016_2",
       "dataset": "household",
-      "label": "Ä¿Ç°·¿×ÓÊÐÖµ(ÍòÔª)[2]",
+      "label": "目前房子市值(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3506,11 +3837,20 @@
     {
       "varname": "c2016_3",
       "dataset": "household",
-      "label": "Ä¿Ç°·¿×ÓÊÐÖµ(ÍòÔª)[3]",
+      "label": "目前房子市值(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3536,7 +3876,7 @@
     {
       "varname": "c2022_1",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÉú²ú»ò¾­Óª[1]",
+      "label": "房子是否生产或经营[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -3551,7 +3891,7 @@
     {
       "varname": "c2022_2",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÉú²ú»ò¾­Óª[2]",
+      "label": "房子是否生产或经营[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3566,7 +3906,7 @@
     {
       "varname": "c2022_3",
       "dataset": "household",
-      "label": "·¿×ÓÊÇ·ñÉú²ú»ò¾­Óª[3]",
+      "label": "房子是否生产或经营[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3581,7 +3921,7 @@
     {
       "varname": "c2023_1",
       "dataset": "household",
-      "label": "ÓÃÓÚÉú²ú»ò¾­ÓªÃæ»ý(Æ½·½Ã×)[1]",
+      "label": "用于生产或经营面积(平方米)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -3596,7 +3936,7 @@
     {
       "varname": "c2023_2",
       "dataset": "household",
-      "label": "ÓÃÓÚÉú²ú»ò¾­ÓªÃæ»ý(Æ½·½Ã×)[2]",
+      "label": "用于生产或经营面积(平方米)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -3611,7 +3951,7 @@
     {
       "varname": "c2023_3",
       "dataset": "household",
-      "label": "ÓÃÓÚÉú²ú»ò¾­ÓªÃæ»ý(Æ½·½Ã×)[3]",
+      "label": "用于生产或经营面积(平方米)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -3626,11 +3966,14 @@
     {
       "varname": "c2024_1",
       "dataset": "household",
-      "label": "¸Ã·¿ÎÝÊÇ·ñÓÐÒøÐÐ´û¿î[1]",
+      "label": "该房屋是否有银行贷款[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3641,11 +3984,14 @@
     {
       "varname": "c2024_2",
       "dataset": "household",
-      "label": "¸Ã·¿ÎÝÊÇ·ñÓÐÒøÐÐ´û¿î[2]",
+      "label": "该房屋是否有银行贷款[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3656,11 +4002,14 @@
     {
       "varname": "c2024_3",
       "dataset": "household",
-      "label": "¸Ã·¿ÎÝÊÇ·ñÓÐÒøÐÐ´û¿î[3]",
+      "label": "该房屋是否有银行贷款[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3671,11 +4020,16 @@
     {
       "varname": "c2025_1",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îµÄÔ­Òò[1]",
+      "label": "没有银行贷款的原因[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "2": "需要，但没有申请过",
+        "3": "申请被拒绝",
+        "4": "以前有银行贷款，但已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3686,11 +4040,16 @@
     {
       "varname": "c2025_2",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îµÄÔ­Òò[2]",
+      "label": "没有银行贷款的原因[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "2": "需要，但没有申请过",
+        "3": "申请被拒绝",
+        "4": "以前有银行贷款，但已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -3701,11 +4060,16 @@
     {
       "varname": "c2025_3",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îµÄÔ­Òò[3]",
+      "label": "没有银行贷款的原因[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "2": "需要，但没有申请过",
+        "3": "申请被拒绝",
+        "4": "以前有银行贷款，但已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4121,7 +4485,7 @@
     {
       "varname": "c2026p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%44s",
@@ -4136,7 +4500,7 @@
     {
       "varname": "c2026p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -4151,7 +4515,7 @@
     {
       "varname": "c2026p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4166,7 +4530,7 @@
     {
       "varname": "c2027_1",
       "dataset": "household",
-      "label": "´û¿î±ÊÊý[1]",
+      "label": "贷款笔数[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4181,7 +4545,7 @@
     {
       "varname": "c2027_2",
       "dataset": "household",
-      "label": "´û¿î±ÊÊý[2]",
+      "label": "贷款笔数[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4196,7 +4560,7 @@
     {
       "varname": "c2027_3",
       "dataset": "household",
-      "label": "´û¿î±ÊÊý[3]",
+      "label": "贷款笔数[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4211,7 +4575,7 @@
     {
       "varname": "c2028_1",
       "dataset": "household",
-      "label": "½è¿îÄê·Ý[1]",
+      "label": "借款年份[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4226,7 +4590,7 @@
     {
       "varname": "c2028_2",
       "dataset": "household",
-      "label": "½è¿îÄê·Ý[2]",
+      "label": "借款年份[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4241,7 +4605,7 @@
     {
       "varname": "c2028_3",
       "dataset": "household",
-      "label": "½è¿îÄê·Ý[3]",
+      "label": "借款年份[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4256,11 +4620,16 @@
     {
       "varname": "c2030_1",
       "dataset": "household",
-      "label": "´û¿îÓÃÍ¾[1]",
+      "label": "贷款用途[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买房屋",
+        "2": "装修房屋",
+        "3": "自建、扩建房屋",
+        "4": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4271,11 +4640,16 @@
     {
       "varname": "c2030_2",
       "dataset": "household",
-      "label": "´û¿îÓÃÍ¾[2]",
+      "label": "贷款用途[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买房屋",
+        "2": "装修房屋",
+        "3": "自建、扩建房屋",
+        "4": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4286,11 +4660,16 @@
     {
       "varname": "c2030_3",
       "dataset": "household",
-      "label": "´û¿îÓÃÍ¾[3]",
+      "label": "贷款用途[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "购买房屋",
+        "2": "装修房屋",
+        "3": "自建、扩建房屋",
+        "4": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4301,7 +4680,7 @@
     {
       "varname": "c2030p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%32s",
@@ -4316,7 +4695,7 @@
     {
       "varname": "c2030p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4331,7 +4710,7 @@
     {
       "varname": "c2030p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4346,11 +4725,14 @@
     {
       "varname": "c2031_1",
       "dataset": "household",
-      "label": "ÊÇ·ñÎª°´½Ò´û¿î[1]",
+      "label": "是否为按揭贷款[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4361,11 +4743,14 @@
     {
       "varname": "c2031_2",
       "dataset": "household",
-      "label": "ÊÇ·ñÎª°´½Ò´û¿î[2]",
+      "label": "是否为按揭贷款[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4376,11 +4761,14 @@
     {
       "varname": "c2031_3",
       "dataset": "household",
-      "label": "ÊÇ·ñÎª°´½Ò´û¿î[3]",
+      "label": "是否为按揭贷款[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4391,7 +4779,7 @@
     {
       "varname": "c2032_1",
       "dataset": "household",
-      "label": "Ê×¸¶¿î½ð¶î(ÍòÔª)[1]",
+      "label": "首付款金额(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -4406,7 +4794,7 @@
     {
       "varname": "c2032_2",
       "dataset": "household",
-      "label": "Ê×¸¶¿î½ð¶î(ÍòÔª)[2]",
+      "label": "首付款金额(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -4421,7 +4809,7 @@
     {
       "varname": "c2032_3",
       "dataset": "household",
-      "label": "Ê×¸¶¿î½ð¶î(ÍòÔª)[3]",
+      "label": "首付款金额(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -4751,7 +5139,7 @@
     {
       "varname": "c2034p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%18s",
@@ -4766,7 +5154,7 @@
     {
       "varname": "c2034p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%18s",
@@ -4781,7 +5169,7 @@
     {
       "varname": "c2034p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10s",
@@ -4796,11 +5184,15 @@
     {
       "varname": "c2035_1",
       "dataset": "household",
-      "label": "´û¿îÐÎÊ½[1]",
+      "label": "贷款形式[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "公积金贷款",
+        "2": "商业贷款",
+        "3": "组合贷款其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4811,11 +5203,15 @@
     {
       "varname": "c2035_2",
       "dataset": "household",
-      "label": "´û¿îÐÎÊ½[2]",
+      "label": "贷款形式[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "公积金贷款",
+        "2": "商业贷款",
+        "3": "组合贷款其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4826,11 +5222,15 @@
     {
       "varname": "c2035_3",
       "dataset": "household",
-      "label": "´û¿îÐÎÊ½[3]",
+      "label": "贷款形式[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "公积金贷款",
+        "2": "商业贷款",
+        "3": "组合贷款其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -4841,7 +5241,7 @@
     {
       "varname": "c2035p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -4856,7 +5256,7 @@
     {
       "varname": "c2035p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%23s",
@@ -4871,7 +5271,7 @@
     {
       "varname": "c2035p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4886,7 +5286,7 @@
     {
       "varname": "c2037_1",
       "dataset": "household",
-      "label": "´û¿îÒøÐÐÃû³Æ[1]",
+      "label": "贷款银行名称[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4901,7 +5301,7 @@
     {
       "varname": "c2037_2",
       "dataset": "household",
-      "label": "´û¿îÒøÐÐÃû³Æ[2]",
+      "label": "贷款银行名称[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4916,7 +5316,7 @@
     {
       "varname": "c2037_3",
       "dataset": "household",
-      "label": "´û¿îÒøÐÐÃû³Æ[3]",
+      "label": "贷款银行名称[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -4931,7 +5331,7 @@
     {
       "varname": "c2037p_1",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ[1]",
+      "label": "其他银行[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%28s",
@@ -4946,7 +5346,7 @@
     {
       "varname": "c2037p_2",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ[2]",
+      "label": "其他银行[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -4961,7 +5361,7 @@
     {
       "varname": "c2037p_3",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ[3]",
+      "label": "其他银行[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -5516,7 +5916,7 @@
     {
       "varname": "c2038p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%32s",
@@ -5531,7 +5931,7 @@
     {
       "varname": "c2038p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%64s",
@@ -5546,7 +5946,7 @@
     {
       "varname": "c2038p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -5561,7 +5961,7 @@
     {
       "varname": "c2041_1",
       "dataset": "household",
-      "label": "´û¿î×Ü¶î(ÍòÔª)[1]",
+      "label": "贷款总额(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5576,7 +5976,7 @@
     {
       "varname": "c2041_2",
       "dataset": "household",
-      "label": "´û¿î×Ü¶î(ÍòÔª)[2]",
+      "label": "贷款总额(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5591,7 +5991,7 @@
     {
       "varname": "c2041_3",
       "dataset": "household",
-      "label": "´û¿î×Ü¶î(ÍòÔª)[3]",
+      "label": "贷款总额(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5606,7 +6006,7 @@
     {
       "varname": "c2045_1",
       "dataset": "household",
-      "label": "´û¿îÄêÏÞ(Äê)[1]",
+      "label": "贷款年限(年)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5621,7 +6021,7 @@
     {
       "varname": "c2045_2",
       "dataset": "household",
-      "label": "´û¿îÄêÏÞ(Äê)[2]",
+      "label": "贷款年限(年)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5636,7 +6036,7 @@
     {
       "varname": "c2045_3",
       "dataset": "household",
-      "label": "´û¿îÄêÏÞ(Äê)[3]",
+      "label": "贷款年限(年)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5651,7 +6051,7 @@
     {
       "varname": "c2046_1",
       "dataset": "household",
-      "label": "»¹¿îÄêÀûÂÊ(%)[1]",
+      "label": "还款年利率(%)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5666,7 +6066,7 @@
     {
       "varname": "c2046_2",
       "dataset": "household",
-      "label": "»¹¿îÄêÀûÂÊ(%)[2]",
+      "label": "还款年利率(%)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5681,7 +6081,7 @@
     {
       "varname": "c2046_3",
       "dataset": "household",
-      "label": "»¹¿îÄêÀûÂÊ(%)[3]",
+      "label": "还款年利率(%)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -5696,11 +6096,17 @@
     {
       "varname": "c2050_1",
       "dataset": "household",
-      "label": "ÊÇ·ñ¸Ä¹ý»¹¿î¼Æ»®[1]",
+      "label": "是否改过还款计划[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有改变",
+        "2": "提前偿还部分贷款",
+        "3": "延期还款",
+        "4": "停止还款",
+        "5": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5711,11 +6117,17 @@
     {
       "varname": "c2050_2",
       "dataset": "household",
-      "label": "ÊÇ·ñ¸Ä¹ý»¹¿î¼Æ»®[2]",
+      "label": "是否改过还款计划[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有改变",
+        "2": "提前偿还部分贷款",
+        "3": "延期还款",
+        "4": "停止还款",
+        "5": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5726,11 +6138,17 @@
     {
       "varname": "c2050_3",
       "dataset": "household",
-      "label": "ÊÇ·ñ¸Ä¹ý»¹¿î¼Æ»®[3]",
+      "label": "是否改过还款计划[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有改变",
+        "2": "提前偿还部分贷款",
+        "3": "延期还款",
+        "4": "停止还款",
+        "5": "其它"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5741,7 +6159,7 @@
     {
       "varname": "c2050p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%22s",
@@ -5756,7 +6174,7 @@
     {
       "varname": "c2050p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%44s",
@@ -5771,7 +6189,7 @@
     {
       "varname": "c2050p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -5786,11 +6204,17 @@
     {
       "varname": "c2051_1",
       "dataset": "household",
-      "label": "¸Ä±ä»¹¿î¼Æ»®Ô­Òò[1]",
+      "label": "改变还款计划原因[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "利率调整",
+        "2": "收入变动",
+        "3": "预期收入变动",
+        "4": "物价水平变动",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5801,11 +6225,17 @@
     {
       "varname": "c2051_2",
       "dataset": "household",
-      "label": "¸Ä±ä»¹¿î¼Æ»®Ô­Òò[2]",
+      "label": "改变还款计划原因[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "利率调整",
+        "2": "收入变动",
+        "3": "预期收入变动",
+        "4": "物价水平变动",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5816,11 +6246,17 @@
     {
       "varname": "c2051_3",
       "dataset": "household",
-      "label": "¸Ä±ä»¹¿î¼Æ»®Ô­Òò[3]",
+      "label": "改变还款计划原因[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "利率调整",
+        "2": "收入变动",
+        "3": "预期收入变动",
+        "4": "物价水平变动",
+        "5": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5831,7 +6267,7 @@
     {
       "varname": "c2051p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%28s",
@@ -5846,7 +6282,7 @@
     {
       "varname": "c2051p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%28s",
@@ -5861,7 +6297,7 @@
     {
       "varname": "c2051p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -5876,11 +6312,15 @@
     {
       "varname": "c2052_1",
       "dataset": "household",
-      "label": "»¹¿î·½Ê½[1]",
+      "label": "还款方式[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "一次性偿还本息",
+        "2": "等额本息",
+        "3": "等额本金分期不等额偿还"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5891,11 +6331,15 @@
     {
       "varname": "c2052_2",
       "dataset": "household",
-      "label": "»¹¿î·½Ê½[2]",
+      "label": "还款方式[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "一次性偿还本息",
+        "2": "等额本息",
+        "3": "等额本金分期不等额偿还"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5906,11 +6350,15 @@
     {
       "varname": "c2052_3",
       "dataset": "household",
-      "label": "»¹¿î·½Ê½[3]",
+      "label": "还款方式[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "一次性偿还本息",
+        "2": "等额本息",
+        "3": "等额本金分期不等额偿还"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5921,11 +6369,20 @@
     {
       "varname": "c2055_1",
       "dataset": "household",
-      "label": "¶àÉÙÎ´»¹Çå(ÍòÔª)[1]",
+      "label": "多少未还清(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5951,11 +6408,20 @@
     {
       "varname": "c2055_2",
       "dataset": "household",
-      "label": "¶àÉÙÎ´»¹Çå(ÍòÔª)[2]",
+      "label": "多少未还清(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -5981,11 +6447,20 @@
     {
       "varname": "c2055_3",
       "dataset": "household",
-      "label": "¶àÉÙÎ´»¹Çå(ÍòÔª)[3]",
+      "label": "多少未还清(万元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6011,11 +6486,15 @@
     {
       "varname": "c3001_1",
       "dataset": "household",
-      "label": "ÊÇ·ñÍ¨¹ýÆäËûÇþµÀ½èÇ®[1]",
+      "label": "是否通过其他渠道借钱[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否",
+        "3": "以前有，现已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6026,11 +6505,15 @@
     {
       "varname": "c3001_2",
       "dataset": "household",
-      "label": "ÊÇ·ñÍ¨¹ýÆäËûÇþµÀ½èÇ®[2]",
+      "label": "是否通过其他渠道借钱[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否",
+        "3": "以前有，现已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6041,11 +6524,15 @@
     {
       "varname": "c3001_3",
       "dataset": "household",
-      "label": "ÊÇ·ñÍ¨¹ýÆäËûÇþµÀ½èÇ®[3]",
+      "label": "是否通过其他渠道借钱[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否",
+        "3": "以前有，现已还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6056,7 +6543,7 @@
     {
       "varname": "c3002_1",
       "dataset": "household",
-      "label": "½è¿î×Ü¶î(Ôª)[1]",
+      "label": "借款总额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6071,7 +6558,7 @@
     {
       "varname": "c3002_2",
       "dataset": "household",
-      "label": "½è¿î×Ü¶î(Ôª)[2]",
+      "label": "借款总额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6086,7 +6573,7 @@
     {
       "varname": "c3002_3",
       "dataset": "household",
-      "label": "½è¿î×Ü¶î(Ôª)[3]",
+      "label": "借款总额(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -6101,7 +6588,7 @@
     {
       "varname": "c3003_1",
       "dataset": "household",
-      "label": "×î´ó½è¿î¶î(Ôª)[1]",
+      "label": "最大借款额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6116,7 +6603,7 @@
     {
       "varname": "c3003_2",
       "dataset": "household",
-      "label": "×î´ó½è¿î¶î(Ôª)[2]",
+      "label": "最大借款额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6131,7 +6618,7 @@
     {
       "varname": "c3003_3",
       "dataset": "household",
-      "label": "×î´ó½è¿î¶î(Ôª)[3]",
+      "label": "最大借款额(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -6146,11 +6633,19 @@
     {
       "varname": "c3004_1",
       "dataset": "household",
-      "label": "½è´¦[1]",
+      "label": "借处[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "父母",
+        "2": "子女",
+        "3": "兄弟姐妹",
+        "4": "其他亲属",
+        "5": "朋友／同事",
+        "6": "民间金融组织",
+        "7": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6161,11 +6656,19 @@
     {
       "varname": "c3004_2",
       "dataset": "household",
-      "label": "½è´¦[2]",
+      "label": "借处[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "父母",
+        "2": "子女",
+        "3": "兄弟姐妹",
+        "4": "其他亲属",
+        "5": "朋友／同事",
+        "6": "民间金融组织",
+        "7": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6176,11 +6679,19 @@
     {
       "varname": "c3004_3",
       "dataset": "household",
-      "label": "½è´¦[3]",
+      "label": "借处[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "父母",
+        "2": "子女",
+        "3": "兄弟姐妹",
+        "4": "其他亲属",
+        "5": "朋友／同事",
+        "6": "民间金融组织",
+        "7": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6191,7 +6702,7 @@
     {
       "varname": "c3004p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%39s",
@@ -6206,7 +6717,7 @@
     {
       "varname": "c3004p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -6221,7 +6732,7 @@
     {
       "varname": "c3004p_3",
       "dataset": "household",
-      "label": "ÆäËû[3]",
+      "label": "其他[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6236,11 +6747,14 @@
     {
       "varname": "c3006a_1",
       "dataset": "household",
-      "label": "ÓÐÎÞÃ÷È·Ô¼¶¨»¹¿îÆÚÏÞ[1]",
+      "label": "有无明确约定还款期限[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6251,11 +6765,14 @@
     {
       "varname": "c3006a_2",
       "dataset": "household",
-      "label": "ÓÐÎÞÃ÷È·Ô¼¶¨»¹¿îÆÚÏÞ[2]",
+      "label": "有无明确约定还款期限[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6266,11 +6783,14 @@
     {
       "varname": "c3006a_3",
       "dataset": "household",
-      "label": "ÓÐÎÞÃ÷È·Ô¼¶¨»¹¿îÆÚÏÞ[3]",
+      "label": "有无明确约定还款期限[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6281,7 +6801,7 @@
     {
       "varname": "c3011_1",
       "dataset": "household",
-      "label": "ÀûÏ¢(%)[1]",
+      "label": "利息(%)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6296,7 +6816,7 @@
     {
       "varname": "c3011_2",
       "dataset": "household",
-      "label": "ÀûÏ¢(%)[2]",
+      "label": "利息(%)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6311,7 +6831,7 @@
     {
       "varname": "c3011_3",
       "dataset": "household",
-      "label": "ÀûÏ¢(%)[3]",
+      "label": "利息(%)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6326,11 +6846,15 @@
     {
       "varname": "c3012_1",
       "dataset": "household",
-      "label": "ÄêÀûÏ¢¡¢ÔÂÀûÏ¢»¹ÊÇÈÕÀûÏ¢[1]",
+      "label": "年利息、月利息还是日利息[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "年利率",
+        "2": "月利率",
+        "3": "日利率"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6341,11 +6865,15 @@
     {
       "varname": "c3012_2",
       "dataset": "household",
-      "label": "ÄêÀûÏ¢¡¢ÔÂÀûÏ¢»¹ÊÇÈÕÀûÏ¢[2]",
+      "label": "年利息、月利息还是日利息[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "年利率",
+        "2": "月利率",
+        "3": "日利率"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6356,11 +6884,15 @@
     {
       "varname": "c3012_3",
       "dataset": "household",
-      "label": "ÄêÀûÏ¢¡¢ÔÂÀûÏ¢»¹ÊÇÈÕÀûÏ¢[3]",
+      "label": "年利息、月利息还是日利息[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "年利率",
+        "2": "月利率",
+        "3": "日利率"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6371,7 +6903,7 @@
     {
       "varname": "c3015_1",
       "dataset": "household",
-      "label": "×î½üÒ»´Î³¥»¹½ð¶î(Ôª)[1]",
+      "label": "最近一次偿还金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6386,7 +6918,7 @@
     {
       "varname": "c3015_2",
       "dataset": "household",
-      "label": "×î½üÒ»´Î³¥»¹½ð¶î(Ôª)[2]",
+      "label": "最近一次偿还金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6401,7 +6933,7 @@
     {
       "varname": "c3015_3",
       "dataset": "household",
-      "label": "×î½üÒ»´Î³¥»¹½ð¶î(Ôª)[3]",
+      "label": "最近一次偿还金额(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6416,7 +6948,7 @@
     {
       "varname": "c3016_1",
       "dataset": "household",
-      "label": "ÖÁ½ñ»¹Ç·½ð¶î(Ôª)[1]",
+      "label": "至今还欠金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6446,7 +6978,7 @@
     {
       "varname": "c3016_2",
       "dataset": "household",
-      "label": "ÖÁ½ñ»¹Ç·½ð¶î(Ôª)[2]",
+      "label": "至今还欠金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6476,7 +7008,7 @@
     {
       "varname": "c3016_3",
       "dataset": "household",
-      "label": "ÖÁ½ñ»¹Ç·½ð¶î(Ôª)[3]",
+      "label": "至今还欠金额(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -6506,11 +7038,20 @@
     {
       "varname": "c4001",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐ²ðÇ¨¾­Àú",
+      "label": "是否有拆迁经历",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5万以下",
+        "2": "5万-10万",
+        "3": "10万-20万",
+        "4": "20万-50万",
+        "5": "50万-100万",
+        "6": "100万-200万",
+        "7": "200万-500万",
+        "8": "500 万以上 ## 房屋拆迁 访员注意：这里拆迁包括家庭厂房拆迁、住房拆迁等各种形式"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6521,7 +7062,7 @@
     {
       "varname": "c4002",
       "dataset": "household",
-      "label": "×î½üÒ»´Î²ðÇ¨Äê·Ý",
+      "label": "最近一次拆迁年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6536,7 +7077,7 @@
     {
       "varname": "c4004",
       "dataset": "household",
-      "label": "²ðÇ¨Ãæ»ý",
+      "label": "拆迁面积",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6551,11 +7092,18 @@
     {
       "varname": "c4005",
       "dataset": "household",
-      "label": "µ¥Î»",
+      "label": "单位",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "平方米",
+        "4": "公顷",
+        "2": "分",
+        "5": "亩",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6566,7 +7114,7 @@
     {
       "varname": "c4005p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6581,11 +7129,17 @@
     {
       "varname": "c4006",
       "dataset": "household",
-      "label": "²¹³¥·½Ê½",
+      "label": "补偿方式",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "货币补偿",
+        "4": "没有补偿",
+        "2": "房屋补偿",
+        "5": "其它（请注明）（跳至",
+        "3": "二者都有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6596,7 +7150,7 @@
     {
       "varname": "c4006p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%38s",
@@ -6611,7 +7165,7 @@
     {
       "varname": "c4007",
       "dataset": "household",
-      "label": "²¹³¥½ð¶î(ÍòÔª)",
+      "label": "补偿金额(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6626,7 +7180,7 @@
     {
       "varname": "c4008",
       "dataset": "household",
-      "label": "²¹³¥Ãæ»ý",
+      "label": "补偿面积",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6641,11 +7195,18 @@
     {
       "varname": "c4008a",
       "dataset": "household",
-      "label": "µ¥Î»",
+      "label": "单位",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "平方米",
+        "4": "公顷",
+        "2": "分",
+        "5": "亩",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6656,7 +7217,7 @@
     {
       "varname": "c4008ap",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6671,7 +7232,7 @@
     {
       "varname": "c4008b",
       "dataset": "household",
-      "label": "²¹³¥¹À¼Æ×ÜÖµ(ÍòÔª)",
+      "label": "补偿估计总值(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6686,7 +7247,7 @@
     {
       "varname": "c4008c",
       "dataset": "household",
-      "label": "²¹³¥ÊÇ·ñÂúÒâ",
+      "label": "补偿是否满意",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6701,7 +7262,7 @@
     {
       "varname": "c5001",
       "dataset": "household",
-      "label": "ÓÐÍÁµØÓë·ñ",
+      "label": "有土地与否",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -6776,7 +7337,7 @@
     {
       "varname": "c5002p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%44s",
@@ -6791,7 +7352,7 @@
     {
       "varname": "c5003_1",
       "dataset": "household",
-      "label": "Ãæ»ý[1]",
+      "label": "面积[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6806,7 +7367,7 @@
     {
       "varname": "c5003_2",
       "dataset": "household",
-      "label": "Ãæ»ý[2]",
+      "label": "面积[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6821,7 +7382,7 @@
     {
       "varname": "c5003_3",
       "dataset": "household",
-      "label": "Ãæ»ý[3]",
+      "label": "面积[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6836,7 +7397,7 @@
     {
       "varname": "c5003_4",
       "dataset": "household",
-      "label": "Ãæ»ý[4]",
+      "label": "面积[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -6851,11 +7412,17 @@
     {
       "varname": "c5004_1",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[1]",
+      "label": "记录单位[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "平方米",
+        "2": "分",
+        "5": "其它（请注明）",
+        "3": "公顷"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6866,11 +7433,17 @@
     {
       "varname": "c5004_2",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[2]",
+      "label": "记录单位[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "平方米",
+        "2": "分",
+        "5": "其它（请注明）",
+        "3": "公顷"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6881,11 +7454,17 @@
     {
       "varname": "c5004_3",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[3]",
+      "label": "记录单位[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "平方米",
+        "2": "分",
+        "5": "其它（请注明）",
+        "3": "公顷"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6896,11 +7475,17 @@
     {
       "varname": "c5004_4",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[4]",
+      "label": "记录单位[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "平方米",
+        "2": "分",
+        "5": "其它（请注明）",
+        "3": "公顷"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6911,7 +7496,7 @@
     {
       "varname": "c5004p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12s",
@@ -6926,7 +7511,7 @@
     {
       "varname": "c5004p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -6941,7 +7526,7 @@
     {
       "varname": "c5004p_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -6956,7 +7541,7 @@
     {
       "varname": "c5004p_4",
       "dataset": "household",
-      "label": "ÆäËü[4]",
+      "label": "其它[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -6971,11 +7556,14 @@
     {
       "varname": "c5005_1",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ö×â[1]",
+      "label": "是否出租[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -6986,11 +7574,14 @@
     {
       "varname": "c5005_2",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ö×â[2]",
+      "label": "是否出租[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7001,11 +7592,14 @@
     {
       "varname": "c5005_3",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ö×â[3]",
+      "label": "是否出租[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7016,11 +7610,14 @@
     {
       "varname": "c5005_4",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ö×â[4]",
+      "label": "是否出租[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7031,7 +7628,7 @@
     {
       "varname": "c5006_1",
       "dataset": "household",
-      "label": "³ö×âÃæ»ý[1]",
+      "label": "出租面积[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7046,7 +7643,7 @@
     {
       "varname": "c5006_2",
       "dataset": "household",
-      "label": "³ö×âÃæ»ý[2]",
+      "label": "出租面积[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7061,7 +7658,7 @@
     {
       "varname": "c5006_3",
       "dataset": "household",
-      "label": "³ö×âÃæ»ý[3]",
+      "label": "出租面积[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7076,7 +7673,7 @@
     {
       "varname": "c5006_4",
       "dataset": "household",
-      "label": "³ö×âÃæ»ý[4]",
+      "label": "出租面积[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7091,11 +7688,18 @@
     {
       "varname": "c5007_1",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[1]",
+      "label": "记录单位[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "公顷",
+        "2": "分",
+        "5": "平方米",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7106,11 +7710,18 @@
     {
       "varname": "c5007_2",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[2]",
+      "label": "记录单位[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "公顷",
+        "2": "分",
+        "5": "平方米",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7121,11 +7732,18 @@
     {
       "varname": "c5007_3",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[3]",
+      "label": "记录单位[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "公顷",
+        "2": "分",
+        "5": "平方米",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7136,11 +7754,18 @@
     {
       "varname": "c5007_4",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»[4]",
+      "label": "记录单位[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "4": "公顷",
+        "2": "分",
+        "5": "平方米",
+        "3": "顷",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7151,7 +7776,7 @@
     {
       "varname": "c5007p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -7166,7 +7791,7 @@
     {
       "varname": "c5007p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7181,7 +7806,7 @@
     {
       "varname": "c5007p_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7196,7 +7821,7 @@
     {
       "varname": "c5007p_4",
       "dataset": "household",
-      "label": "ÆäËü[4]",
+      "label": "其它[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7211,7 +7836,7 @@
     {
       "varname": "c5008_1",
       "dataset": "household",
-      "label": "È¥Äê×â½ð(Ôª)[1]",
+      "label": "去年租金(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7226,7 +7851,7 @@
     {
       "varname": "c5008_2",
       "dataset": "household",
-      "label": "È¥Äê×â½ð(Ôª)[2]",
+      "label": "去年租金(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -7241,7 +7866,7 @@
     {
       "varname": "c5008_3",
       "dataset": "household",
-      "label": "È¥Äê×â½ð(Ôª)[3]",
+      "label": "去年租金(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -7256,7 +7881,7 @@
     {
       "varname": "c5008_4",
       "dataset": "household",
-      "label": "È¥Äê×â½ð(Ôª)[4]",
+      "label": "去年租金(元)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7271,7 +7896,7 @@
     {
       "varname": "c5010_1",
       "dataset": "household",
-      "label": "Õ÷ÊÕ½ð¶î(Ôª)[1]",
+      "label": "征收金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7286,7 +7911,7 @@
     {
       "varname": "c5010_2",
       "dataset": "household",
-      "label": "Õ÷ÊÕ½ð¶î(Ôª)[2]",
+      "label": "征收金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7301,7 +7926,7 @@
     {
       "varname": "c5010_3",
       "dataset": "household",
-      "label": "Õ÷ÊÕ½ð¶î(Ôª)[3]",
+      "label": "征收金额(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7316,7 +7941,7 @@
     {
       "varname": "c5010_4",
       "dataset": "household",
-      "label": "Õ÷ÊÕ½ð¶î(Ôª)[4]",
+      "label": "征收金额(元)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7331,11 +7956,14 @@
     {
       "varname": "c6001",
       "dataset": "household",
-      "label": "ÍÁµØÊÇ·ñ±»Õ÷ÊÕ¹ý",
+      "label": "土地是否被征收过",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7346,7 +7974,7 @@
     {
       "varname": "c6002",
       "dataset": "household",
-      "label": "×î½üÒ»´ÎÕ÷ÊÕÄê·Ý",
+      "label": "最近一次征收年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7361,7 +7989,7 @@
     {
       "varname": "c6004",
       "dataset": "household",
-      "label": "Õ÷ÊÕÃæ»ý",
+      "label": "征收面积",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7376,11 +8004,18 @@
     {
       "varname": "c6005",
       "dataset": "household",
-      "label": "¼ÇÂ¼µ¥Î»",
+      "label": "记录单位",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "亩",
+        "2": "分",
+        "3": "顷",
+        "4": "公顷",
+        "5": "平方米",
+        "6": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7391,7 +8026,7 @@
     {
       "varname": "c6005p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%11s",
@@ -7406,11 +8041,15 @@
     {
       "varname": "c6006",
       "dataset": "household",
-      "label": "²¹³¥·½Ê½",
+      "label": "补偿方式",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "货币",
+        "2": "非货币方式",
+        "3": "二者都有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7421,7 +8060,7 @@
     {
       "varname": "c6006p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -7436,7 +8075,7 @@
     {
       "varname": "c6007",
       "dataset": "household",
-      "label": "²¹³¥½ð¶î(ÍòÔª)",
+      "label": "补偿金额(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7451,11 +8090,16 @@
     {
       "varname": "c6008",
       "dataset": "household",
-      "label": "·Ç»õ±Ò²¹³¥ÀàÐÍ",
+      "label": "非货币补偿类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "提供养老保险",
+        "3": "安排工作",
+        "2": "提供医疗保险",
+        "4": "其它（请注明） ## （三）车辆 ## 显示：下面我们想了解一下您家的车辆状况"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7466,7 +8110,7 @@
     {
       "varname": "c6008p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%34s",
@@ -7481,11 +8125,14 @@
     {
       "varname": "c7001",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÆû³µ",
+      "label": "是否有汽车",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7496,7 +8143,7 @@
     {
       "varname": "c7002",
       "dataset": "household",
-      "label": "ÓµÓÐ³£¼û³µÁ¾Êý",
+      "label": "拥有常见车辆数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7511,7 +8158,7 @@
     {
       "varname": "c7003_1",
       "dataset": "household",
-      "label": "Æû³µÆ·ÅÆ[1]",
+      "label": "汽车品牌[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -7526,7 +8173,7 @@
     {
       "varname": "c7003_2",
       "dataset": "household",
-      "label": "Æû³µÆ·ÅÆ[2]",
+      "label": "汽车品牌[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -7541,7 +8188,7 @@
     {
       "varname": "c7004_1",
       "dataset": "household",
-      "label": "ÐÍºÅ[1]",
+      "label": "型号[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -7556,7 +8203,7 @@
     {
       "varname": "c7004_2",
       "dataset": "household",
-      "label": "ÐÍºÅ[2]",
+      "label": "型号[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -7571,7 +8218,7 @@
     {
       "varname": "c7005_1",
       "dataset": "household",
-      "label": "»ñµÃÆû³µÄê·Ý[1]",
+      "label": "获得汽车年份[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7586,7 +8233,7 @@
     {
       "varname": "c7005_2",
       "dataset": "household",
-      "label": "»ñµÃÆû³µÄê·Ý[2]",
+      "label": "获得汽车年份[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7601,11 +8248,14 @@
     {
       "varname": "c7007_1",
       "dataset": "household",
-      "label": "ÊÇÐÂ³µ»¹ÊÇ¶þÊÖ³µ[1]",
+      "label": "是新车还是二手车[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "新车",
+        "2": "二手车"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7616,11 +8266,14 @@
     {
       "varname": "c7007_2",
       "dataset": "household",
-      "label": "ÊÇÐÂ³µ»¹ÊÇ¶þÊÖ³µ[2]",
+      "label": "是新车还是二手车[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "新车",
+        "2": "二手车"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7631,7 +8284,7 @@
     {
       "varname": "c7008_1",
       "dataset": "household",
-      "label": "¹º³µ¼Û¸ñ(ÍòÔª)[1]",
+      "label": "购车价格(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7646,7 +8299,7 @@
     {
       "varname": "c7008_2",
       "dataset": "household",
-      "label": "¹º³µ¼Û¸ñ(ÍòÔª)[2]",
+      "label": "购车价格(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7661,7 +8314,7 @@
     {
       "varname": "c7008a_1",
       "dataset": "household",
-      "label": "¹º³µ½ÉÄÉ·ÑÓÃ(Ôª)[1]",
+      "label": "购车缴纳费用(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7676,7 +8329,7 @@
     {
       "varname": "c7008a_2",
       "dataset": "household",
-      "label": "¹º³µ½ÉÄÉ·ÑÓÃ(Ôª)[2]",
+      "label": "购车缴纳费用(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7691,11 +8344,19 @@
     {
       "varname": "c7009_1",
       "dataset": "household",
-      "label": "¸Ã³µÊÐ³¡¼ÛÖµ(ÍòÔª)[1]",
+      "label": "该车市场价值(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50 万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7721,11 +8382,19 @@
     {
       "varname": "c7009_2",
       "dataset": "household",
-      "label": "¸Ã³µÊÐ³¡¼ÛÖµ(ÍòÔª)[2]",
+      "label": "该车市场价值(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50 万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7751,7 +8420,7 @@
     {
       "varname": "c7009a_1",
       "dataset": "household",
-      "label": "¸Ã³µÊ¹ÓÃ¹«ÀïÊý[1]",
+      "label": "该车使用公里数[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7766,7 +8435,7 @@
     {
       "varname": "c7009a_2",
       "dataset": "household",
-      "label": "¸Ã³µÊ¹ÓÃ¹«ÀïÊý[2]",
+      "label": "该车使用公里数[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -7781,11 +8450,14 @@
     {
       "varname": "c7014_1",
       "dataset": "household",
-      "label": "¹º³µÊÇ·ñÓÐÒøÐÐ´û¿î[1]",
+      "label": "购车是否有银行贷款[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7796,11 +8468,14 @@
     {
       "varname": "c7014_2",
       "dataset": "household",
-      "label": "¹º³µÊÇ·ñÓÐÒøÐÐ´û¿î[2]",
+      "label": "购车是否有银行贷款[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7811,11 +8486,16 @@
     {
       "varname": "c7015_1",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îÔ­Òò[1]",
+      "label": "没有银行贷款原因[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "2": "需要，但没有申请过",
+        "3": "申请过但被拒绝",
+        "4": "以前申请过，已经还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7826,11 +8506,16 @@
     {
       "varname": "c7015_2",
       "dataset": "household",
-      "label": "Ã»ÓÐÒøÐÐ´û¿îÔ­Òò[2]",
+      "label": "没有银行贷款原因[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "不需要",
+        "2": "需要，但没有申请过",
+        "3": "申请过但被拒绝",
+        "4": "以前申请过，已经还清"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7841,7 +8526,7 @@
     {
       "varname": "c7016p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7856,7 +8541,7 @@
     {
       "varname": "c7016p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -7871,7 +8556,7 @@
     {
       "varname": "c7018_1",
       "dataset": "household",
-      "label": "´û¿î×Ü½ð¶î(ÍòÔª)[1]",
+      "label": "贷款总金额(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7886,7 +8571,7 @@
     {
       "varname": "c7018_2",
       "dataset": "household",
-      "label": "´û¿î×Ü½ð¶î(ÍòÔª)[2]",
+      "label": "贷款总金额(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -7901,11 +8586,19 @@
     {
       "varname": "c7019_1",
       "dataset": "household",
-      "label": "Ç·¿î½ð¶î(ÍòÔª)[1]",
+      "label": "欠款金额(万元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50 万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7931,11 +8624,19 @@
     {
       "varname": "c7019_2",
       "dataset": "household",
-      "label": "Ç·¿î½ð¶î(ÍòÔª)[2]",
+      "label": "欠款金额(万元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50 万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7961,11 +8662,14 @@
     {
       "varname": "c7047_1",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÆäËü½è¿î[1]",
+      "label": "是否有其它借款[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有（跳至"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -7976,11 +8680,14 @@
     {
       "varname": "c7047_2",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÆäËü½è¿î[2]",
+      "label": "是否有其它借款[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有（跳至"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8201,7 +8908,7 @@
     {
       "varname": "c7048p_1",
       "dataset": "household",
-      "label": "ÆäËû[1]",
+      "label": "其他[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -8216,7 +8923,7 @@
     {
       "varname": "c7048p_2",
       "dataset": "household",
-      "label": "ÆäËû[2]",
+      "label": "其他[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -8231,7 +8938,7 @@
     {
       "varname": "c7049_1",
       "dataset": "household",
-      "label": "½è¿î×Ü½ð¶î(Ôª)[1]",
+      "label": "借款总金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8246,7 +8953,7 @@
     {
       "varname": "c7049_2",
       "dataset": "household",
-      "label": "½è¿î×Ü½ð¶î(Ôª)[2]",
+      "label": "借款总金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8261,11 +8968,19 @@
     {
       "varname": "c7050_1",
       "dataset": "household",
-      "label": "Ç·¿î×Ü½ð¶î(Ôª)[1]",
+      "label": "欠款总金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8291,11 +9006,19 @@
     {
       "varname": "c7050_2",
       "dataset": "household",
-      "label": "Ç·¿î×Ü½ð¶î(Ôª)[2]",
+      "label": "欠款总金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2万以下",
+        "2": "2-5 万",
+        "3": "5-10 万",
+        "4": "10-20 万",
+        "5": "20-50万",
+        "6": "50-100 万",
+        "7": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8321,7 +9044,7 @@
     {
       "varname": "c7052_1",
       "dataset": "household",
-      "label": "Ö§³öÀûÏ¢½ð¶î(Ôª)[1]",
+      "label": "支出利息金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8336,7 +9059,7 @@
     {
       "varname": "c7052_2",
       "dataset": "household",
-      "label": "Ö§³öÀûÏ¢½ð¶î(Ôª)[2]",
+      "label": "支出利息金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -8351,7 +9074,7 @@
     {
       "varname": "c7052a",
       "dataset": "household",
-      "label": "ÆäËü³µÁ¾×Ü¼ÛÖµ(ÍòÔª)",
+      "label": "其它车辆总价值(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -8381,7 +9104,7 @@
     {
       "varname": "c7053",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐÆäËü³µÁ¾",
+      "label": "是否拥有其它车辆",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -8396,7 +9119,7 @@
     {
       "varname": "c7055",
       "dataset": "household",
-      "label": "ÆäËü³µÁ¾×ÜÊÐÖµ(Ôª)",
+      "label": "其它车辆总市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8411,11 +9134,14 @@
     {
       "varname": "c7056",
       "dataset": "household",
-      "label": "¹ºÂòÆäËü³µÁ¾ÊÇ·ñ´û½è¿î",
+      "label": "购买其它车辆是否贷借款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8426,11 +9152,19 @@
     {
       "varname": "c7057",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿î×Ü¶î(Ôª)",
+      "label": "目前欠款总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2 万以下",
+        "5": "20-50 万",
+        "2": "2-5 万",
+        "6": "50-100 万",
+        "3": "5-10 万",
+        "7": "100 万以上",
+        "4": "10-20 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8456,7 +9190,7 @@
     {
       "varname": "c7057a",
       "dataset": "household",
-      "label": "Æû³µ×â½ðÖ§³ö(Ôª)",
+      "label": "汽车租金支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8471,7 +9205,7 @@
     {
       "varname": "c7057b",
       "dataset": "household",
-      "label": "Æû³µ×â½ðÊÕÈë(Ôª)",
+      "label": "汽车租金收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -8486,11 +9220,14 @@
     {
       "varname": "c7057c",
       "dataset": "household",
-      "label": "ÊÇ·ñ×âÈë³µÁ¾",
+      "label": "是否租入车辆",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8501,11 +9238,14 @@
     {
       "varname": "c7057d",
       "dataset": "household",
-      "label": "Æû³µÊÇ·ñ³ö×â",
+      "label": "汽车是否出租",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -8516,7 +9256,7 @@
     {
       "varname": "c7070",
       "dataset": "household",
-      "label": "ÊÇ·ñ¹ºÂò³µÁ¾±£ÏÕ",
+      "label": "是否购买车辆保险",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -8726,7 +9466,7 @@
     {
       "varname": "c7071p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -8741,7 +9481,7 @@
     {
       "varname": "c7072",
       "dataset": "household",
-      "label": "½ÉÄÉ±£·Ñ½ð¶î(Ôª)",
+      "label": "缴纳保费金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8756,7 +9496,7 @@
     {
       "varname": "c7073",
       "dataset": "household",
-      "label": "ÊÇ·ñÉêÇë¹ýÆû³µ±£ÏÕÀíÅâ",
+      "label": "是否申请过汽车保险理赔",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -8771,7 +9511,7 @@
     {
       "varname": "c7074",
       "dataset": "household",
-      "label": "Æû³µ±£ÏÕÀíÅâ½ð¶î(Ôª)",
+      "label": "汽车保险理赔金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -8981,7 +9721,7 @@
     {
       "varname": "c8001p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%22s",
@@ -8996,7 +9736,7 @@
     {
       "varname": "c8002_1",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_1",
+      "label": "估计价值(元)_1",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9011,7 +9751,7 @@
     {
       "varname": "c8002_10",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_10",
+      "label": "估计价值(元)_10",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9026,7 +9766,7 @@
     {
       "varname": "c8002_11",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_11",
+      "label": "估计价值(元)_11",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9041,7 +9781,7 @@
     {
       "varname": "c8002_12",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_12",
+      "label": "估计价值(元)_12",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -9056,7 +9796,7 @@
     {
       "varname": "c8002_2",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_2",
+      "label": "估计价值(元)_2",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9071,7 +9811,7 @@
     {
       "varname": "c8002_3",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_3",
+      "label": "估计价值(元)_3",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9086,7 +9826,7 @@
     {
       "varname": "c8002_4",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_4",
+      "label": "估计价值(元)_4",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9101,7 +9841,7 @@
     {
       "varname": "c8002_5",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_5",
+      "label": "估计价值(元)_5",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9116,7 +9856,7 @@
     {
       "varname": "c8002_6",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_6",
+      "label": "估计价值(元)_6",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9131,7 +9871,7 @@
     {
       "varname": "c8002_7",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_7",
+      "label": "估计价值(元)_7",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9146,7 +9886,7 @@
     {
       "varname": "c8002_8",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_8",
+      "label": "估计价值(元)_8",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9161,7 +9901,7 @@
     {
       "varname": "c8002_9",
       "dataset": "household",
-      "label": "¹À¼Æ¼ÛÖµ(Ôª)_9",
+      "label": "估计价值(元)_9",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9176,11 +9916,14 @@
     {
       "varname": "c8003",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐÆäËü×Ê²ú",
+      "label": "是否拥有其它资产",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -9281,7 +10024,7 @@
     {
       "varname": "c8005_1",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_1",
+      "label": "其它资产现值(元)_1",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -9296,7 +10039,7 @@
     {
       "varname": "c8005_2",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_2",
+      "label": "其它资产现值(元)_2",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9311,7 +10054,7 @@
     {
       "varname": "c8005_3",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_3",
+      "label": "其它资产现值(元)_3",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -9326,7 +10069,7 @@
     {
       "varname": "c8005_4",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_4",
+      "label": "其它资产现值(元)_4",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9341,7 +10084,7 @@
     {
       "varname": "c8005_5",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_5",
+      "label": "其它资产现值(元)_5",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9356,7 +10099,7 @@
     {
       "varname": "c8005_6",
       "dataset": "household",
-      "label": "ÆäËü×Ê²úÏÖÖµ(Ôª)_6",
+      "label": "其它资产现值(元)_6",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -9371,11 +10114,14 @@
     {
       "varname": "c8006",
       "dataset": "household",
-      "label": "ÊÇ·ñ´û¿î»ò½è¿î",
+      "label": "是否贷款或借款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -9386,11 +10132,15 @@
     {
       "varname": "c8007",
       "dataset": "household",
-      "label": "Ç·¿î½ð¶î(Ôª)",
+      "label": "欠款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 万以下",
+        "3": "10-15 万",
+        "2": "5-10 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -9866,11 +10616,14 @@
     {
       "varname": "d1101",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐ»îÆÚ´æ¿îÕË»§",
+      "label": "是否有活期存款账户",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -9881,7 +10634,7 @@
     {
       "varname": "d1104",
       "dataset": "household",
-      "label": "Ê¹ÓÃ»îÆÚÕË»§¸öÊý",
+      "label": "使用活期账户个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -9896,11 +10649,22 @@
     {
       "varname": "d1105",
       "dataset": "household",
-      "label": "Ä¿Ç°»îÆÚ´æ¿î×Ü¶î(Ôª)",
+      "label": "目前活期存款总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 若"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -9926,7 +10690,7 @@
     {
       "varname": "d1107",
       "dataset": "household",
-      "label": "¿ª»§ÒøÐÐÃû³Æ",
+      "label": "开户银行名称",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -9941,7 +10705,7 @@
     {
       "varname": "d1107p",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ",
+      "label": "其他银行",
       "label_en": "",
       "vtype": "numeric",
       "format": "%38s",
@@ -10226,7 +10990,7 @@
     {
       "varname": "d1108p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%60s",
@@ -10241,7 +11005,7 @@
     {
       "varname": "d1111",
       "dataset": "household",
-      "label": "»îÆÚ´æ¿îÓà¶î(Ôª)",
+      "label": "活期存款余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -10256,11 +11020,14 @@
     {
       "varname": "d2101",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐ¶¨ÆÚ´æ¿î",
+      "label": "是否有定期存款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -10511,7 +11278,7 @@
     {
       "varname": "d2103a",
       "dataset": "household",
-      "label": "¶¨ÆÚ´æ¿î±ÊÊý",
+      "label": "定期存款笔数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -10526,7 +11293,7 @@
     {
       "varname": "d2103p",
       "dataset": "household",
-      "label": "ÆäËüÔ­Òò",
+      "label": "其它原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -10541,7 +11308,7 @@
     {
       "varname": "d2104",
       "dataset": "household",
-      "label": "¶¨ÆÚ´æ¿î×Ü¶î(Ôª)",
+      "label": "定期存款总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -10571,7 +11338,7 @@
     {
       "varname": "d2106",
       "dataset": "household",
-      "label": "Ë°ºóÀûÏ¢ÊÕÈë(Ôª)",
+      "label": "税后利息收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -10586,7 +11353,7 @@
     {
       "varname": "d2114",
       "dataset": "household",
-      "label": "´æÈëÄê·Ý",
+      "label": "存入年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -10601,7 +11368,7 @@
     {
       "varname": "d2115",
       "dataset": "household",
-      "label": "´æ¿îÆÚÏÞ(Äê)",
+      "label": "存款期限(年)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -10616,7 +11383,7 @@
     {
       "varname": "d2117",
       "dataset": "household",
-      "label": "Ä¿Ç°¸Ã±Ê´æ¿î½ð¶î(Ôª)",
+      "label": "目前该笔存款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -10631,7 +11398,7 @@
     {
       "varname": "d3101",
       "dataset": "household",
-      "label": "Ä¿Ç°ÊÇ·ñ³ÖÓÐ¹ÉÆ±ÕË»§",
+      "label": "目前是否持有股票账户",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -10811,7 +11578,7 @@
     {
       "varname": "d3102p",
       "dataset": "household",
-      "label": "ÆäËüÔ­Òò",
+      "label": "其它原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%56s",
@@ -10826,11 +11593,23 @@
     {
       "varname": "d3103",
       "dataset": "household",
-      "label": "¹ÉÆ±ÕË»§ÏÖ½ðÓà¶î(Ôª)",
+      "label": "股票账户现金余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -10856,7 +11635,7 @@
     {
       "varname": "d3104",
       "dataset": "household",
-      "label": "³ÖÓÐ¹ÉÆ±Ö§Êý",
+      "label": "持有股票支数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11021,7 +11800,7 @@
     {
       "varname": "d3105p",
       "dataset": "household",
-      "label": "ÆäËüÔ­Òò",
+      "label": "其它原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%22s",
@@ -11036,7 +11815,7 @@
     {
       "varname": "d3106",
       "dataset": "household",
-      "label": "¼ÒÈËÊÇ·ñÔÚ¹ÉÆ±·¢ÐÐÆóÒµÓÐ¹¤×÷Ê·",
+      "label": "家人是否在股票发行企业有工作史",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11051,7 +11830,7 @@
     {
       "varname": "d3107",
       "dataset": "household",
-      "label": "Í¶×Ê¹ÉÆ±Ê±³¤(ÔÂ)",
+      "label": "投资股票时长(月)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -11066,11 +11845,15 @@
     {
       "varname": "d3108",
       "dataset": "household",
-      "label": "³´¹ÉÓ¯¿÷Çé¿ö",
+      "label": "炒股盈亏情况",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "盈利",
+        "3": "亏损",
+        "2": "盈亏平衡 访员注意：此问是询问所有购买的股票总市值，那些股票帐户中未用于购买股票的资金不计算在内"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11081,11 +11864,23 @@
     {
       "varname": "d3109",
       "dataset": "household",
-      "label": "¹ÉÆ±Ä¿Ç°ÊÐÖµ(Ôª)",
+      "label": "股票目前市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 ## 访员注意：此问询问受访家庭所有成员中通常使用最多的操作方式，以受访者的主观判断为准"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11231,11 +12026,23 @@
     {
       "varname": "d3112a",
       "dataset": "household",
-      "label": "¹ÉÆ±Í¶×Ê¾ö²ßÕß",
+      "label": "股票投资决策者",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "受访者",
+        "7": "孙子/孙女",
+        "2": "配偶",
+        "8": "兄弟姐妹",
+        "3": "受访者和配偶共同决定",
+        "9": "其他亲属",
+        "4": "家人共同做出",
+        "10": "非亲属",
+        "5": "父母",
+        "11": "各自决策",
+        "6": "子女"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11246,7 +12053,7 @@
     {
       "varname": "d3113",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐ·Ç¹«¿ªÊÐ³¡½»Ò×¹ÉÆ±",
+      "label": "是否有非公开市场交易股票",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11261,11 +12068,23 @@
     {
       "varname": "d3116",
       "dataset": "household",
-      "label": "Ä¿Ç°ÊÐÖµ(Ôª)",
+      "label": "目前市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11291,7 +12110,7 @@
     {
       "varname": "d3116a",
       "dataset": "household",
-      "label": "ÎÞ½è´û¹ºÂò¹ÉÆ±",
+      "label": "无借贷购买股票",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11306,7 +12125,7 @@
     {
       "varname": "d3116b",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿îÊý¶î(Ôª)",
+      "label": "目前欠款数额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -11321,11 +12140,23 @@
     {
       "varname": "d3117",
       "dataset": "household",
-      "label": "È¥Äê¹ÉÆ±Ë°ºóÊÕÈë(Ôª)",
+      "label": "去年股票税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 （四）债券"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11486,7 +12317,7 @@
     {
       "varname": "d4101p",
       "dataset": "household",
-      "label": "ÆäËûÕ®È¯",
+      "label": "其他债券",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11501,11 +12332,23 @@
     {
       "varname": "d4103_1",
       "dataset": "household",
-      "label": "³ÖÓÐÕ®È¯×ÜÃæÖµ(Ôª)[1]",
+      "label": "持有债券总面值(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11531,11 +12374,23 @@
     {
       "varname": "d4103_2",
       "dataset": "household",
-      "label": "³ÖÓÐÕ®È¯×ÜÃæÖµ(Ôª)[2]",
+      "label": "持有债券总面值(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11561,11 +12416,23 @@
     {
       "varname": "d4103_3",
       "dataset": "household",
-      "label": "³ÖÓÐÕ®È¯×ÜÃæÖµ(Ôª)[3]",
+      "label": "持有债券总面值(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11591,11 +12458,23 @@
     {
       "varname": "d4103_4",
       "dataset": "household",
-      "label": "³ÖÓÐÕ®È¯×ÜÃæÖµ(Ôª)[4]",
+      "label": "持有债券总面值(元)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11621,11 +12500,23 @@
     {
       "varname": "d4103_5",
       "dataset": "household",
-      "label": "³ÖÓÐÕ®È¯×ÜÃæÖµ(Ôª)[5]",
+      "label": "持有债券总面值(元)[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -11651,7 +12542,7 @@
     {
       "varname": "d4105_1",
       "dataset": "household",
-      "label": "×î´óÒ»±Ê¹ºÂòÄê·Ý[1]",
+      "label": "最大一笔购买年份[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11666,7 +12557,7 @@
     {
       "varname": "d4105_2",
       "dataset": "household",
-      "label": "×î´óÒ»±Ê¹ºÂòÄê·Ý[2]",
+      "label": "最大一笔购买年份[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11681,7 +12572,7 @@
     {
       "varname": "d4105_3",
       "dataset": "household",
-      "label": "×î´óÒ»±Ê¹ºÂòÄê·Ý[3]",
+      "label": "最大一笔购买年份[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11696,7 +12587,7 @@
     {
       "varname": "d4105_4",
       "dataset": "household",
-      "label": "×î´óÒ»±Ê¹ºÂòÄê·Ý[4]",
+      "label": "最大一笔购买年份[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11711,7 +12602,7 @@
     {
       "varname": "d4105_5",
       "dataset": "household",
-      "label": "×î´óÒ»±Ê¹ºÂòÄê·Ý[5]",
+      "label": "最大一笔购买年份[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11726,7 +12617,7 @@
     {
       "varname": "d4106_1",
       "dataset": "household",
-      "label": "ÆÚÏÞ(Äê)[1]",
+      "label": "期限(年)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -11741,7 +12632,7 @@
     {
       "varname": "d4106_2",
       "dataset": "household",
-      "label": "ÆÚÏÞ(Äê)[2]",
+      "label": "期限(年)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -11756,7 +12647,7 @@
     {
       "varname": "d4106_3",
       "dataset": "household",
-      "label": "ÆÚÏÞ(Äê)[3]",
+      "label": "期限(年)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11771,7 +12662,7 @@
     {
       "varname": "d4106_4",
       "dataset": "household",
-      "label": "ÆÚÏÞ(Äê)[4]",
+      "label": "期限(年)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11786,7 +12677,7 @@
     {
       "varname": "d4106_5",
       "dataset": "household",
-      "label": "ÆÚÏÞ(Äê)[5]",
+      "label": "期限(年)[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11801,7 +12692,7 @@
     {
       "varname": "d4108_1",
       "dataset": "household",
-      "label": "ÃæÖµ(Ôª)[1]",
+      "label": "面值(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -11816,7 +12707,7 @@
     {
       "varname": "d4108_2",
       "dataset": "household",
-      "label": "ÃæÖµ(Ôª)[2]",
+      "label": "面值(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -11831,7 +12722,7 @@
     {
       "varname": "d4108_3",
       "dataset": "household",
-      "label": "ÃæÖµ(Ôª)[3]",
+      "label": "面值(元)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -11846,7 +12737,7 @@
     {
       "varname": "d4108_4",
       "dataset": "household",
-      "label": "ÃæÖµ(Ôª)[4]",
+      "label": "面值(元)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -11861,7 +12752,7 @@
     {
       "varname": "d4108_5",
       "dataset": "household",
-      "label": "ÃæÖµ(Ôª)[5]",
+      "label": "面值(元)[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11876,7 +12767,7 @@
     {
       "varname": "d4110_1",
       "dataset": "household",
-      "label": "ÄêÀûÂÊ(%)[1]",
+      "label": "年利率(%)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -11891,7 +12782,7 @@
     {
       "varname": "d4110_2",
       "dataset": "household",
-      "label": "ÄêÀûÂÊ(%)[2]",
+      "label": "年利率(%)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -11906,7 +12797,7 @@
     {
       "varname": "d4110_3",
       "dataset": "household",
-      "label": "ÄêÀûÂÊ(%)[3]",
+      "label": "年利率(%)[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -11921,7 +12812,7 @@
     {
       "varname": "d4110_4",
       "dataset": "household",
-      "label": "ÄêÀûÂÊ(%)[4]",
+      "label": "年利率(%)[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -11936,7 +12827,7 @@
     {
       "varname": "d4110_5",
       "dataset": "household",
-      "label": "ÄêÀûÂÊ(%)[5]",
+      "label": "年利率(%)[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11951,7 +12842,7 @@
     {
       "varname": "d4110a",
       "dataset": "household",
-      "label": "ÓÐÎÞ½è´û¹ºÂòÕ®È¯",
+      "label": "有无借贷购买债券",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11966,7 +12857,7 @@
     {
       "varname": "d4110b",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿î½ð¶î(Ôª)",
+      "label": "目前欠款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -11981,7 +12872,7 @@
     {
       "varname": "d4111",
       "dataset": "household",
-      "label": "È¥ÄêÕ®È¯Ë°ºóÊÕÈë(Ôª)",
+      "label": "去年债券税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -11996,7 +12887,7 @@
     {
       "varname": "d5103",
       "dataset": "household",
-      "label": "Ö§Êý",
+      "label": "支数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12086,7 +12977,7 @@
     {
       "varname": "d5104p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -12101,7 +12992,7 @@
     {
       "varname": "d5105",
       "dataset": "household",
-      "label": "Í¶×Ê»ù½ðÊ±³¤(ÔÂ)",
+      "label": "投资基金时长(月)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -12116,11 +13007,23 @@
     {
       "varname": "d5107",
       "dataset": "household",
-      "label": "Ä¿Ç°ÓµÓÐ»ù½ð×ÜÊÐÖµ(Ôª)",
+      "label": "目前拥有基金总市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12146,7 +13049,7 @@
     {
       "varname": "d5108a",
       "dataset": "household",
-      "label": "ÓÐÎÞ½è´û¹ºÂò»ù½ð",
+      "label": "有无借贷购买基金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12161,7 +13064,7 @@
     {
       "varname": "d5108b",
       "dataset": "household",
-      "label": "Ä¿Ç°Î´»¹Ç·¿î¶î(Ôª)",
+      "label": "目前未还欠款额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -12176,11 +13079,23 @@
     {
       "varname": "d5109",
       "dataset": "household",
-      "label": "È¥Äê»ù½ðË°ºóÊÕÈë(Ôª)",
+      "label": "去年基金税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以",
+        "6": "20 万-50 万跳回"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12206,7 +13121,7 @@
     {
       "varname": "d6103",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐÆÚ»õ",
+      "label": "是否拥有期货",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12536,7 +13451,7 @@
     {
       "varname": "d6104p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12551,11 +13466,23 @@
     {
       "varname": "d6106a",
       "dataset": "household",
-      "label": "ÆÚ»õÊÐ¼Û(Ôª)",
+      "label": "期货市价(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "7": "50万-100万",
+        "2": "5千-2万",
+        "8": "100万-200万",
+        "3": "2万-5万",
+        "9": "200万-500万",
+        "4": "5万-10万",
+        "10": "500万-1000万",
+        "5": "10万-20万",
+        "6": "20万-50万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12581,11 +13508,14 @@
     {
       "varname": "d6107",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÈ¨Ö¤",
+      "label": "是否有权证",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否 访员注意：此处询问权证总市值，若受访者单独告诉每种权证的市值，请自行加总"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12596,11 +13526,23 @@
     {
       "varname": "d6110",
       "dataset": "household",
-      "label": "È¨Ö¤ÊÐ¼Û(Ôª)",
+      "label": "权证市价(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "7": "50万-100万",
+        "2": "5千-2万",
+        "8": "100万-200万",
+        "3": "2万-5万",
+        "9": "200万-500万",
+        "4": "5万-10万",
+        "10": "500万-1000万",
+        "5": "10万-20万",
+        "11": "1000 万以上",
+        "6": "20万-50万 访员注意：此问不包括前面的期货、权证"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12626,7 +13568,7 @@
     {
       "varname": "d6112",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÆäËüÑÜÉúÆ·",
+      "label": "是否有其它衍生品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12641,11 +13583,23 @@
     {
       "varname": "d6115",
       "dataset": "household",
-      "label": "ÆäËüÑÜÉúÆ·ÊÐÖµ(Ôª)",
+      "label": "其它衍生品市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 ## 访员注意：此问询问受访家庭从所有金融衍生品的情况，包括期货、权证等"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12671,7 +13625,7 @@
     {
       "varname": "d6115a",
       "dataset": "household",
-      "label": "ÓÐÎÞ½è´û¹ºÂòÑÜÉúÆ·",
+      "label": "有无借贷购买衍生品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12686,7 +13640,7 @@
     {
       "varname": "d6115b",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿î½ð¶î(Ôª)",
+      "label": "目前欠款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -12701,11 +13655,23 @@
     {
       "varname": "d6116",
       "dataset": "household",
-      "label": "È¥ÄêÑÜÉúÆ·Ë°ºó½ð¶î(Ôª)",
+      "label": "去年衍生品税后金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 跳回"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -12731,7 +13697,7 @@
     {
       "varname": "d7103",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐÒøÐÐÀí²Æ²úÆ·",
+      "label": "是否拥有银行理财产品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13091,7 +14057,7 @@
     {
       "varname": "d7104p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%14s",
@@ -13106,11 +14072,22 @@
     {
       "varname": "d7105",
       "dataset": "household",
-      "label": "ÒøÐÐÀí²Æ²úÆ·Í¶×Ê¶î(Ôª)",
+      "label": "银行理财产品投资额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "7": "50万-100万",
+        "2": "5千-2万",
+        "8": "100万-200万",
+        "3": "2万-5万",
+        "9": "200万-500万",
+        "4": "5万-10万",
+        "10": "500万-1000万 5.1 10万-20万",
+        "11": "1000 万以上",
+        "6": "20万-50万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13121,7 +14098,7 @@
     {
       "varname": "d7106a",
       "dataset": "household",
-      "label": "ÒøÐÐ²úÆ·×ÜÊÐÖµ(Ôª)",
+      "label": "银行产品总市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -13151,7 +14128,7 @@
     {
       "varname": "d7107",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐÆäËü½ðÈÚÀí²Æ²úÆ·",
+      "label": "是否拥有其它金融理财产品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13166,7 +14143,7 @@
     {
       "varname": "d7108",
       "dataset": "household",
-      "label": "ÆäËü½ðÈÚÀí²Æ²úÆ·Í¶×Ê¶î(Ôª)",
+      "label": "其它金融理财产品投资额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -13181,7 +14158,7 @@
     {
       "varname": "d7110",
       "dataset": "household",
-      "label": "ÆäËü½ðÈÚÀí²Æ²úÆ·×ÜÊÐÖµ(Ôª)",
+      "label": "其它金融理财产品总市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -13211,7 +14188,7 @@
     {
       "varname": "d7111a",
       "dataset": "household",
-      "label": "ÊÇ·ñ½è´û¹ºÂò½ðÈÚÀí²Æ²úÆ·",
+      "label": "是否借贷购买金融理财产品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13226,11 +14203,23 @@
     {
       "varname": "d7111b",
       "dataset": "household",
-      "label": "Ç·¿îÊý¶î(Ôª)",
+      "label": "欠款数额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "7": "50万-100万",
+        "2": "5千-2万",
+        "8": "100万-200万",
+        "3": "2万-5万",
+        "9": "200万-500万",
+        "4": "5万-10万",
+        "10": "5 500万-1000万",
+        "5": "10万-20万",
+        "11": "1000万以上",
+        "6": "20万-50万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13241,11 +14230,23 @@
     {
       "varname": "d7112",
       "dataset": "household",
-      "label": "È¥Äê½ðÈÚÀí²Æ²úÆ·Ë°ºóÊÕÈë(Ôª)",
+      "label": "去年金融理财产品税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13436,11 +14437,14 @@
     {
       "varname": "d8101",
       "dataset": "household",
-      "label": "ÊÇ·ñ³ÖÓÐ·ÇÈËÃñ±Ò×Ê²ú",
+      "label": "是否持有非人民币资产",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13571,7 +14575,7 @@
     {
       "varname": "d8102p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -13586,11 +14590,22 @@
     {
       "varname": "d8104_1",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[1]",
+      "label": "总市值[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13616,11 +14631,22 @@
     {
       "varname": "d8104_2",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[2]",
+      "label": "总市值[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13646,11 +14672,22 @@
     {
       "varname": "d8104_3",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[3]",
+      "label": "总市值[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13676,11 +14713,22 @@
     {
       "varname": "d8104_4",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[4]",
+      "label": "总市值[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13706,11 +14754,22 @@
     {
       "varname": "d8104_5",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[5]",
+      "label": "总市值[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13736,11 +14795,22 @@
     {
       "varname": "d8104_6",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[6]",
+      "label": "总市值[6]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13766,11 +14836,22 @@
     {
       "varname": "d8104_7",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[7]",
+      "label": "总市值[7]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13796,11 +14877,22 @@
     {
       "varname": "d8104_8",
       "dataset": "household",
-      "label": "×ÜÊÐÖµ[8]",
+      "label": "总市值[8]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "3": "2 万-5 万",
+        "2": "5 千-2 万",
+        "4": "5 万-10 万",
+        "5": "10 万-20 万",
+        "9": "200 万-500 万",
+        "6": "20 万-50 万",
+        "10": "500 万-1000 万",
+        "7": "50 万-100 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13826,11 +14918,17 @@
     {
       "varname": "d8104a_1",
       "dataset": "household",
-      "label": "µ¥Î»[1]",
+      "label": "单位[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13841,11 +14939,17 @@
     {
       "varname": "d8104a_2",
       "dataset": "household",
-      "label": "µ¥Î»[2]",
+      "label": "单位[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13856,11 +14960,17 @@
     {
       "varname": "d8104a_3",
       "dataset": "household",
-      "label": "µ¥Î»[3]",
+      "label": "单位[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13871,11 +14981,17 @@
     {
       "varname": "d8104a_4",
       "dataset": "household",
-      "label": "µ¥Î»[4]",
+      "label": "单位[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13886,11 +15002,17 @@
     {
       "varname": "d8104a_5",
       "dataset": "household",
-      "label": "µ¥Î»[5]",
+      "label": "单位[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13901,11 +15023,17 @@
     {
       "varname": "d8104a_6",
       "dataset": "household",
-      "label": "µ¥Î»[6]",
+      "label": "单位[6]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13916,11 +15044,17 @@
     {
       "varname": "d8104a_7",
       "dataset": "household",
-      "label": "µ¥Î»[7]",
+      "label": "单位[7]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13931,11 +15065,17 @@
     {
       "varname": "d8104a_8",
       "dataset": "household",
-      "label": "µ¥Î»[8]",
+      "label": "单位[8]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "元",
+        "4": "欧元",
+        "2": "美元",
+        "5": "日元",
+        "3": "港币 6 其它（请注明） ## 访员注意：此问指受访家庭从所有非人民币资产上获得的实际税后收入"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -13946,7 +15086,7 @@
     {
       "varname": "d8104ap_3",
       "dataset": "household",
-      "label": "ÆäËü[3]",
+      "label": "其它[3]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13961,7 +15101,7 @@
     {
       "varname": "d8104ap_4",
       "dataset": "household",
-      "label": "ÆäËü[4]",
+      "label": "其它[4]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13976,7 +15116,7 @@
     {
       "varname": "d8104ap_5",
       "dataset": "household",
-      "label": "ÆäËü[5]",
+      "label": "其它[5]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -13991,7 +15131,7 @@
     {
       "varname": "d8104ap_6",
       "dataset": "household",
-      "label": "ÆäËü[6]",
+      "label": "其它[6]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14006,7 +15146,7 @@
     {
       "varname": "d8104ap_7",
       "dataset": "household",
-      "label": "ÆäËü[7]",
+      "label": "其它[7]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14021,7 +15161,7 @@
     {
       "varname": "d8105a",
       "dataset": "household",
-      "label": "ÓÐÎÞ½è´û¹ºÂò·ÇÈËÃñ±Ò×Ê²ú",
+      "label": "有无借贷购买非人民币资产",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14036,7 +15176,7 @@
     {
       "varname": "d8105b",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿î½ð¶î(Ôª)",
+      "label": "目前欠款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14051,11 +15191,23 @@
     {
       "varname": "d8106",
       "dataset": "household",
-      "label": "È¥Äê·ÇÈËÃñ±Ò×Ê²úË°ºóÊÕÈë(Ôª)",
+      "label": "去年非人民币资产税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 ## （九）黄金"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14081,11 +15233,14 @@
     {
       "varname": "d9101",
       "dataset": "household",
-      "label": "ÊÇ·ñÓµÓÐ»Æ½ð",
+      "label": "是否拥有黄金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14096,7 +15251,7 @@
     {
       "varname": "d9102",
       "dataset": "household",
-      "label": "¹ºÂò»Æ½ðÍ¶×Ê¶î(Ôª)",
+      "label": "购买黄金投资额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14111,11 +15266,22 @@
     {
       "varname": "d9103",
       "dataset": "household",
-      "label": "»Æ½ðÊÐÖµ(Ôª)",
+      "label": "黄金市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14141,11 +15307,23 @@
     {
       "varname": "d9105",
       "dataset": "household",
-      "label": "È¥Äê»Æ½ðË°ºóÊÕÈë(Ôª)",
+      "label": "去年黄金税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "7": "50 万-100 万",
+        "2": "5 千-2 万",
+        "8": "100 万-200 万",
+        "3": "2 万-5 万",
+        "9": "200 万-500 万",
+        "4": "5 万-10 万",
+        "10": "500 万-1000 万",
+        "5": "10 万-20 万",
+        "11": "1000 万以上",
+        "6": "20 万-50 万 ## （十）现金"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14171,7 +15349,7 @@
     {
       "varname": "e1001",
       "dataset": "household",
-      "label": "ÊÇ·ñÒò×ÓÅ®½ÌÓýÏòÒøÐÐ´û¿î",
+      "label": "是否因子女教育向银行贷款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14186,7 +15364,7 @@
     {
       "varname": "e1005",
       "dataset": "household",
-      "label": "´û¿î±ÊÊý",
+      "label": "贷款笔数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14201,7 +15379,7 @@
     {
       "varname": "e1006",
       "dataset": "household",
-      "label": "Ç·¿îÊý¶î(ÍòÔª)",
+      "label": "欠款数额(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -14216,7 +15394,7 @@
     {
       "varname": "e1007",
       "dataset": "household",
-      "label": "Ö§¸¶ÀûÏ¢¶î(Ôª)",
+      "label": "支付利息额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14231,7 +15409,7 @@
     {
       "varname": "e1008a",
       "dataset": "household",
-      "label": "½ÌÓý´û¿î»ñµÃÄê·Ý",
+      "label": "教育贷款获得年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14246,11 +15424,14 @@
     {
       "varname": "e1009",
       "dataset": "household",
-      "label": "½ÌÓý´û¿îÐÔÖÊ",
+      "label": "教育贷款性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国家助学贷款",
+        "2": "商业教育贷款"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14261,7 +15442,7 @@
     {
       "varname": "e1010",
       "dataset": "household",
-      "label": "·¢·ÅÒøÐÐ",
+      "label": "发放银行",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14276,7 +15457,7 @@
     {
       "varname": "e1010p",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ",
+      "label": "其他银行",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -14291,11 +15472,17 @@
     {
       "varname": "e1011",
       "dataset": "household",
-      "label": "´û¿îÓÃÍ¾",
+      "label": "贷款用途",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "学杂费",
+        "4": "学杂费、住宿费",
+        "2": "住宿费",
+        "5": "学杂费、住宿费与生活费",
+        "3": "生活费用"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14306,7 +15493,7 @@
     {
       "varname": "e1012",
       "dataset": "household",
-      "label": "´û¿î×Ü¶î(Ôª)",
+      "label": "贷款总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14321,7 +15508,7 @@
     {
       "varname": "e1013",
       "dataset": "household",
-      "label": "´û¿îÆÚÏÞ(Äê)",
+      "label": "贷款期限(年)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -14336,7 +15523,7 @@
     {
       "varname": "e1014",
       "dataset": "household",
-      "label": "´û¿îÄêÀûÂÊ(%)",
+      "label": "贷款年利率(%)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -14351,11 +15538,14 @@
     {
       "varname": "e1020",
       "dataset": "household",
-      "label": "ÊÇ·ñÓÐÆäËü½è¿î",
+      "label": "是否有其它借款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14366,7 +15556,7 @@
     {
       "varname": "e1021",
       "dataset": "household",
-      "label": "½è¿î×Ü¶î(Ôª)",
+      "label": "借款总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14381,7 +15571,7 @@
     {
       "varname": "e1022",
       "dataset": "household",
-      "label": "Ç·¿îÊý¶î(Ôª)",
+      "label": "欠款数额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14396,7 +15586,7 @@
     {
       "varname": "e1023",
       "dataset": "household",
-      "label": "ÊÇ·ñÖ§¸¶ÀûÏ¢",
+      "label": "是否支付利息",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14411,7 +15601,7 @@
     {
       "varname": "e1024",
       "dataset": "household",
-      "label": "È¥ÄêÖ§¸¶ÀûÏ¢¶î(Ôª)",
+      "label": "去年支付利息额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -14531,7 +15721,7 @@
     {
       "varname": "e2001p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%18s",
@@ -14546,11 +15736,14 @@
     {
       "varname": "e2002",
       "dataset": "household",
-      "label": "ÓÐÎÞÐÅÓÃ¿¨",
+      "label": "有无信用卡",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14726,7 +15919,7 @@
     {
       "varname": "e2003p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%16s",
@@ -14816,7 +16009,7 @@
     {
       "varname": "e2004p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%38s",
@@ -14831,11 +16024,17 @@
     {
       "varname": "e2005",
       "dataset": "household",
-      "label": "ÈçºÎ»¹¿î",
+      "label": "如何还款",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "到期只偿还最低还款额",
+        "4": "延期偿还",
+        "2": "到期偿还账单金额",
+        "5": "停止偿还",
+        "3": "提前偿还"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -14846,7 +16045,7 @@
     {
       "varname": "e2005p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%44s",
@@ -14861,7 +16060,7 @@
     {
       "varname": "e2009_1",
       "dataset": "household",
-      "label": "ÉêÇëÄê·Ý[1]",
+      "label": "申请年份[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14876,7 +16075,7 @@
     {
       "varname": "e2009_2",
       "dataset": "household",
-      "label": "ÉêÇëÄê·Ý[2]",
+      "label": "申请年份[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14891,7 +16090,7 @@
     {
       "varname": "e2009a_1",
       "dataset": "household",
-      "label": "°ìÀíÒøÐÐ[1]",
+      "label": "办理银行[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14906,7 +16105,7 @@
     {
       "varname": "e2009a_2",
       "dataset": "household",
-      "label": "°ìÀíÒøÐÐ[2]",
+      "label": "办理银行[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -14921,7 +16120,7 @@
     {
       "varname": "e2009ap_1",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ[1]",
+      "label": "其他银行[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -14936,7 +16135,7 @@
     {
       "varname": "e2009ap_2",
       "dataset": "household",
-      "label": "ÆäËûÒøÐÐ[2]",
+      "label": "其他银行[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -15281,7 +16480,7 @@
     {
       "varname": "e2010p_1",
       "dataset": "household",
-      "label": "ÆäËü[1]",
+      "label": "其它[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -15296,7 +16495,7 @@
     {
       "varname": "e2010p_2",
       "dataset": "household",
-      "label": "ÆäËü[2]",
+      "label": "其它[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%18s",
@@ -15311,7 +16510,7 @@
     {
       "varname": "e2011_1",
       "dataset": "household",
-      "label": "ÐÅÓÃ¶î¶È(Ôª)[1]",
+      "label": "信用额度(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15326,7 +16525,7 @@
     {
       "varname": "e2011_2",
       "dataset": "household",
-      "label": "ÐÅÓÃ¶î¶È(Ôª)[2]",
+      "label": "信用额度(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15341,11 +16540,14 @@
     {
       "varname": "e2013_1",
       "dataset": "household",
-      "label": "ÊÇ·ñÔ¤½è¹ýÏÖ½ð[1]",
+      "label": "是否预借过现金[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -15356,11 +16558,14 @@
     {
       "varname": "e2013_2",
       "dataset": "household",
-      "label": "ÊÇ·ñÔ¤½è¹ýÏÖ½ð[2]",
+      "label": "是否预借过现金[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -15371,7 +16576,7 @@
     {
       "varname": "e2014_1",
       "dataset": "household",
-      "label": "ÉÏÔÂÐÅÓÃ¿¨Ïû·Ñ½ð¶î(Ôª)[1]",
+      "label": "上月信用卡消费金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15386,7 +16591,7 @@
     {
       "varname": "e2014_2",
       "dataset": "household",
-      "label": "ÉÏÔÂÐÅÓÃ¿¨Ïû·Ñ½ð¶î(Ôª)[2]",
+      "label": "上月信用卡消费金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15401,7 +16606,7 @@
     {
       "varname": "e2015_1",
       "dataset": "household",
-      "label": "ÐÅÓÃ¿¨Ç·¿î½ð¶î(Ôª)[1]",
+      "label": "信用卡欠款金额(元)[1]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15416,7 +16621,7 @@
     {
       "varname": "e2015_2",
       "dataset": "household",
-      "label": "ÐÅÓÃ¿¨Ç·¿î½ð¶î(Ôª)[2]",
+      "label": "信用卡欠款金额(元)[2]",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -15431,7 +16636,7 @@
     {
       "varname": "e2016",
       "dataset": "household",
-      "label": "ÎÞÐÅÓÃ¿¨Ô­Òò",
+      "label": "无信用卡原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -15446,7 +16651,7 @@
     {
       "varname": "e2016p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -15461,7 +16666,7 @@
     {
       "varname": "e2017",
       "dataset": "household",
-      "label": "ÉêÇëÐÅÓÃ¿¨´ÎÊý",
+      "label": "申请信用卡次数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -15476,11 +16681,18 @@
     {
       "varname": "e2018",
       "dataset": "household",
-      "label": "ÒøÐÐ¾Ü·¢¿¨Ô­Òò",
+      "label": "银行拒发卡原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有稳定或足够的收入",
+        "5": "工作单位性质",
+        "2": "不良的信用记录",
+        "6": "其它（请注明）",
+        "3": "没有信用记录",
+        "7": "不清楚原因"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -15491,7 +16703,7 @@
     {
       "varname": "e2018p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -15506,7 +16718,7 @@
     {
       "varname": "e3001",
       "dataset": "household",
-      "label": "ÓÐÎÞÆäËüÐÎÊ½¸ºÕ®",
+      "label": "有无其它形式负债",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -15701,7 +16913,7 @@
     {
       "varname": "e3003p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -16016,7 +17228,7 @@
     {
       "varname": "e3005p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%66s",
@@ -16031,7 +17243,7 @@
     {
       "varname": "e3006",
       "dataset": "household",
-      "label": "ÆäËü¸ºÕ®×Ü½ð¶î(Ôª)",
+      "label": "其它负债总金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16046,7 +17258,7 @@
     {
       "varname": "e3007",
       "dataset": "household",
-      "label": "È¥ÄêÖ§¸¶ÀûÏ¢(Ôª)",
+      "label": "去年支付利息(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16061,7 +17273,7 @@
     {
       "varname": "e3008",
       "dataset": "household",
-      "label": "Ä¿Ç°Ç·¿î¶î(Ôª)",
+      "label": "目前欠款额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16076,7 +17288,7 @@
     {
       "varname": "g1001",
       "dataset": "household",
-      "label": "ÔÂ»ïÊ³·Ñ(Ôª)",
+      "label": "月伙食费(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16091,7 +17303,7 @@
     {
       "varname": "g1002",
       "dataset": "household",
-      "label": "ÔÂÔÚÍâ¾Í²Í»¨Ïú(Ôª)",
+      "label": "月在外就餐花销(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16106,11 +17318,14 @@
     {
       "varname": "g1003",
       "dataset": "household",
-      "label": "ÊÇ·ñ×Ô²úÅ©²úÆ·",
+      "label": "是否自产农产品",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16121,7 +17336,7 @@
     {
       "varname": "g1004",
       "dataset": "household",
-      "label": "ÔÂÏû·Ñ×Ô²úÅ©²úÆ·ÊÐ¼Û(Ôª)",
+      "label": "月消费自产农产品市价(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16136,7 +17351,7 @@
     {
       "varname": "g1005",
       "dataset": "household",
-      "label": "Ë®¡¢µçµÈ×Ü·ÑÓÃ(Ôª)",
+      "label": "水、电等总费用(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16151,7 +17366,7 @@
     {
       "varname": "g1006",
       "dataset": "household",
-      "label": "¹ºÂòÈÕ³£ÓÃÆ··ÑÓÃ(Ôª)",
+      "label": "购买日常用品费用(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16166,7 +17381,7 @@
     {
       "varname": "g1007",
       "dataset": "household",
-      "label": "¼ÒÕþ·þÎñ·ÑÓÃ(Ôª)",
+      "label": "家政服务费用(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16181,7 +17396,7 @@
     {
       "varname": "g1008",
       "dataset": "household",
-      "label": "±¾µØ½»Í¨·ÑÓÃ(Ôª)",
+      "label": "本地交通费用(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16196,7 +17411,7 @@
     {
       "varname": "g1009",
       "dataset": "household",
-      "label": "Í¨ÐÅ·ÑÓÃ(Ôª)",
+      "label": "通信费用(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16211,7 +17426,7 @@
     {
       "varname": "g1010",
       "dataset": "household",
-      "label": "ÎÄ»¯ÓéÀÖ×ÜÖ§³ö(Ôª)",
+      "label": "文化娱乐总支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16226,7 +17441,7 @@
     {
       "varname": "g1011",
       "dataset": "household",
-      "label": "È¥Äê×Ô¼ºÒÂÎï»¨Ïú(Ôª)",
+      "label": "去年自己衣物花销(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16241,7 +17456,7 @@
     {
       "varname": "g1011a",
       "dataset": "household",
-      "label": "È¥ÄêÅäÅ¼ÒÂÎï»¨Ïú(Ôª)",
+      "label": "去年配偶衣物花销(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16256,7 +17471,7 @@
     {
       "varname": "g1011b",
       "dataset": "household",
-      "label": "È¥Äêº¢×ÓÒÂÎï»¨Ïú(Ôª)",
+      "label": "去年孩子衣物花销(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16271,7 +17486,7 @@
     {
       "varname": "g1012",
       "dataset": "household",
-      "label": "×¡·¿×°ÐÞ¡¢Î¬ÐÞ»òÀ©½¨»¨·Ñ(Ôª)",
+      "label": "住房装修、维修或扩建花费(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16286,7 +17501,7 @@
     {
       "varname": "g1013",
       "dataset": "household",
-      "label": "Å¯Æø»¨·Ñ(Ôª)",
+      "label": "暖气花费(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16301,11 +17516,20 @@
     {
       "varname": "g1014",
       "dataset": "household",
-      "label": "¹ºÂò¼ÒÍ¥ÄÍÓÃÆ·Ö§³ö(Ôª)",
+      "label": "购买家庭耐用品支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "5": "5 万-10 万",
+        "2": "5 千-1 万",
+        "6": "10 万-20 万",
+        "3": "1 万-3 万",
+        "7": "20 万-50 万",
+        "4": "3 万-5 万",
+        "8": "50 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16331,11 +17555,20 @@
     {
       "varname": "g1015",
       "dataset": "household",
-      "label": "¹ºÂòÉÝ³ÞÆ·Ö§³ö(Ôª)",
+      "label": "购买奢侈品支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "5": "5 万-10 万",
+        "2": "5 千-1 万",
+        "6": "10 万-20 万",
+        "3": "1 万-3 万",
+        "7": "20 万-50 万",
+        "4": "3 万-5 万",
+        "8": "50 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16361,7 +17594,7 @@
     {
       "varname": "g1016",
       "dataset": "household",
-      "label": "½ÌÓý¡¢ÅàÑµÖ§³ö(Ôª)",
+      "label": "教育、培训支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16376,7 +17609,7 @@
     {
       "varname": "g1016a",
       "dataset": "household",
-      "label": "ÁôÑ§½ÌÓý¡¢ÅàÑµÖ§³ö(Ôª)",
+      "label": "留学教育、培训支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%12.0g",
@@ -16391,11 +17624,19 @@
     {
       "varname": "g1017",
       "dataset": "household",
-      "label": "¹ºÂò½»Í¨¹¤¾ßÖ§³ö(ÍòÔª)",
+      "label": "购买交通工具支出(万元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2 万以下",
+        "5": "20-50 万",
+        "2": "2-5 万",
+        "6": "50-100 万",
+        "3": "5-10 万",
+        "7": "100 万以上",
+        "4": "10-20 万 访员注意：旅游支出包括自费旅游产生的各种交通费、门票费、住宿费等"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16406,11 +17647,19 @@
     {
       "varname": "g1018",
       "dataset": "household",
-      "label": "ÂÃÓÎ¡¢Ì½Ç××ÜÖ§³ö(Ôª)",
+      "label": "旅游、探亲总支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2 万以下",
+        "5": "20-50 万",
+        "2": "2-5 万",
+        "6": "50-100 万",
+        "3": "5-10 万",
+        "7": "100 万以上",
+        "4": "10-20 万"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16436,7 +17685,7 @@
     {
       "varname": "g1019",
       "dataset": "household",
-      "label": "±£½¡×ÜÖ§³ö(Ôª)",
+      "label": "保健总支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16451,11 +17700,14 @@
     {
       "varname": "g2001",
       "dataset": "household",
-      "label": "È¥ÄêÊÇ·ñ¸øÓèËûÈË×ÊÖú",
+      "label": "去年是否给予他人资助",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16616,7 +17868,7 @@
     {
       "varname": "g2004a",
       "dataset": "household",
-      "label": "È¥Äê¸øÓèËûÈËÖ§³ö½ð¶î£¨½Ú¼ÙÈÕ£©(Ôª)",
+      "label": "去年给予他人支出金额（节假日）(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16631,7 +17883,7 @@
     {
       "varname": "g2004b",
       "dataset": "household",
-      "label": "È¥Äê¸øÓèËûÈËÖ§³ö½ð¶î£¨ºì°×Ï²ÊÂ£©(Ôª)",
+      "label": "去年给予他人支出金额（红白喜事）(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16646,7 +17898,7 @@
     {
       "varname": "g2004c",
       "dataset": "household",
-      "label": "È¥Äê¸øÓèËûÈËÖ§³ö½ð¶î£¨½ÌÓýµÈ£©(Ôª)",
+      "label": "去年给予他人支出金额（教育等）(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16661,7 +17913,7 @@
     {
       "varname": "g2004d",
       "dataset": "household",
-      "label": "È¥Äê¸øÓèËûÈËÖ§³ö½ð¶î£¨ÆäËü£©(Ôª)",
+      "label": "去年给予他人支出金额（其它）(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16676,11 +17928,14 @@
     {
       "varname": "g3001",
       "dataset": "household",
-      "label": "ÓÐÎÞÆäËüÖ§³ö",
+      "label": "有无其它支出",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16691,7 +17946,7 @@
     {
       "varname": "g3003",
       "dataset": "household",
-      "label": "ÆäËüÖ§³öÊÐÖµ(Ôª)",
+      "label": "其它支出市值(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16706,11 +17961,14 @@
     {
       "varname": "h1001",
       "dataset": "household",
-      "label": "È¥ÄêÊÇ·ñ»ñµÃ×ÊÖú",
+      "label": "去年是否获得资助",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -16871,7 +18129,7 @@
     {
       "varname": "h1004a",
       "dataset": "household",
-      "label": "È¥ÄêÊÕµ½×ÊÖú½ð¶î(½Ú¼ÙÈÕ)(Ôª)",
+      "label": "去年收到资助金额(节假日)(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16886,7 +18144,7 @@
     {
       "varname": "h1004b",
       "dataset": "household",
-      "label": "È¥ÄêÊÕµ½×ÊÖú½ð¶î(ºì°×Ï²ÊÂ)(Ôª)",
+      "label": "去年收到资助金额(红白喜事)(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16901,7 +18159,7 @@
     {
       "varname": "h1004c",
       "dataset": "household",
-      "label": "È¥ÄêÊÕµ½×ÊÖú½ð¶î(½ÌÓýµÈ)(Ôª)",
+      "label": "去年收到资助金额(教育等)(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16916,7 +18174,7 @@
     {
       "varname": "h1004d",
       "dataset": "household",
-      "label": "È¥ÄêÊÕµ½×ÊÖú½ð¶î(¼Ì³Ð×Ê²ú)(Ôª)",
+      "label": "去年收到资助金额(继承资产)(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16931,7 +18189,7 @@
     {
       "varname": "h1004e",
       "dataset": "household",
-      "label": "Äú¼ÒÆäËüÊÕÈë(Ôª)",
+      "label": "您家其它收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -16946,7 +18204,7 @@
     {
       "varname": "h1004ep",
       "dataset": "household",
-      "label": "ÆäËüÊÕÈë",
+      "label": "其它收入",
       "label_en": "",
       "vtype": "numeric",
       "format": "%56s",
@@ -17096,7 +18354,7 @@
     {
       "varname": "h2001p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -17111,7 +18369,7 @@
     {
       "varname": "h2002",
       "dataset": "household",
-      "label": "ÁìÈ¡½ð¶î(Ôª)",
+      "label": "领取金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -17246,7 +18504,7 @@
     {
       "varname": "h2003p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%46s",
@@ -17261,11 +18519,20 @@
     {
       "varname": "h2004",
       "dataset": "household",
-      "label": "ÆäËüÊÕÈë½ð¶î(Ôª)",
+      "label": "其它收入金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5 千以下",
+        "5": "5 万-10 万",
+        "2": "5 千-1 万",
+        "6": "10 万-20 万",
+        "3": "1 万-3 万",
+        "7": "20 万-50 万",
+        "4": "3 万-5 万",
+        "8": "50万以上 访员注意：下面问题只针对出售房屋、汽车"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17291,7 +18558,7 @@
     {
       "varname": "h2005",
       "dataset": "household",
-      "label": "ÆäËüÊÕÈëË°·Ñ½ð¶î(Ôª)",
+      "label": "其它收入税费金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -17306,11 +18573,15 @@
     {
       "varname": "h3001a",
       "dataset": "household",
-      "label": "×ÜÖ§³öÆ«¸ß»¹ÊÇÆ«µÍ",
+      "label": "总支出偏高还是偏低",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "偏高",
+        "2": "偏低",
+        "3": "持平"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17321,7 +18592,7 @@
     {
       "varname": "h3002p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -17456,7 +18727,7 @@
     {
       "varname": "h3003p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -17471,11 +18742,15 @@
     {
       "varname": "h3004",
       "dataset": "household",
-      "label": "È¥Äê×ÜÊÕÈëÓëÕý³£Äê·Ý±È½Ï",
+      "label": "去年总收入与正常年份比较",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "偏高",
+        "3": "持平",
+        "2": "偏低"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17696,7 +18971,7 @@
     {
       "varname": "h3005p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%44s",
@@ -17876,7 +19151,7 @@
     {
       "varname": "h3006p",
       "dataset": "household",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%244s",
@@ -17891,11 +19166,15 @@
     {
       "varname": "h3007",
       "dataset": "household",
-      "label": "¹ýÈ¥5ÄêÖÐÊÕÈëÔö³¤ÓëÎï¼Û±È½Ï",
+      "label": "过去5年中收入增长与物价比较",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "高于",
+        "3": "持平",
+        "2": "低于"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17906,11 +19185,15 @@
     {
       "varname": "h3008",
       "dataset": "household",
-      "label": "¹ýÈ¥5ÄêÖÐÖ§³öÔö³¤ÓëÎï¼Û±È½Ï",
+      "label": "过去5年中支出增长与物价比较",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "高于",
+        "3": "持平",
+        "2": "低于 ## →结束问卷 ## 访员总结 ## 访员注意：访问结束后，请访员自行填写这部分内容"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17936,11 +19219,19 @@
     {
       "varname": "k1101",
       "dataset": "household",
-      "label": "³ÖÓÐÏÖ½ð¶î(Ôª)",
+      "label": "持有现金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2 千以下",
+        "5": "5 万-10 万",
+        "2": "2 千-5 千",
+        "6": "10 万-50 万",
+        "3": "5 千-2 万",
+        "7": "50 万以上",
+        "4": "2 万-5 万 ## （十一）借出款 访员注意：“别人”指本调查所界定的家庭成员以外的人或机构"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -17966,7 +19257,7 @@
     {
       "varname": "k2101",
       "dataset": "household",
-      "label": "Ä¿Ç°ÊÇ·ñ½è¿î¸øËûÈË",
+      "label": "目前是否借款给他人",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -17981,7 +19272,7 @@
     {
       "varname": "k2102a",
       "dataset": "household",
-      "label": "½è³ö¿î½ð¶î(Ôª)",
+      "label": "借出款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -17996,7 +19287,7 @@
     {
       "varname": "k2102b",
       "dataset": "household",
-      "label": "½è¿î¹é»¹ÆÚÏÞ(Äê)",
+      "label": "借款归还期限(年)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -18011,7 +19302,7 @@
     {
       "varname": "k2103",
       "dataset": "household",
-      "label": "½è¿îÈË",
+      "label": "借款人",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -18026,7 +19317,7 @@
     {
       "varname": "k2103p",
       "dataset": "household",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%22s",
@@ -18041,7 +19332,7 @@
     {
       "varname": "k2105",
       "dataset": "household",
-      "label": "ÀûÂÊ(%)",
+      "label": "利率(%)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -18056,7 +19347,7 @@
     {
       "varname": "k2106",
       "dataset": "household",
-      "label": "ÊÇ·ñµ£ÐÄ½è¿î²»ÄÜÊÕ»Ø",
+      "label": "是否担心借款不能收回",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -18071,7 +19362,7 @@
     {
       "varname": "k2106a",
       "dataset": "household",
-      "label": "Ô¤¼ÆÊÕ»Ø½è¿îÊ±³¤(ÔÂ)",
+      "label": "预计收回借款时长(月)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -18086,7 +19377,7 @@
     {
       "varname": "k2107",
       "dataset": "household",
-      "label": "È¥ÄêÊÕ»Ø½è¿î½ð¶î(Ôª)",
+      "label": "去年收回借款金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",
@@ -18101,7 +19392,7 @@
     {
       "varname": "k2108",
       "dataset": "household",
-      "label": "È¥Äê½è³ö¿îÀûÏ¢(Ôª)",
+      "label": "去年借出款利息(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%10.0g",

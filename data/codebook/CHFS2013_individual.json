@@ -56,7 +56,7 @@
     {
       "varname": "hhead",
       "dataset": "individual",
-      "label": "1=»§Ö÷,0=·Ç»§Ö÷",
+      "label": "1=户主,0=非户主",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9.0g",
@@ -71,7 +71,7 @@
     {
       "varname": "a2000a",
       "dataset": "individual",
-      "label": "¾Ó×¡ÔÚÒ»Æð¼ÒÍ¥³ÉÔ±¸öÊý",
+      "label": "居住在一起家庭成员个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -86,7 +86,7 @@
     {
       "varname": "a2000b",
       "dataset": "individual",
-      "label": "Íâ³ö¼ÒÍ¥³ÉÔ±¸öÊý",
+      "label": "外出家庭成员个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -101,11 +101,23 @@
     {
       "varname": "a2001",
       "dataset": "individual",
-      "label": "ÓëÊÜ·ÃÕß¹ØÏµ",
+      "label": "与受访者关系",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "本人",
+        "2": "配偶或伴侣",
+        "3": "父母",
+        "4": "岳父母/公婆",
+        "5": "祖父母/外祖父母",
+        "6": "子女",
+        "7": "儿媳/女婿",
+        "8": "孙子/孙女",
+        "9": "孙媳/孙女婿",
+        "10": "兄弟姐妹",
+        "11": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -116,7 +128,7 @@
     {
       "varname": "a2001p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%34s",
@@ -131,7 +143,7 @@
     {
       "varname": "a2003",
       "dataset": "individual",
-      "label": "ÐÔ±ð",
+      "label": "性别",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -146,7 +158,7 @@
     {
       "varname": "a2005",
       "dataset": "individual",
-      "label": "³öÉúÄê",
+      "label": "出生年",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -161,11 +173,18 @@
     {
       "varname": "a2010",
       "dataset": "individual",
-      "label": "¹ú¼®",
+      "label": "国籍",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "11": "中国大陆",
+        "4": "欧洲【跳至 A2011a】",
+        "2": "港澳台",
+        "5": "亚洲其它国家【跳至 A2011a】",
+        "3": "美国/加拿大【跳至 A2011a】",
+        "6": "其它国家【跳至A2011a】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -176,7 +195,7 @@
     {
       "varname": "a2011",
       "dataset": "individual",
-      "label": "Ãñ×å",
+      "label": "民族",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -191,11 +210,18 @@
     {
       "varname": "a2011a",
       "dataset": "individual",
-      "label": "×Ú½ÌÐÅÑö",
+      "label": "宗教信仰",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "佛教",
+        "2": "道教",
+        "3": "伊斯兰教",
+        "4": "基督教",
+        "5": "无",
+        "6": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -206,7 +232,7 @@
     {
       "varname": "a2011ap",
       "dataset": "individual",
-      "label": "×Ú½ÌÐÅÑö£ºÆäËû",
+      "label": "宗教信仰：其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%26s",
@@ -221,7 +247,7 @@
     {
       "varname": "a2012",
       "dataset": "individual",
-      "label": "ÎÄ»¯³Ì¶È",
+      "label": "文化程度",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -236,11 +262,14 @@
     {
       "varname": "a2012a",
       "dataset": "individual",
-      "label": "ÊÇ·ñ¹úÍâ»ñµÃÑ§Î»",
+      "label": "是否国外获得学位",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -251,11 +280,16 @@
     {
       "varname": "a2015",
       "dataset": "individual",
-      "label": "ÕþÖÎÃæÃ²",
+      "label": "政治面貌",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "共青团员",
+        "2": "中共党员",
+        "3": "民主党派或其它党派",
+        "4": "群众"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -266,7 +300,7 @@
     {
       "varname": "a2018",
       "dataset": "individual",
-      "label": "ÊÇ·ñ±¾ÊÐ»§¿Ú",
+      "label": "是否本市户口",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -281,11 +315,14 @@
     {
       "varname": "a2018a",
       "dataset": "individual",
-      "label": "ÊÇ·ñ±¾ÏçÕò/½ÖµÀ»§¿Ú",
+      "label": "是否本乡镇/街道户口",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否跳至"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -296,7 +333,7 @@
     {
       "varname": "a2019",
       "dataset": "individual",
-      "label": "»§¿ÚËùÔÚÊ¡",
+      "label": "户口所在省",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -311,7 +348,7 @@
     {
       "varname": "a2020",
       "dataset": "individual",
-      "label": "»§¿ÚËùÔÚÊÐ/ÏØ",
+      "label": "户口所在市/县",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -326,7 +363,7 @@
     {
       "varname": "a2021",
       "dataset": "individual",
-      "label": "¿ªÊ¼×¡ÔÚÕâÀïÄê·Ý",
+      "label": "开始住在这里年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -341,7 +378,7 @@
     {
       "varname": "a2022",
       "dataset": "individual",
-      "label": "»§¿ÚÀàÐÍ",
+      "label": "户口类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -356,7 +393,7 @@
     {
       "varname": "a2022_00",
       "dataset": "individual",
-      "label": "»ñµÃÍ³Ò»»§¿ÚÄê·Ý",
+      "label": "获得统一户口年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -371,7 +408,7 @@
     {
       "varname": "a2022_01",
       "dataset": "individual",
-      "label": "»ñµÃÍ³Ò»»§¿ÚÇ°»§¿ÚÀàÐÍ",
+      "label": "获得统一户口前户口类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -386,11 +423,14 @@
     {
       "varname": "a2022a",
       "dataset": "individual",
-      "label": "ÊÇ·ñÅ©×ª·Ç»§¿Ú",
+      "label": "是否农转非户口",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否【跳至A2024】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -401,7 +441,7 @@
     {
       "varname": "a2022b",
       "dataset": "individual",
-      "label": "×¨Îª·ÇÅ©»§¿ÚÊ±¼ä",
+      "label": "专为非农户口时间",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -416,11 +456,18 @@
     {
       "varname": "a2022c",
       "dataset": "individual",
-      "label": "Å©×ª·Ç»§¿ÚÔ­Òò",
+      "label": "农转非户口原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "征地拆迁",
+        "4": "升学转为集体户口",
+        "2": "城镇购房",
+        "5": "购买",
+        "3": "城镇就业",
+        "6": "其他(请注明)"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -431,7 +478,7 @@
     {
       "varname": "a2022cp",
       "dataset": "individual",
-      "label": "Å©×ª·Ç»§¿ÚÔ­Òò:ÆäËû",
+      "label": "农转非户口原因:其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -446,11 +493,15 @@
     {
       "varname": "a2022d",
       "dataset": "individual",
-      "label": "ÊÇ·ñ¾Ó×¡±¾ÏØÊÐ",
+      "label": "是否居住本县市",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是【跳至 A2024】",
+        "2": "否",
+        "3": "国外【跳至 A2024】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -461,7 +512,7 @@
     {
       "varname": "a2022e",
       "dataset": "individual",
-      "label": "¾Ó×¡Ê¡·Ý",
+      "label": "居住省份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%20s",
@@ -476,7 +527,7 @@
     {
       "varname": "a2022f",
       "dataset": "individual",
-      "label": "¾Ó×¡ÊÐ/ÏØ",
+      "label": "居住市/县",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -491,11 +542,18 @@
     {
       "varname": "a2024",
       "dataset": "individual",
-      "label": "»éÒö×´¿ö",
+      "label": "婚姻状况",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "未婚【跳至 A2025b】",
+        "2": "已婚",
+        "3": "同居",
+        "4": "分居【跳至A2025b】",
+        "5": "离婚【跳至 A2025b】",
+        "6": "丧偶【跳至 A2025b】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -506,7 +564,7 @@
     {
       "varname": "a2025",
       "dataset": "individual",
-      "label": "½á»é(Í¬¾Ó)Äê·Ý",
+      "label": "结婚(同居)年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -521,11 +579,21 @@
     {
       "varname": "a2025b",
       "dataset": "individual",
-      "label": "Ä¿Ç°ÉíÌå×´¿ö",
+      "label": "目前身体状况",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没上过学【跳至 A2015】",
+        "2": "小学【跳至A2015】",
+        "3": "初中【跳至A2015】",
+        "4": "高中【跳至 A2015】",
+        "5": "中专/职高【跳至A2015】",
+        "6": "大专/高职【跳至 A2015】",
+        "7": "大学本科",
+        "8": "硕士研究生",
+        "9": "博士研究生"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -536,11 +604,17 @@
     {
       "varname": "a2025c",
       "dataset": "individual",
-      "label": "16ËêÒÔÇ°ÉíÌå×´¿ö",
+      "label": "16岁以前身体状况",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "非常好",
+        "4": "一般",
+        "2": "很好",
+        "5": "不好",
+        "3": "好"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -551,11 +625,14 @@
     {
       "varname": "a2025d",
       "dataset": "individual",
-      "label": "¹ýÈ¥Ò»ÄêÊÇ·ñÒòÉíÌåÔ­ÒòÎÞ·¨Õý³£¹¤×÷»òÉú»î",
+      "label": "过去一年是否因身体原因无法正常工作或生活",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -566,7 +643,7 @@
     {
       "varname": "a2028",
       "dataset": "individual",
-      "label": "Ç×ÐÖµÜ½ãÃÃ¸öÊý",
+      "label": "亲兄弟姐妹个数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -581,11 +658,14 @@
     {
       "varname": "a3000",
       "dataset": "individual",
-      "label": "ÊÇ·ñÓÐ¹¤×÷",
+      "label": "是否有工作",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有【跳至 A3002】",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -596,11 +676,20 @@
     {
       "varname": "a3001",
       "dataset": "individual",
-      "label": "Ã»¹¤×÷µÄÔ­Òò",
+      "label": "没工作的原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "在校学生",
+        "6": "失业或没有找到工作",
+        "2": "家庭主妇",
+        "7": "不愿意工作",
+        "3": "丧失劳动能力者",
+        "8": "离休或退休",
+        "4": "季节性工作，目前不在工作季节",
+        "9": "其它（请注明）选择4、或8跳至"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -611,7 +700,7 @@
     {
       "varname": "a3001p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -626,7 +715,7 @@
     {
       "varname": "a3002",
       "dataset": "individual",
-      "label": "¼¸·Ý¹¤×÷",
+      "label": "几份工作",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -641,11 +730,18 @@
     {
       "varname": "a3003",
       "dataset": "individual",
-      "label": "¹¤×÷ÐÔÖÊ",
+      "label": "工作性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "受雇于他人或单位【跳至 A3005】",
+        "2": "经营个体或私营企业；自主创业【跳至A3028】",
+        "3": "在家务农",
+        "4": "返聘【跳至 A3005】",
+        "5": "自由职业【跳至 A3028】",
+        "6": "其他（志愿者）（仅询问"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -656,11 +752,14 @@
     {
       "varname": "a3003a",
       "dataset": "individual",
-      "label": "ÊÇ·ñµ£ÈÎ´å¸É²¿",
+      "label": "是否担任村干部",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否跳至 A3028"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -671,11 +770,20 @@
     {
       "varname": "a3005",
       "dataset": "individual",
-      "label": "Ö°Òµ",
+      "label": "职业",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国家机关党群组织、企事业单位负责人",
+        "2": "专业技术人员",
+        "3": "办事人员和有关人员",
+        "4": "商业、服务业人员",
+        "5": "农、林、牧、渔水利生产人员",
+        "6": "生产、运输设备操作人员及有关人员",
+        "7": "军人",
+        "8": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -686,7 +794,7 @@
     {
       "varname": "a3005p",
       "dataset": "individual",
-      "label": "Ö°Òµ:ÆäËû",
+      "label": "职业:其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -701,7 +809,7 @@
     {
       "varname": "a3006",
       "dataset": "individual",
-      "label": "ÐÐÒµ",
+      "label": "行业",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -716,7 +824,7 @@
     {
       "varname": "a3006p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -731,7 +839,7 @@
     {
       "varname": "a3007",
       "dataset": "individual",
-      "label": "¹¤×÷ÄêÊý",
+      "label": "工作年数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -746,11 +854,18 @@
     {
       "varname": "a3008",
       "dataset": "individual",
-      "label": "×¨Òµ¼¼ÊõÖ°³Æ",
+      "label": "专业技术职称",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "无职称",
+        "2": "技术员",
+        "3": "初级职称",
+        "4": "中级职称",
+        "5": "高级职称",
+        "6": "荣誉职称"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -761,11 +876,22 @@
     {
       "varname": "a3009",
       "dataset": "individual",
-      "label": "¹¤×÷Ö°Îñ",
+      "label": "工作职务",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "普通职工【跳至A3011】",
+        "6": "（副）处长",
+        "2": "单位部门负责人 （如经理）",
+        "7": "（副）局长及以上",
+        "3": "单位负责人（如总经理）",
+        "8": "村干部",
+        "4": "（副）组/股长",
+        "9": "乡镇干部",
+        "5": "（副）科长",
+        "10": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -776,7 +902,7 @@
     {
       "varname": "a3009p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -791,7 +917,7 @@
     {
       "varname": "a3010",
       "dataset": "individual",
-      "label": "µ£ÈÎÖ°ÎñÄêÊý",
+      "label": "担任职务年数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -806,7 +932,7 @@
     {
       "varname": "a3011",
       "dataset": "individual",
-      "label": "È¥Äê¹¤×÷ÔÂÊý",
+      "label": "去年工作月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -821,7 +947,7 @@
     {
       "varname": "a3012",
       "dataset": "individual",
-      "label": "Ã¿ÖÜ¹¤×÷ÌìÊý",
+      "label": "每周工作天数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -836,7 +962,7 @@
     {
       "varname": "a3013",
       "dataset": "individual",
-      "label": "Ã¿Ìì¹¤×÷Ð¡Ê±Êý",
+      "label": "每天工作小时数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -851,11 +977,19 @@
     {
       "varname": "a3014",
       "dataset": "individual",
-      "label": "¹¤×÷µ¥Î»ÀàÐÍ",
+      "label": "工作单位类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "政府部门",
+        "2": "事业单位",
+        "3": "企业",
+        "4": "非营利非政府组织",
+        "5": "军队",
+        "6": "个体经营",
+        "7": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -866,7 +1000,7 @@
     {
       "varname": "a3014p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -881,11 +1015,17 @@
     {
       "varname": "a3015",
       "dataset": "individual",
-      "label": "±àÖÆÀàÐÍ",
+      "label": "编制类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有编制",
+        "2": "行政编制（公务员）",
+        "3": "事业编制（参公管理）",
+        "4": "事业编制（其他）",
+        "5": "军队编制若 A3014≠3，跳至 A3020"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -896,11 +1036,20 @@
     {
       "varname": "a3016",
       "dataset": "individual",
-      "label": "µ¥Î»ÐÔÖÊ",
+      "label": "单位性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国有/国有控股",
+        "2": "集体/集体控股",
+        "3": "私营/私人/个体（不含外资）",
+        "4": "外商独资",
+        "5": "港澳台独资",
+        "6": "中外合资",
+        "7": "其它联营企业",
+        "8": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -911,7 +1060,7 @@
     {
       "varname": "a3016p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -926,11 +1075,14 @@
     {
       "varname": "a3018a",
       "dataset": "individual",
-      "label": "µ¥Î»ÊÇ·ñÉÏÊÐ",
+      "label": "单位是否上市",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "上市",
+        "2": "没上市"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -941,7 +1093,7 @@
     {
       "varname": "a3020",
       "dataset": "individual",
-      "label": "È¥ÄêÊµÊÕ»õ±ÒÊÕÈë(Ôª)",
+      "label": "去年实收货币收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -956,11 +1108,22 @@
     {
       "varname": "a3022",
       "dataset": "individual",
-      "label": "Ë°ºó½±½ðÊÕÈë(Ôª)",
+      "label": "税后奖金收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "2": "5千-1万",
+        "3": "1万-2万",
+        "4": "2万-3万",
+        "5": "3万-5万",
+        "6": "5万-10万",
+        "7": "10万-20万",
+        "8": "20万-50万",
+        "9": "50万-100万",
+        "10": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -971,11 +1134,16 @@
     {
       "varname": "a3023",
       "dataset": "individual",
-      "label": "Ë°ºó²¹ÌùÊÕÈë»òÊµÎïÊÕÈë(Ôª)",
+      "label": "税后补贴收入或实物收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "2": "5千-1万3.1万-2万4.2万-3万3万-5万6.5万-10万7.10万-20万8.20万-50万",
+        "9": "50万-100万",
+        "10": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -986,11 +1154,22 @@
     {
       "varname": "a3024",
       "dataset": "individual",
-      "label": "¸öË°×Ü¶î(Ôª)",
+      "label": "个税总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "2千以下",
+        "2": "2千-5千",
+        "3": "5千-1万",
+        "4": "1万-2万",
+        "5": "2万-3万",
+        "6": "3万-5万",
+        "7": "5万-10万",
+        "8": "10万-20万",
+        "9": "20万-50万",
+        "10": "50万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1001,7 +1180,7 @@
     {
       "varname": "a3024a",
       "dataset": "individual",
-      "label": "¼ÙÈçÏÖÔÚÊ§Òµ£¬¶ÔÐÂ¹¤×÷µÄ×îµÍÐ½×ÊÒªÇó",
+      "label": "假如现在失业，对新工作的最低薪资要求",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1016,11 +1195,19 @@
     {
       "varname": "a3028",
       "dataset": "individual",
-      "label": "µÚ¶þ¹¤×÷ÐÔÖÊ",
+      "label": "第二工作性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "受雇于他人或单位",
+        "2": "经营个体或私营企业；自主创业【循环下一位家庭成员】",
+        "3": "在家务农【循环下一位家庭成员】",
+        "4": "返聘",
+        "5": "自由职业",
+        "6": "其他（志愿者）【循环下一位家庭成员】",
+        "7": "季节性工作【循环下一位家庭成员】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1031,7 +1218,7 @@
     {
       "varname": "a3029",
       "dataset": "individual",
-      "label": "È¥ÄêµÚ¶þ¹¤×÷ÔÂÊý",
+      "label": "去年第二工作月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1046,7 +1233,7 @@
     {
       "varname": "a3030",
       "dataset": "individual",
-      "label": "µÚ¶þ¹¤×÷ÌìÊý",
+      "label": "第二工作天数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1061,7 +1248,7 @@
     {
       "varname": "a3031",
       "dataset": "individual",
-      "label": "µÚ¶þ¹¤×÷Ð¡Ê±Êý",
+      "label": "第二工作小时数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1076,11 +1263,22 @@
     {
       "varname": "a3036",
       "dataset": "individual",
-      "label": "µÚ¶þ¹¤×÷µÄË°ºóÊÕÈë(Ôª)",
+      "label": "第二工作的税后收入(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "2": "5千-1万",
+        "3": "1万-2万",
+        "4": "2万-3万",
+        "5": "3万-5万",
+        "6": "5万-10万",
+        "7": "10万-20万",
+        "8": "20万-50万",
+        "9": "50万-100万",
+        "10": "100万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1091,7 +1289,7 @@
     {
       "varname": "a3037",
       "dataset": "individual",
-      "label": "µÚ¶þ¹¤×÷Ëù½É¸öË°(Ôª)",
+      "label": "第二工作所缴个税(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1106,7 +1304,7 @@
     {
       "varname": "a3037c",
       "dataset": "individual",
-      "label": "À´×Ô²»×¡ÔÚÒ»Æð¼ÒÍ¥³ÉÔ±ÊÕÈë",
+      "label": "来自不住在一起家庭成员收入",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1121,7 +1319,7 @@
     {
       "varname": "a3037d",
       "dataset": "individual",
-      "label": "¸ø²»×¡ÔÚÒ»Æð¼ÒÍ¥³ÉÔ±µÄ×ªÒÆÖ§³ö",
+      "label": "给不住在一起家庭成员的转移支出",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1136,7 +1334,7 @@
     {
       "varname": "a3038",
       "dataset": "individual",
-      "label": "ÊÇ·ñÔø¾­¹¤×÷¹ý",
+      "label": "是否曾经工作过",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1151,7 +1349,7 @@
     {
       "varname": "a3040a",
       "dataset": "individual",
-      "label": "×î½üÒ»·Ý¹¤×÷ÐÔÖÊ",
+      "label": "最近一份工作性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1166,11 +1364,20 @@
     {
       "varname": "a3041",
       "dataset": "individual",
-      "label": "×î½üÒ»·Ý¹¤×÷Ö°Òµ",
+      "label": "最近一份工作职业",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国家机关党群组织、企事业单位负责人",
+        "2": "专业技术人员",
+        "3": "办事人员和有关人员",
+        "4": "商业、服务业人员",
+        "5": "农、林、牧、渔水利生产人员",
+        "6": "生产、运输设备操作人员及有关人员",
+        "7": "军人",
+        "8": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1181,7 +1388,7 @@
     {
       "varname": "a3041p",
       "dataset": "individual",
-      "label": "×î½üÒ»·Ý¹¤×÷Ö°Òµ:ÆäËû",
+      "label": "最近一份工作职业:其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -1511,11 +1718,18 @@
     {
       "varname": "a3042a",
       "dataset": "individual",
-      "label": "×¨Òµ¼¼ÊõÖ°³Æ",
+      "label": "专业技术职称",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "无职称",
+        "4": "中级职称",
+        "2": "技术员",
+        "5": "高级职称",
+        "3": "初级职称",
+        "6": "荣誉职称"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1526,11 +1740,22 @@
     {
       "varname": "a3042b",
       "dataset": "individual",
-      "label": "Ö°Îñ",
+      "label": "职务",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "普通职工",
+        "2": "单位部门负责人（如经理）",
+        "3": "单位负责人（如总经理）",
+        "4": "（副）组/股长",
+        "5": "（副）科长",
+        "6": "（副）处长",
+        "7": "（副）局长及以上",
+        "8": "村干部",
+        "9": "乡镇干部",
+        "10": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1541,7 +1766,7 @@
     {
       "varname": "a3042bp",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%36s",
@@ -1556,11 +1781,19 @@
     {
       "varname": "a3042c",
       "dataset": "individual",
-      "label": "¹¤×÷µ¥Î»ÀàÐÍ",
+      "label": "工作单位类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "政府部门",
+        "2": "事业单位",
+        "3": "企业",
+        "4": "非营利非政府组织",
+        "5": "军队",
+        "6": "个体经营",
+        "7": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1571,7 +1804,7 @@
     {
       "varname": "a3042cp",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -1586,11 +1819,17 @@
     {
       "varname": "a3042d",
       "dataset": "individual",
-      "label": "±àÖÆÀàÐÍ",
+      "label": "编制类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "没有编制",
+        "2": "行政编制（公务员）",
+        "3": "事业编制（参公管理）",
+        "4": "事业编制（其他）",
+        "5": "军队编制"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1601,11 +1840,20 @@
     {
       "varname": "a3042e",
       "dataset": "individual",
-      "label": "¹¤×÷µ¥Î»ÐÔÖÊ",
+      "label": "工作单位性质",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "国有/国有控股",
+        "2": "集体/集体控股",
+        "3": "私营/私人/个体（不含外资）",
+        "4": "外商独资",
+        "5": "港澳台独资",
+        "6": "中外合资",
+        "7": "其它联营企业",
+        "8": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1616,7 +1864,7 @@
     {
       "varname": "a3042ep",
       "dataset": "individual",
-      "label": "¹¤×÷µ¥Î»ÀàÐÍ:ÆäËû",
+      "label": "工作单位类型:其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -1631,7 +1879,7 @@
     {
       "varname": "a3042p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -1646,7 +1894,7 @@
     {
       "varname": "a3043",
       "dataset": "individual",
-      "label": "ÍËÐÝ/Ê§ÒµÇ°Ò»¸öÔÂË°ºó¹¤×Ê",
+      "label": "退休/失业前一个月税后工资",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1661,7 +1909,7 @@
     {
       "varname": "a3043a",
       "dataset": "individual",
-      "label": "ÍËÐÝ/Ê§ÒµÇ°Ò»Äê½±½ð¡¢²¹Ìù",
+      "label": "退休/失业前一年奖金、补贴",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1676,7 +1924,7 @@
     {
       "varname": "a3044",
       "dataset": "individual",
-      "label": "Ê§ÒµÄê·Ý",
+      "label": "失业年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1691,7 +1939,7 @@
     {
       "varname": "a3044a",
       "dataset": "individual",
-      "label": "Ê§ÒµÔÂ·Ý",
+      "label": "失业月份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1706,11 +1954,14 @@
     {
       "varname": "a3045",
       "dataset": "individual",
-      "label": "ÊÇ·ñÈ¥ÃñÕþ²¿ÃÅµÇ¼ÇÊ§Òµ",
+      "label": "是否去民政部门登记失业",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1721,11 +1972,14 @@
     {
       "varname": "a3046",
       "dataset": "individual",
-      "label": "ÊÇ·ñÁìÈ¡Ê§Òµ¾È¼Ã»òÊ§Òµ±£ÏÕ½ð",
+      "label": "是否领取失业救济或失业保险金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否【跳至 A3049】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1736,7 +1990,7 @@
     {
       "varname": "a3047",
       "dataset": "individual",
-      "label": "ÁìÈ¡Ê§Òµ¾È¼Ã»òÊ§Òµ±£ÏÕÊ±¼ä(ÔÂ)",
+      "label": "领取失业救济或失业保险时间(月)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1751,7 +2005,7 @@
     {
       "varname": "a3048",
       "dataset": "individual",
-      "label": "Ê§Òµ¾È¼Ã»òÊ§Òµ±£ÏÕÁìÈ¡½ð¶î£¨Ôª/ÔÂ£©",
+      "label": "失业救济或失业保险领取金额（元/月）",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1766,11 +2020,14 @@
     {
       "varname": "a3049",
       "dataset": "individual",
-      "label": "¹ýÈ¥Ò»¸öÔÂÄÚÊÇ·ñÑ°ÕÒ¹¤×÷",
+      "label": "过去一个月内是否寻找工作",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "是",
+        "2": "否"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1781,7 +2038,7 @@
     {
       "varname": "a3051",
       "dataset": "individual",
-      "label": "Ä¿Ç°×îµÍÐ½×ÊÒªÇó£¨Ôª/ÔÂ£©",
+      "label": "目前最低薪资要求（元/月）",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1796,11 +2053,22 @@
     {
       "varname": "f1001b",
       "dataset": "individual",
-      "label": "ÍËÐÝÑøÀÏ·½Ê½",
+      "label": "退休养老方式",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "公务员退休工资【跳至F1019】",
+        "2": "参公管理事业单位退休工资【跳至F1019】",
+        "3": "非参公管理事业单位退休工资【跳至F1019】",
+        "4": "城镇职工基本养老保险金（城职保）",
+        "5": "城镇居民社会养老保险金（城居保）",
+        "6": "新型农村社会养老保险金（新农保）",
+        "7": "农村社会养老保险金（老农保）8城乡居民社会养老保险金",
+        "9": "离休工资【跳至F1019】",
+        "10": "都没有【跳至 F1031a】",
+        "11": "其他（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -1811,7 +2079,7 @@
     {
       "varname": "f1001bp",
       "dataset": "individual",
-      "label": "ÍËÐÝÑøÀÏ·½Ê½:ÆäËû",
+      "label": "退休养老方式:其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -1826,7 +2094,7 @@
     {
       "varname": "f1003",
       "dataset": "individual",
-      "label": "ÊÇ·ñ¿ªÊ¼ÁìÉç±£",
+      "label": "是否开始领社保",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1841,7 +2109,7 @@
     {
       "varname": "f1004",
       "dataset": "individual",
-      "label": "ÁìÈ¡Äê·Ý",
+      "label": "领取年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1856,7 +2124,7 @@
     {
       "varname": "f1005",
       "dataset": "individual",
-      "label": "ÉÏÔÂÁìÈ¡ÑøÀÏ½ðÊý¶î(Ôª)",
+      "label": "上月领取养老金数额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1871,7 +2139,7 @@
     {
       "varname": "f1007",
       "dataset": "individual",
-      "label": "±£·ÑÓÉË­½ÉÄÉ",
+      "label": "保费由谁缴纳",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1886,7 +2154,7 @@
     {
       "varname": "f1007a",
       "dataset": "individual",
-      "label": "ÊÇ·ñÖªµÀÉÏ¸öÔÂ³ÇÖ°±£×Ô¼º½ÉÄÉÁË¶àÉÙÇ®",
+      "label": "是否知道上个月城职保自己缴纳了多少钱",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1901,7 +2169,7 @@
     {
       "varname": "f1007b",
       "dataset": "individual",
-      "label": "³ÇÖ°±£Ò»¹²½ÉÄÉÁË¶àÉÙÇ®",
+      "label": "城职保一共缴纳了多少钱",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1916,7 +2184,7 @@
     {
       "varname": "f1008",
       "dataset": "individual",
-      "label": "ÉÏÔÂ×Ô¼º½ÉÄÉ½ð¶î(Ôª)",
+      "label": "上月自己缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1931,7 +2199,7 @@
     {
       "varname": "f1010",
       "dataset": "individual",
-      "label": "Éç±£¸öÈËÕË»§Óà¶î(Ôª)",
+      "label": "社保个人账户余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1946,7 +2214,7 @@
     {
       "varname": "f1011",
       "dataset": "individual",
-      "label": "Éç±£½É·ÑÓÐÎÞÖÐ¶Ï¹ý",
+      "label": "社保缴费有无中断过",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1961,7 +2229,7 @@
     {
       "varname": "f1012",
       "dataset": "individual",
-      "label": "ÖÐ¶Ï½É·ÑÔ­Òò",
+      "label": "中断缴费原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -1976,7 +2244,7 @@
     {
       "varname": "f1012p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -1991,7 +2259,7 @@
     {
       "varname": "f1013",
       "dataset": "individual",
-      "label": "ÖÐ¶ÏÔÂÊý",
+      "label": "中断月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2006,7 +2274,7 @@
     {
       "varname": "f1014",
       "dataset": "individual",
-      "label": "²Î¼ÓÐÂÅ©±£Äê·Ý",
+      "label": "参加新农保年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2021,7 +2289,7 @@
     {
       "varname": "f1015",
       "dataset": "individual",
-      "label": "ÄêÐÂÅ©±£½É·ÑÓÐÎÞÖÐ¶Ï",
+      "label": "年新农保缴费有无中断",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2036,7 +2304,7 @@
     {
       "varname": "f1016",
       "dataset": "individual",
-      "label": "ÎªÐÂÅ©±£½ÉÄÉ½ð¶î(Ôª)",
+      "label": "为新农保缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2051,7 +2319,7 @@
     {
       "varname": "f1016a",
       "dataset": "individual",
-      "label": "ÐÂÅ©±£Ò»´ÎÐÔ½ÉÄÉ½ð¶î(Ôª)",
+      "label": "新农保一次性缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2066,7 +2334,7 @@
     {
       "varname": "f1017",
       "dataset": "individual",
-      "label": "Õþ¸®²¹Öú½ð¶î(Ôª)",
+      "label": "政府补助金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2081,7 +2349,7 @@
     {
       "varname": "f1018",
       "dataset": "individual",
-      "label": "ÖÐ¶Ï½É·ÑÔ­Òò",
+      "label": "中断缴费原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2096,7 +2364,7 @@
     {
       "varname": "f1018a",
       "dataset": "individual",
-      "label": "ÑøÀÏ½ðÕË»§Óà¶î",
+      "label": "养老金账户余额",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2111,7 +2379,7 @@
     {
       "varname": "f1018p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%9s",
@@ -2126,7 +2394,7 @@
     {
       "varname": "f1019",
       "dataset": "individual",
-      "label": "Àë/ÍËÐÝ½ðÊÇ·ñÁìÈ¡",
+      "label": "离/退休金是否领取",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2141,7 +2409,7 @@
     {
       "varname": "f1020",
       "dataset": "individual",
-      "label": "ÀëÐÝ»¹ÊÇÍËÐÝ",
+      "label": "离休还是退休",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2156,7 +2424,7 @@
     {
       "varname": "f1021",
       "dataset": "individual",
-      "label": "ÀëÐÝÄê·Ý",
+      "label": "离休年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2171,7 +2439,7 @@
     {
       "varname": "f1022",
       "dataset": "individual",
-      "label": "ÉÏÔÂÀëÐÝ¹¤×Ê(Ôª)",
+      "label": "上月离休工资(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2186,7 +2454,7 @@
     {
       "varname": "f1023",
       "dataset": "individual",
-      "label": "ÍËÐÝÀàÐÍ",
+      "label": "退休类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2201,7 +2469,7 @@
     {
       "varname": "f1023p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%34s",
@@ -2216,7 +2484,7 @@
     {
       "varname": "f1024",
       "dataset": "individual",
-      "label": "ÍËÐÝÄê·Ý",
+      "label": "退休年份",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2231,7 +2499,7 @@
     {
       "varname": "f1025",
       "dataset": "individual",
-      "label": "ÉÏÔÂÍËÐÝ¹¤×Ê(Ôª)",
+      "label": "上月退休工资(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2246,7 +2514,7 @@
     {
       "varname": "f1026",
       "dataset": "individual",
-      "label": "ÓÐÎÞÆóÒµÄê½ð",
+      "label": "有无企业年金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2261,7 +2529,7 @@
     {
       "varname": "f1027",
       "dataset": "individual",
-      "label": "ÁìÈ¡ÆóÒµÄê½ðÓë·ñ",
+      "label": "领取企业年金与否",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2276,7 +2544,7 @@
     {
       "varname": "f1028",
       "dataset": "individual",
-      "label": "ÉÏÔÂÁìÈ¡ÆóÒµÄê½ðÊý¶î(Ôª)",
+      "label": "上月领取企业年金数额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2291,7 +2559,7 @@
     {
       "varname": "f1029",
       "dataset": "individual",
-      "label": "ÉÏÔÂ×Ô¼º½ÉÄÉ½ð¶î(Ôª)",
+      "label": "上月自己缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2306,7 +2574,7 @@
     {
       "varname": "f1030",
       "dataset": "individual",
-      "label": "ÉÏÔÂµ¥Î»½ÉÄÉ½ð¶î(Ôª)",
+      "label": "上月单位缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2321,7 +2589,7 @@
     {
       "varname": "f1031",
       "dataset": "individual",
-      "label": "ÆóÒµÄê½ð¸öÈËÕË»§Óà¶î(Ôª)",
+      "label": "企业年金个人账户余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2336,7 +2604,7 @@
     {
       "varname": "f1031a",
       "dataset": "individual",
-      "label": "ÆäËû¼ÒÍ¥³ÉÔ±ÍËÐÝ½ðÊÕÈë",
+      "label": "其他家庭成员退休金收入",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2351,11 +2619,14 @@
     {
       "varname": "f2001",
       "dataset": "individual",
-      "label": "ÊÇ·ñÓÐÉç»áÒ½ÁÆ±£ÏÕ",
+      "label": "是否有社会医疗保险",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有【跳至F2003】",
+        "2": "没有"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2486,7 +2757,7 @@
     {
       "varname": "f2002p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -2501,11 +2772,21 @@
     {
       "varname": "f2003",
       "dataset": "individual",
-      "label": "Ä¿Ç°×îÖ÷ÒªÒ½±£ÀàÐÍ",
+      "label": "目前最主要医保类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "公费医疗",
+        "2": "单位报销",
+        "3": "城镇职工基本医疗保险",
+        "4": "城镇居民基本医疗保险",
+        "5": "新型农村合作医疗保险",
+        "6": "学生医疗保险",
+        "8": "医疗救助",
+        "9": "红军级离休干部配偶或遗孀的医疗保险",
+        "10": "其它（请注明）"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2516,7 +2797,7 @@
     {
       "varname": "f2003p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -2531,7 +2812,7 @@
     {
       "varname": "f2004",
       "dataset": "individual",
-      "label": "½ÉÄÉÒ½±£±£·Ñ(Ôª)",
+      "label": "缴纳医保保费(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2546,11 +2827,14 @@
     {
       "varname": "f2005",
       "dataset": "individual",
-      "label": "¸ÃÒ½±£ÓÐÎÞ¸öÈËÕË»§",
+      "label": "该医保有无个人账户",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "有",
+        "2": "没有【跳至 F2007】"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2561,11 +2845,21 @@
     {
       "varname": "f2006",
       "dataset": "individual",
-      "label": "¸öÈËÕË»§Óà¶î(Ôª)",
+      "label": "个人账户余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
-      "valuelabels": {},
+      "valuelabels": {
+        "1": "5千以下",
+        "2": "5千-1万",
+        "3": "1万-2万",
+        "4": "2万-3万",
+        "5": "3万-5万",
+        "6": "5万-10万",
+        "7": "10万-20万",
+        "8": "20万-50万",
+        "9": "50 万以上"
+      },
       "missing_rules": {
         "system": [],
         "user": []
@@ -2576,7 +2870,7 @@
     {
       "varname": "f2007",
       "dataset": "individual",
-      "label": "ÊÇ·ñ¹ºÂò´ó²¡Ò½ÁÆÍ³³ï",
+      "label": "是否购买大病医疗统筹",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2591,7 +2885,7 @@
     {
       "varname": "f2008",
       "dataset": "individual",
-      "label": "È¥Äê£¬´ó²¡Ò½ÁÆÍ³³ï½ÉÄÉ±£·Ñ",
+      "label": "去年，大病医疗统筹缴纳保费",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2606,7 +2900,7 @@
     {
       "varname": "f2019",
       "dataset": "individual",
-      "label": "ÉÏ¸öÔÂÒ½ÁÆ×ÜÖ§³ö(Ôª)",
+      "label": "上个月医疗总支出(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2621,7 +2915,7 @@
     {
       "varname": "f2020",
       "dataset": "individual",
-      "label": "ÆäÖÐÒ½±£Ö§¸¶½ð¶î(Ôª)",
+      "label": "其中医保支付金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2636,7 +2930,7 @@
     {
       "varname": "f2020a",
       "dataset": "individual",
-      "label": "ÆäÖÐ´ó²¡Í³³ïÖ§¸¶½ð¶î(Ôª)",
+      "label": "其中大病统筹支付金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2651,7 +2945,7 @@
     {
       "varname": "f3001",
       "dataset": "individual",
-      "label": "ÓÐÎÞÊ§Òµ±£ÏÕ",
+      "label": "有无失业保险",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2666,7 +2960,7 @@
     {
       "varname": "f4001",
       "dataset": "individual",
-      "label": "ÊÇ·ñÓÐ×¡·¿¹«»ý½ð",
+      "label": "是否有住房公积金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2681,7 +2975,7 @@
     {
       "varname": "f4004",
       "dataset": "individual",
-      "label": "Ä¿Ç°ÊÇ·ñ¼ÌÐø½ÉÄÉ",
+      "label": "目前是否继续缴纳",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2696,7 +2990,7 @@
     {
       "varname": "f4005",
       "dataset": "individual",
-      "label": "È¥ÄêÃ¿ÔÂ½ÉÄÉ½ð¶î(Ôª)",
+      "label": "去年每月缴纳金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2711,7 +3005,7 @@
     {
       "varname": "f4007",
       "dataset": "individual",
-      "label": "ÒÑÀÛ¼Æ½ÉÄÉÔÂÊý",
+      "label": "已累计缴纳月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2726,7 +3020,7 @@
     {
       "varname": "f4008",
       "dataset": "individual",
-      "label": "Ä¿Ç°¹«»ý½ðÕË»§Óà¶î(Ôª)",
+      "label": "目前公积金账户余额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2741,7 +3035,7 @@
     {
       "varname": "f4009",
       "dataset": "individual",
-      "label": "È¥ÄêÊÇ·ñÌáÈ¡/Ê¹ÓÃ×¡·¿¹«»ý½ð",
+      "label": "去年是否提取/使用住房公积金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2756,7 +3050,7 @@
     {
       "varname": "f4010",
       "dataset": "individual",
-      "label": "Ê¹ÓÃ¹«»ý½ðÔ­Òò",
+      "label": "使用公积金原因",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2771,7 +3065,7 @@
     {
       "varname": "f4010p",
       "dataset": "individual",
-      "label": "ÆäËü",
+      "label": "其它",
       "label_en": "",
       "vtype": "numeric",
       "format": "%28s",
@@ -2786,7 +3080,7 @@
     {
       "varname": "f4011",
       "dataset": "individual",
-      "label": "È¥ÄêÊ¹ÓÃ×Ü¶î(Ôª)",
+      "label": "去年使用总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2801,7 +3095,7 @@
     {
       "varname": "f4012",
       "dataset": "individual",
-      "label": "ÓÐÎÞ¹¤ÉÌ±£ÏÕ",
+      "label": "有无工商保险",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2816,7 +3110,7 @@
     {
       "varname": "f4013",
       "dataset": "individual",
-      "label": "ÓÐÎÞÉúÓý±£ÏÕ",
+      "label": "有无生育保险",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -2921,7 +3215,7 @@
     {
       "varname": "f6101",
       "dataset": "individual",
-      "label": "¹ºÂòÈËÊÙ±£ÏÕÕß",
+      "label": "购买人寿保险者",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3086,7 +3380,7 @@
     {
       "varname": "f6103",
       "dataset": "individual",
-      "label": "×Ü±£¶î(Ôª)",
+      "label": "总保额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3101,7 +3395,7 @@
     {
       "varname": "f6104",
       "dataset": "individual",
-      "label": "±£ÏÕÀàÐÍ",
+      "label": "保险类型",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3116,7 +3410,7 @@
     {
       "varname": "f6104p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -3131,7 +3425,7 @@
     {
       "varname": "f6105",
       "dataset": "individual",
-      "label": "ÊÇ·ñ·Öºì",
+      "label": "是否分红",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3146,7 +3440,7 @@
     {
       "varname": "f6106",
       "dataset": "individual",
-      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label": "去年所得分红(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3161,7 +3455,7 @@
     {
       "varname": "f6107",
       "dataset": "individual",
-      "label": "ÊÇ·ñ·µ»¹±¾½ð",
+      "label": "是否返还本金",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3176,7 +3470,7 @@
     {
       "varname": "f6108",
       "dataset": "individual",
-      "label": "È¥Äê·µ»¹±¾½ð(Ôª)",
+      "label": "去年返还本金(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3191,7 +3485,7 @@
     {
       "varname": "f6109",
       "dataset": "individual",
-      "label": "½ÉÄÉÆµÂÊ",
+      "label": "缴纳频率",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3206,7 +3500,7 @@
     {
       "varname": "f6109p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%29s",
@@ -3221,7 +3515,7 @@
     {
       "varname": "f6110",
       "dataset": "individual",
-      "label": "Ã¿´Î½ÉÄÉ±£·Ñ½ð¶î(Ôª)",
+      "label": "每次缴纳保费金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3236,7 +3530,7 @@
     {
       "varname": "f6111",
       "dataset": "individual",
-      "label": "Ðë½ÉÄÉÄêÊý",
+      "label": "须缴纳年数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3251,7 +3545,7 @@
     {
       "varname": "f6112",
       "dataset": "individual",
-      "label": "ÒÑ½ÉÄÉÔÂÊý",
+      "label": "已缴纳月数",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3266,7 +3560,7 @@
     {
       "varname": "f6118",
       "dataset": "individual",
-      "label": "È¥ÄêÊÇ·ñ»ñµÃÈËÊÙ±£ÏÕÅâ¸¶",
+      "label": "去年是否获得人寿保险赔付",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3281,7 +3575,7 @@
     {
       "varname": "f6119",
       "dataset": "individual",
-      "label": "Åâ¸¶½ð¶î(Ôª)",
+      "label": "赔付金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3296,7 +3590,7 @@
     {
       "varname": "f6201",
       "dataset": "individual",
-      "label": "½¡¿µ±£ÏÕ¹ºÂòÕß",
+      "label": "健康保险购买者",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3386,7 +3680,7 @@
     {
       "varname": "f6203",
       "dataset": "individual",
-      "label": "È¥Äê±£·Ñ×Ü¶î(Ôª)",
+      "label": "去年保费总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3401,7 +3695,7 @@
     {
       "varname": "f6204",
       "dataset": "individual",
-      "label": "È¥Äê±¨Ïú×Ü¶î(Ôª)",
+      "label": "去年报销总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3416,7 +3710,7 @@
     {
       "varname": "f6301",
       "dataset": "individual",
-      "label": "ÉÌÒµÑøÀÏ±£ÏÕ¹ºÂòÕß",
+      "label": "商业养老保险购买者",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3431,7 +3725,7 @@
     {
       "varname": "f6302",
       "dataset": "individual",
-      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label": "去年缴纳保费总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3446,7 +3740,7 @@
     {
       "varname": "f6305",
       "dataset": "individual",
-      "label": "ÊÇ·ñ·Öºì",
+      "label": "是否分红",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3461,7 +3755,7 @@
     {
       "varname": "f6306",
       "dataset": "individual",
-      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label": "去年所得分红(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3476,7 +3770,7 @@
     {
       "varname": "f6307",
       "dataset": "individual",
-      "label": "Ä¿Ç°ÊÇ·ñ¿ªÊ¼ÁìÈ¡",
+      "label": "目前是否开始领取",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3491,7 +3785,7 @@
     {
       "varname": "f6308",
       "dataset": "individual",
-      "label": "ÉÏÔÂÁìÈ¡½ð¶î(Ôª)",
+      "label": "上月领取金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3506,7 +3800,7 @@
     {
       "varname": "f6401",
       "dataset": "individual",
-      "label": "ÉÌÒµ²Æ²ú±£ÏÕ×Ü±£¶î(Ôª)",
+      "label": "商业财产保险总保额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3626,7 +3920,7 @@
     {
       "varname": "f6402p",
       "dataset": "individual",
-      "label": "ÆäËû",
+      "label": "其他",
       "label_en": "",
       "vtype": "numeric",
       "format": "%40s",
@@ -3641,7 +3935,7 @@
     {
       "varname": "f6403",
       "dataset": "individual",
-      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label": "去年缴纳保费总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3656,7 +3950,7 @@
     {
       "varname": "f6404",
       "dataset": "individual",
-      "label": "ÊÇ·ñ·Öºì",
+      "label": "是否分红",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3671,7 +3965,7 @@
     {
       "varname": "f6405",
       "dataset": "individual",
-      "label": "È¥ÄêËùµÃ·Öºì(Ôª)",
+      "label": "去年所得分红(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3686,7 +3980,7 @@
     {
       "varname": "f6406",
       "dataset": "individual",
-      "label": "È¥ÄêÅâ¸¶½ð¶î(Ôª)",
+      "label": "去年赔付金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3701,7 +3995,7 @@
     {
       "varname": "f6501",
       "dataset": "individual",
-      "label": "ÆäËüÉÌÒµ±£ÏÕÃû³Æ",
+      "label": "其它商业保险名称",
       "label_en": "",
       "vtype": "numeric",
       "format": "%50s",
@@ -3716,7 +4010,7 @@
     {
       "varname": "f6502",
       "dataset": "individual",
-      "label": "È¥Äê½ÉÄÉ±£·Ñ×Ü¶î(Ôª)",
+      "label": "去年缴纳保费总额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",
@@ -3731,7 +4025,7 @@
     {
       "varname": "f6503",
       "dataset": "individual",
-      "label": "È¥ÄêÅâ¸¶½ð¶î(Ôª)",
+      "label": "去年赔付金额(元)",
       "label_en": "",
       "vtype": "numeric",
       "format": "%8.0g",

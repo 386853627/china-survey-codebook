@@ -337,9 +337,97 @@ python cli/codebook.py surveys
 - `tags/topic_tags.json`（14 类 + 1005 变量标签）
 - `docs/SCHEMA.md` + `docs/USAGE.md` + `README.md`（全部重写）
 
-## 9. AI Agent 调用场景示例
+### Phase 5: Codebook 质量修复 + 查询辅助层
 
-**场景**：你问"我想研究教育对收入的影响，CGSS 哪些年份有相关变量？"
+> **触发原因**：通过三次端到端测试（CHFS 2021 农村大学生 / CHFS 2011 城镇大学生 / CGSS 2023 农村大学生）发现 codebook 存在标签乱码、取值标签缺失、字段不一致、缺乏查询辅助 API 等问题。
+
+**前置**：Phase 4 完成 + 三次 codebook 查询测试
+
+**测试发现的问题汇总**：
+
+| # | 问题 | 影响范围 | 严重度 |
+|---|------|----------|--------|
+| P5-1 | CHFS 2011/2013 JSON 标签 GBK 乱码 | CHFS 2011/2013 全部变量 | 高 |
+| P5-2 | CHFS 2011/2013 取值标签缺失（valuelabels 为空） | CHFS 2011/2013 全部变量 | 高 |
+| P5-3 | CGSS JSON 缺少顶层 `dataset` 字段 | 13 个 CGSS JSON | 中 |
+| P5-4 | pandas read_stata 行为不一致：值类型因年/调查而异（category 带数字前缀 / category 无前缀 / float64 裸数值） | 全部（用户侧） | 高 |
+| P5-5 | 缺乏 Python 查询辅助层：每次查询需手动三步（搜变量→读编码→写匹配） | 全部（用户侧） | 高 |
+| P5-6 | 跨调查编码不统一：教育 CHFS a2012(9级) vs CGSS a7a(14级)；户口 CHFS a2022 2011(二分) vs 2021(5类) vs CGSS a18(9类) | 跨调查映射 | 中 |
+
+**任务清单**：
+
+#### P5-1: 修复 CHFS 2011/2013 标签 GBK 乱码
+- [ ] 修改 `etl/extract_metadata.py`，增加编码检测逻辑
+- [ ] 对 CHFS 2011/2013 的 .dta 文件重跑 ETL，生成正确 UTF-8 标签
+- [ ] 验证：`fix_gkb(label)` 不再需要，JSON 标签直接可读
+- [ ] 重建 SQLite DB
+
+**方案**：pandas `read_stata` 对 CHFS 2011/2013 .dta 文件以 latin-1 解码了 GBK 字节。需在 ETL 中检测并修复：`label.encode('latin-1').decode('gbk')`，或指定 `convert_categoricals=False` 后手动解码。
+
+#### P5-2: 补全 CHFS 2011/2013 取值标签
+- [ ] 排查 CHFS 2011/2013 .dta 中 valuelabels 缺失原因（DTA 文件本身无标签 vs pandas 未读取）
+- [ ] 若 DTA 本身有标签集（labelset）但未绑定变量，手工建立变量→编码映射
+- [ ] 若 DTA 本身无标签，参照 CHFS 问卷文档补录核心变量（a2012 文化程度 / a2022 户口等）的编码
+- [ ] 写入 JSON 并重建 DB
+
+#### P5-3: CGSS JSON 补 dataset 字段
+- [ ] 批量给 13 个 CGSS JSON 顶层加 `"dataset": "main"`
+- [ ] 给每个 variable 元素加 `"dataset": "main"` 字段
+- [ ] 重建 SQLite DB（验证 dataset 列非空）
+
+#### P5-4: 统一值类型处理策略
+- [ ] 在 ETL 中记录每个变量的 `value_type` 元数据：`labeled_category`（有标签的 category）/ `numeric`（裸数值）
+- [ ] 在 JSON 中增加 `value_encoding` 字段，标注 DTA 实际读取时的类型
+- [ ] 验证：CHFS 2021 = `labeled_category` / CHFS 2011 = `numeric` / CGSS 2023 = `labeled_category`
+
+#### P5-5: 构建 Python 查询辅助层
+- [ ] 新建 `lib/codebook_query.py`，封装常见查询模式
+- [ ] 核心 API 设计：
+  ```python
+  from lib.codebook_query import Codebook
+
+  cb = Codebook(db_path="data/codebook.db", json_dir="data/codebook")
+
+  # 按语义查找变量
+  cb.search("CHFS", 2021, "individual", keywords=["户口", "户籍"])
+
+  # 获取变量定义（含取值标签）
+  cb.get_variable("CGSS", 2023, "main", "a7a")
+
+  # 获取筛选条件：传入语义条件，返回可用于 pandas 的 filter dict
+  cb.build_filter("CGSS", 2023, "main",
+      hukou="农业户口",       # 自动匹配 a18 == "农业户口"
+      education="大专以上"    # 自动匹配 a7a in [9..13]
+  )
+
+  # 直接统计数据
+  cb.count(dta_path, filters={"hukou": "农业户口", "education": "大专以上"})
+  ```
+- [ ] 支持"语义条件 → 变量编码 → pandas 筛选"的自动映射
+- [ ] 将 test/ 下三个脚本改为调用辅助层，验证可用性
+
+#### P5-6: 跨调查编码归一映射
+- [ ] 扩展 `data/cross_survey_mapping.json`，增加编码归一规则
+- [ ] 教育编码归一：CGSS a7a(14级) → 统一级别(9级)；CHFS a2012(9级) → 统一级别(9级)
+- [ ] 户口编码归一：CGSS a18(9类) / CHFS a2022-2011(二分) / CHFS a2022-2021(5类) → 统一三分类(农业/非农/统一)
+- [ ] 在辅助层中提供 `cb.normalize(varname, value, target_scheme="unified")` 方法
+
+**验证标准**：
+- CHFS 2011/2013 JSON 标签无乱码，取值标签非空（至少核心变量）
+- CGSS JSON 顶层 dataset 字段存在
+- `lib/codebook_query.py` 可一行完成"农村大学生"统计，无需手写三步
+- 跨调查编码归一后，CHFS 2011 + CGSS 2023 可用统一条件查询
+
+**产出文件**：
+- `etl/extract_metadata.py`（修改，编码修复）
+- `data/codebook/CHFS{2011,2013}_*.json`（重生成）
+- `data/codebook/CGSS*.json`（回填 dataset）
+- `data/codebook.db`（重建）
+- `lib/codebook_query.py`（新建，查询辅助层）
+- `data/cross_survey_mapping.json`（扩展，编码归一）
+- `test/`（三个测试脚本改为调用辅助层）
+
+## 9. AI Agent 调用场景示例
 
 ```
 Agent 流程：
@@ -389,7 +477,8 @@ Agent 流程：
 | 2. 全量入库 + SQLite | ✅ 完成 | 2026-07-04 | 13年/11790变量/17.5MB DB/955映射 |
 | 3. CLI + Tag 体系 | ✅ 完成 | 2026-07-04 | 258变量打标/5子命令/DB回填 |
 | 4. CHFS + 文档 | ✅ 完成 | 2026-07-06 | CHFS 6年19文件/17025变量/14类tag/18跨调查映射 |
+| 5. 质量修复 + 查询辅助层 | 📋 计划中 | — | 6项问题修复/Python查询API/跨调查编码归一 |
 
 ---
 
-_最后更新：2026-07-06（Phase 4 完成）_
+_最后更新：2026-07-06（Phase 5 计划制定）_
